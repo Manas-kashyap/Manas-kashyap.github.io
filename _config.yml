@@ -1,68 +1,54 @@
-permalink: /:title/
+# Build settings
+permalink: /blog/:year/:title/
 markdown: kramdown
 highlighter: pygments
+plugins: [jekyll-paginate-v2]
 
-paginate: 2 #6
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
 comments: true
-paginate_path: "/page/:num"
-
-baseurl: "/nandomoreira-jekyll-theme" # change to empty string ""
-domain_name: nandomoreira.me
-google_analytics: UA-52446115-1
 
 source: source
 destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
 
-# cover: /assets/images/header-cover.png
-
-# site title, description, meta_description, meta_keywords
-# Details for the RSS feed generator
-name: Fernando Moreira
-title: Fernando Moreira | Desenvolvimento Web e tudo mais..
-description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
-meta_description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
-meta_keywords: "site, website, loja virtual, lojas virtuais, e-commerce, wordpress, frontend, front-end, html5, css3, javascript, jquery, seo, otimizacao, performance"
+# SEO settings
+title: end2end
+description: "A free Jekyll theme for download"
+keywords: "Jekyll, theme, free, download, SEO, blog, web"
 url: http://nandomoreira.me
-production_url: http://nandomoreira.me
-repo: https://github.com/nandomoreirame/nandomoreira-jekyll-theme
+baseurl: "/end2end"
+
+google_analytics: UA-52446115-1
+repo: http://github.com/nandomoreirame/end2end
 disqus_shortname: "nandothemes"
-rss_path: source/
+disqus_site_shortname: "nandothemes"
+
+# Author settings
 author:
   name: Fernando Moreira
-  image: /assets/images/author.jpg
+  job: Frontend Engineer
+  bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  thumb: /images/author.jpg
   email: nandomoreira.me@gmail.com
-  url: http://nandomoreira.me
-  facebook: http://facebook.com/fernando.dev
-  twitter: http://twitter.com/nandomoreirame
-  instagram: http://instagram.com/nandomoreira.me
-  github: http://github.com/nandomoreirame
-  linkedin: http://linkedin.com/in/nandomoreirame
-  bio: "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
+  url: https://nandomoreira.me/
+  github: https://github.com/nandomoreirame
+  twitter: https://twitter.com/umdevux
+  facebook: https://facebook.com/umdevux
+  linkedin: https://linkedin.com/in/nandomoreirame
 
-# thought
-thought:
-  text: I have no special talent. I am only passionately curious.
-  author: Albert Einstein
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: icons
+    title: Icons
+  - slug: blog
+    title: Blog
 
-# Plugin: jekyll-assets
-assets:
-  dirname: /assets
-  baseurl: /nandomoreira-jekyll-theme/assets/ # change to /assets/
-  sources:
-    - assets/images
-    - assets/fonts
-    - assets/css
-    - assets/js
-  cache: true
-  gzip: [ text/css, application/javascript ]
-
-# Compress HTML
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  ignore:
-    envs: all
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]

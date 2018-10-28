@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Home
-post_class: page-template
-slug: home
 ---
 
-<article>
-  <a href="{{ site.repo }}/archive/source.zip" class="post alert txt-center" target="_blank">
-    <h2>Download the nandomoreira.me Jekyll theme</h2>
-  </a>
-</article>
-
-{% for post in paginator.posts %}
-  {% include article.html %}
-{% endfor %}
-
-{% include pagination.html %}
+<section class="hero">
+  <div class="hero-inner">
+    <div class="container">
+      <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot">
+      <h1>end2end <small>v2.0</small></h1>
+      <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
+      <h3>{{ site.author.bio }}</h3>
+      <a href="{{ '/about' | prepend: site.baseurl }}" class="button button-ghost" title="about">about</a>
+      <a href="{{ '/blog' | prepend: site.baseurl }}" class="button button-ghost" title="blog">blog</a>
+      <a href="{{ site.repo }}/archive/master.zip" class="button button-ghost" title="Download">Download</a>
+      {% include social.html %}
+    </div>
+  </div>
+</section>
