@@ -4,28 +4,31 @@ email: manaskashyaptech@gmail.com
 description: "A Developer at building phase."
 baseurl: ""
 url: "https://Manas-kashyap.github.io"
-title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
+title_description: "I am currently a Third​ year Computer Science​ student pursuing Bachelor of Technology from Amity University, Noida, India.
+<br /> An open-source enthusiast & a passionate learner. I also like to contribute to open source projects (like Android-development, Web development , dockers).
+<br /> I am also part of debian javascript , ruby , go , Medical , python packaging teams and pkg security team .
+<br /> I am also Developer in Hamaralinux.org and yogdaan.org (open source community) and I really like to learn new technologies and likes to experiment with them."
 title_image: "https://www.gravatar.com/avatar/adfc6106200af1c797247b4944d67709?s=500&d=mm"
 google_analytics: "UA-20365477-4"
-disqus_account: cartenoire
-github_repository: https://github.com/jacobtomlinson/carte-noire
+disqus_account: manas_kashyap
+github_repository: https://github.com/Manas-kashyap/Manas-kashyap.github.io/
 addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: _jacobtomlinson
-github_username:  jacobtomlinson
-instagram_username:
-reddit_username:
-linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
-google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
-stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
-xing_link:
-facebook_link:
+twitter_username: manas_tech
+github_username:  Manas-kashyap
+instagram_username: nerdy.404
+#reddit_username:
+linkedin_link: https://linkedin.com/in/manas-kashyap-1a2262130/
+#google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
+#stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
+#xing_link:
+#facebook_link:
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/manas_tech\">Manas Kashyap</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/Manas-kashyap\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown
