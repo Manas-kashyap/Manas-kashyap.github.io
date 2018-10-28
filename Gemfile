@@ -1,9 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'github-pages'
-gem 'rouge'
-gem 'jekyll'
-gem 'jekyll-mentions'
-gem 'jekyll-feed'
-gem 'jekyll-sitemap'
-gem 'jekyll-gist'
+gem 'jekyll', '~> 2.5.3'
+gem 'jekyll-assets'
+
+gem 'rake', '~> 12.3.0'
+gem 'compass', '~> 1.0.3'
+gem 'sass', '~> 3.4.10'
