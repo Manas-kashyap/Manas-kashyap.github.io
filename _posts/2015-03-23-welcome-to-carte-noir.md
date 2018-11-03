@@ -1,16 +1,14 @@
 ---
 layout:     post
-title:      Welcome to Carte Noire
-date:       2015-03-23 15:31:19
-author:     Jacob Tomlinson
-summary:    Carte Noire is a dark blog theme for Jekyll focusing on a clear reading experience.
+title:      Why Linux
+date:       2018-11-03 12:30:20
+author:     Manas kashyap
+summary:    What is Linux?
 categories: jekyll
-thumbnail:  heart
+thumbnail:  linux
 tags:
- - welcome
- - to
- - carte
- - noire
+ - Linux
+ - Open source
 ---
 
 Welcome to Carte Noire.

@@ -5,41 +5,9 @@
     <description>A Developer at building phase.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Oct 2018 22:49:31 +0530</pubDate>
-    <lastBuildDate>Mon, 29 Oct 2018 22:49:31 +0530</lastBuildDate>
+    <pubDate>Sat, 03 Nov 2018 12:15:46 +0530</pubDate>
+    <lastBuildDate>Sat, 03 Nov 2018 12:15:46 +0530</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
-    
-      <item>
-        <title>Welcome to Carte Noire</title>
-        <description>&lt;p&gt;Welcome to Carte Noire.&lt;/p&gt;
-
-&lt;p&gt;Carte Noire began as a new theme for &lt;a href=&quot;http://www.jacobtomlinson.co.uk/&quot;&gt;my personal blog&lt;/a&gt;, but has now taken
-on a life of its own as a free theme for Jekyll.&lt;/p&gt;
-
-&lt;p&gt;The theme has been designed with simplicity and readability in mind. It makes
-use of third party services such as Disqus ad AddThis to ensure the blog has
-all the features you would expect from a dynamic application such as Wordpress
-but with the hosting and maintenance simplicity of Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Please use/copy/share Carte Noire!&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 23 Mar 2015 21:01:19 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2015/03/23/welcome-to-carte-noir/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2015/03/23/welcome-to-carte-noir/</guid>
-        
-        <category>welcome</category>
-        
-        <category>to</category>
-        
-        <category>carte</category>
-        
-        <category>noire</category>
-        
-        
-        <category>jekyll</category>
-        
-      </item>
     
       <item>
         <title>Carte Noire in Action</title>
