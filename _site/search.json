@@ -1,19 +1,11 @@
 [
   
   {
-    "title"    : "Carte Noire in Action",
+    "title"    : "Why Linux",
     "category" : "",
-    "tags"     : "demo, action, carte, noire",
-    "url"      : "/jekyll/2014/06/10/carte-noire-in-action/",
-    "date"     : "2014-06-10 18:01:19 +0530"
-    } ,
-    
-  {
-    "title"    : "So, What is Jekyll?",
-    "category" : "",
-    "tags"     : "about, jekyll",
-    "url"      : "/jekyll/2014/06/09/so-what-is-jekyll/",
-    "date"     : "2014-06-09 18:02:18 +0530"
+    "tags"     : "linux, Open source",
+    "url"      : "/jekyll/2018/11/03/Why-linux/",
+    "date"     : "2018-11-03 17:30:00 +0530"
     } 
     
   ]
