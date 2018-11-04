@@ -30,7 +30,7 @@ From that day I started to use Linux and python.
 
 ## More technical things 
 
-While I was exploring things, I came to know about game developing and tried my luck there also, with [unity 3D][5], then tried to design things in 3D and also 2D graphics designing using [photoshop][6] and [Autodesk Maya][7], so basically I tried my best to learn every technology I could, in this journey I encountered some super awesome seniors, and some really helpful communities when it came for open source.
+While I was exploring things, I came to know about game developing and tried my luck there also, with [unity 3D][5], then tried to design things in 3D and also 2D graphics designing using [photoshop][6] and [Autodesk Maya][7], android development and so on,  So basically I tried my best to learn every technology I could, in this journey I encountered some super awesome seniors, and some really helpful communities when it came for open source.
 
 ## My first contribution to Open Source 
 
