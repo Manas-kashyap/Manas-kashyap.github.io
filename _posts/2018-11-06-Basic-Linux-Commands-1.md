@@ -27,7 +27,7 @@ We use the term “Linux” to refer to the Linux kernel, but also the set of pr
 A terminal, shell is a program that receives commands from the user and gives it to the OS to process, and it shows the output.
 Linux's shell is its main part. Its distros come in GUI (graphical user interface), but basically, Linux has a CLI (command line interface). In this tutorial, we are going to cover the basic commands that we use in the shell of Linux..
 
-##### To open the terminal, press Ctrl+Alt+T in Ubuntu, Debian, or press Alt+F2, type in gnome-terminal, and press enter. In Raspberry Pi, type in lxterminal. There is also a GUI way too by searching for terminal in start menu. 
+#### To open the terminal, press Ctrl+Alt+T in Ubuntu, Debian, or press Alt+F2, type in gnome-terminal, and press enter. In Raspberry Pi, type in lxterminal. There is also a GUI way too by searching for terminal in start menu. 
 
 ## Linux Commands
 
@@ -43,7 +43,7 @@ Use **rmdir** to delete a directory. But *rmdir* can only be used to delete an e
 
 **4) rm** - This command is used to delete files and directories.  Use **"rm -r*"** to delete just the directory. It deletes both the folder and the files it contains when using only the rm command.
 
-##### Warning:- never do , "sudo rm -rf /*", it will delete all the files in your root directory leading to shutting down of system.
+#### Warning:- never do , "sudo rm -rf /*", it will delete all the files in your root directory leading to shutting down of system.
 
 **5) touch** - This command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For example, “touch new.txt”.
 
