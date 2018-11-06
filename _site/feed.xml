@@ -5,9 +5,89 @@
     <description>A Developer at building phase.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Nov 2018 11:40:09 +0530</pubDate>
-    <lastBuildDate>Tue, 06 Nov 2018 11:40:09 +0530</lastBuildDate>
+    <pubDate>Tue, 06 Nov 2018 21:55:39 +0530</pubDate>
+    <lastBuildDate>Tue, 06 Nov 2018 21:55:39 +0530</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Basic Linux Commands -1</title>
+        <description>&lt;p&gt;In this Blog, I am going to tell 10 Basic Linux Commands. 
+This Blog is part of a series that is going to be released soon .&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-linux&quot;&gt;What is Linux?&lt;/h2&gt;
+&lt;p&gt;Linux is best known as the most used open source operating system.&lt;/p&gt;
+
+&lt;p&gt;We use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/&quot;&gt;Why to use linux?&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-linux-command-line-shell-or-terminal-&quot;&gt;What is Linux Command Line ,shell or Terminal ?&lt;/h2&gt;
+
+&lt;p&gt;A terminal, shell is a program that receives commands from the user and gives it to the OS to process, and it shows the output.
+Linux’s shell is its main part. Its distros come in GUI (graphical user interface), but basically, Linux has a CLI (command line interface). In this tutorial, we are going to cover the basic commands that we use in the shell of Linux..&lt;/p&gt;
+
+&lt;h4 id=&quot;to-open-the-terminal-press-ctrlaltt-in-ubuntu-debian-or-press-altf2-type-in-gnome-terminal-and-press-enter-in-raspberry-pi-type-in-lxterminal-there-is-also-a-gui-way-too-by-searching-for-terminal-in-start-menu&quot;&gt;To open the terminal, press Ctrl+Alt+T in Ubuntu, Debian, or press Alt+F2, type in gnome-terminal, and press enter. In Raspberry Pi, type in lxterminal. There is also a GUI way too by searching for terminal in start menu.&lt;/h4&gt;
+
+&lt;h2 id=&quot;linux-commands&quot;&gt;Linux Commands&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;1) ls&lt;/strong&gt; - Use the &lt;strong&gt;“ls”&lt;/strong&gt; command to know what files are in the directory you are in. You can see all the hidden files by using the command &lt;strong&gt;&lt;em&gt;“ls -a”&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2) cd&lt;/strong&gt; - Use the &lt;strong&gt;“cd”&lt;/strong&gt; command to go to a directory. For example, if you are in the home folder, and you want to go to the downloads folder, then you can type in “&lt;strong&gt;&lt;em&gt;cd Downloads”&lt;/em&gt;&lt;/strong&gt;. Remember, this command is case sensitive, and you have to type in the name of the folder exactly as it is. 
+But there is a problem with these commands. Imagine you have a folder named “Raspberry Pi”. In this case, when you type in “cd Raspberry Pi”, the shell will take the second argument of the command as a different one, so you will get an error saying that the directory does not exist. Here, you can use a backward slash. That is, you can use &lt;strong&gt;“cd Raspberry\ Pi”&lt;/strong&gt; in this case. Spaces are denoted like this: &lt;em&gt;If you just type “cd” and press enter, it takes you to the home directory.&lt;/em&gt; To go back from a folder to the folder before that, you can type &lt;strong&gt;“cd ..”&lt;/strong&gt; . The two dots represent back.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3) mkdir &amp;amp; rmdir&lt;/strong&gt; - the command when you need to create a folder or a directory. For example, if you want to make a directory called “freshers”, then you can type “&lt;em&gt;mkdir freshers”&lt;/em&gt;.
+Remember, as told before, if you want to create a directory named &lt;strong&gt;&lt;em&gt;“fresher 2k18”&lt;/em&gt;&lt;/strong&gt;, then you can type &lt;em&gt;“&lt;strong&gt;mkdir freshers\ 2k18&lt;/strong&gt;”&lt;/em&gt;. 
+Use &lt;strong&gt;rmdir&lt;/strong&gt; to delete a directory. But &lt;em&gt;rmdir&lt;/em&gt; can only be used to delete an empty directory. 
+&lt;em&gt;To delete a directory containing files, use rm&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4) rm&lt;/strong&gt; - This command is used to delete files and directories.  Use &lt;strong&gt;“rm -r*“&lt;/strong&gt; to delete just the directory. It deletes both the folder and the files it contains when using only the rm command.&lt;/p&gt;
+
+&lt;h4 id=&quot;warning--never-do--sudo-rm--rf--it-will-delete-all-the-files-in-your-root-directory-leading-to-shutting-down-of-system&quot;&gt;Warning:- never do , “sudo rm -rf /*”, it will delete all the files in your root directory leading to shutting down of system.&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;5) touch&lt;/strong&gt; - This command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For example, “touch new.txt”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6) man &amp;amp; –help&lt;/strong&gt; - To know more about a command and how to use it, use the man command. It shows the manual pages of the command. For example, &lt;em&gt;“man cd”&lt;/em&gt; shows the manual pages of the cd command. Typing in the command name and the argument helps it show which ways the command can be used &lt;em&gt;(e.g., cd –help).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7) cp&lt;/strong&gt; - Use the &lt;em&gt;cp&lt;/em&gt; command to copy files through the command line. It takes two arguments: &lt;em&gt;The first is the location of the file to be copied, the second is where to copy&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8) mv&lt;/strong&gt; - Use the mv command to move files through the command line. &lt;em&gt;We can also use the mv command to rename a file&lt;/em&gt;. For example, if we want to rename the file “text” to “new”, we can use “mv text new”. It takes the two arguments, just like the cp command.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;9) cat&lt;/strong&gt; - Use the cat command to display the contents of a file. It is usually used to easily view programs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10) uname&lt;/strong&gt; - Use uname to show the information about the system your Linux distro is running. Using the command “uname -a” prints most of the information about the system. This prints the kernel release date, version, processor type, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Tips and Tricks for Using Linux Command Line&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can use the clear command to clear the terminal .&lt;/p&gt;
+
+&lt;p&gt;TAB can be used to fill up in terminal. For example, You just need to type “cd Doc” and then TAB and the terminal fills the rest up and makes it “cd Documents”.&lt;/p&gt;
+
+&lt;p&gt;Ctrl+C can be used to stop any command in terminal safely. If it doesn’t stop with that, then Ctrl+Z can be used to force stop it.&lt;/p&gt;
+
+&lt;p&gt;You can exit from the terminal by using the exit command.&lt;/p&gt;
+
+&lt;p&gt;You can power off or reboot the computer by using the command sudo halt and sudo reboot.&lt;/p&gt;
+
+&lt;h5 id=&quot;for-more-commands-visit-here&quot;&gt;For more commands visit &lt;a href=&quot;https://ss64.com/bash/&quot;&gt;here&lt;/a&gt;.&lt;/h5&gt;
+&lt;p&gt;These are some commands that will help you while starting in Linux terminal .&lt;/p&gt;
+
+&lt;p&gt;Hopefully it helps you .&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 06 Nov 2018 17:10:00 +0530</pubDate>
+        <link>http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
+        
+        <category>linux</category>
+        
+        <category>Command Line</category>
+        
+        <category>Basics</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>How to install Tor-Browser in Linux</title>
@@ -107,13 +187,13 @@ From that day I started to use Linux and python.&lt;/p&gt;
 For, those students just one kind of advice, try your best and leave the rest. I also started without any prior knowledge and yeah i am at a place where i didnt expect i will be in upcoming years. 
 This blog is just to let you know yeah, you all are not alone who are starting with things now, just don’t feel low as it can create many bad thoughts in your mind, as I have encountered with those thoughts and it created really a lot of bad phase in my college journey.&lt;/p&gt;
 
-&lt;h5 id=&quot;this-is-just-a-small-part-of-the-bigger-story-which-will-come-soon&quot;&gt;This is just a small part of the bigger story which will come soon.&lt;/h5&gt;
+&lt;h5 id=&quot;this-is-just-a-small-part-of-the-bigger-story-which-will-come-soon-part--1-is-this&quot;&gt;This is just a small part of the bigger story which will come soon. (Part -1 is this)&lt;/h5&gt;
 &lt;h5 id=&quot;hope-it-helps-you-all-&quot;&gt;Hope it helps you all .&lt;/h5&gt;
 
 </description>
         <pubDate>Mon, 05 Nov 2018 01:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
         
         <category>linux</category>
         

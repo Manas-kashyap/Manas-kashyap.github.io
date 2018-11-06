@@ -1,6 +1,14 @@
 [
   
   {
+    "title"    : "Basic Linux Commands -1",
+    "category" : "",
+    "tags"     : "linux, Command Line, Basics",
+    "url"      : "/jekyll/2018/11/06/Basic-Linux-Commands-1/",
+    "date"     : "2018-11-06 17:10:00 +0530"
+    } ,
+    
+  {
     "title"    : "How to install Tor-Browser in Linux",
     "category" : "",
     "tags"     : "Proxy, Browser, Tor, Installation, linux",
@@ -12,7 +20,7 @@
     "title"    : "My Journey with Tech",
     "category" : "",
     "tags"     : "linux, Open source, Journey, A look back",
-    "url"      : "/jekyll/2018/11/05/My-journey-with-Tech/",
+    "url"      : "/jekyll/2018/11/05/My-journey-with-Tech-1/",
     "date"     : "2018-11-05 01:30:00 +0530"
     } ,
     

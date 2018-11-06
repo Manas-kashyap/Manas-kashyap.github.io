@@ -3,7 +3,7 @@ layout:     post
 title:      My Journey with Tech
 date:       2018-11-04 20:00:00
 author:     Manas kashyap
-summary:    My journey with technology till now 
+summary:    My journey with technology till now - 1
 categories: jekyll
 thumbnail:  messy
 tags:
@@ -46,7 +46,7 @@ I am sure many readers who are going to read this blog will have one thing in mi
 For, those students just one kind of advice, try your best and leave the rest. I also started without any prior knowledge and yeah i am at a place where i didnt expect i will be in upcoming years. 
 This blog is just to let you know yeah, you all are not alone who are starting with things now, just don't feel low as it can create many bad thoughts in your mind, as I have encountered with those thoughts and it created really a lot of bad phase in my college journey.
 
-##### This is just a small part of the bigger story which will come soon. 
+##### This is just a small part of the bigger story which will come soon. (Part -1 is this) 
 ##### Hope it helps you all . 
 
 
