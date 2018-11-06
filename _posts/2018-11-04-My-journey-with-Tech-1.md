@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      My Journey with Tech
+title:      My Journey with Tech -1
 date:       2018-11-04 20:00:00
 author:     Manas kashyap
 summary:    My journey with technology till now - 1
