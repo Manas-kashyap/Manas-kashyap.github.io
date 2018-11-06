@@ -5,9 +5,71 @@
     <description>A Developer at building phase.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 05 Nov 2018 20:01:16 +0530</pubDate>
-    <lastBuildDate>Mon, 05 Nov 2018 20:01:16 +0530</lastBuildDate>
+    <pubDate>Tue, 06 Nov 2018 11:37:44 +0530</pubDate>
+    <lastBuildDate>Tue, 06 Nov 2018 11:37:44 +0530</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>How to install Tor-Browser in Linux</title>
+        <description>&lt;p&gt;In this Blog, I will be sharing a quick guide on how to install Tor-browser in your system.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-tor&quot;&gt;What is Tor?&lt;/h2&gt;
+
+&lt;p&gt;The Tor software protects you by bouncing your communications around a distributed network of relays run by volunteers all around the world: it prevents somebody watching your Internet connection from learning what sites you visit, it prevents the sites you visit from learning your physical location, and it lets you access sites which are blocked.&lt;/p&gt;
+
+&lt;p&gt;Tor Browser lets you use Tor on Microsoft Windows, Apple MacOS, or GNU/Linux without needing to install any software. It can run off a USB flash drive, comes with a pre-configured web browser to protect your anonymity, and is self-contained (portable).&lt;/p&gt;
+
+&lt;p&gt;To know more read the official &lt;a href=&quot;https://www.torproject.org/docs/documentation.html.en&quot;&gt;Documentation&lt;/a&gt; here.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;That’s too much of info, get me to the installation part&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-install-tor&quot;&gt;How to install Tor.&lt;/h2&gt;
+
+&lt;p&gt;1) “For Kali Linux and Debian repository”&lt;/p&gt;
+&lt;h4 id=&quot;sudo-apt-get-install-tor&quot;&gt;sudo apt-get install tor&lt;/h4&gt;
+
+&lt;p&gt;2) Download and Running TOR Bundle
+For this, you need a little grip of some basic Linux command like wget, cd and changing the permission of files.
+So, let’s start
+I) Let’s get the TOR Bundle (latest version as on 05-11-2018), we will be using “wget” tool.&lt;/p&gt;
+
+&lt;p&gt;So, Let’s get to the terminal using ctrl+alt+t (for many Desktop environment, Defaultly setup).
+Lets get to the directory where you want to install it, lets suppose Documents is the place , so the command will be &lt;em&gt;cd Documents&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we will download the TOR bundle using wget or you can do it manually from the &lt;a href=&quot;https://www.torproject.org/download/download-easy.html.en&quot;&gt;site&lt;/a&gt; (but doing manually will Download it to the Downoads folder) , but from terminal we will use &lt;em&gt;“wget https://www.torproject.org/dist/torbrowser/8.0.3/tor-browser-linux64-8.0.3_en-US.tar.xz”&lt;/em&gt; (latest bundle as per 05/11/18) .&lt;/p&gt;
+
+&lt;p&gt;II) Now we will extract it from the zipped filee that we just downloaded.
+For that we will use &lt;em&gt;“tar -xvzf https://www.torproject.org/dist/torbrowser/8.0.3/tor-browser-linux64-8.0.3_en-US.tar.xz”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;III) Now we can see the files will be extracted to a new folder named tor-browser(tab completion completes it)
+We will go to that folder using &lt;em&gt;“cd tor-browser(tab completion)”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;IV) Now by typing &lt;em&gt;“ls -la”&lt;/em&gt; , you can see a number of files in which one is “start-tor-browser.desktop”
+so , to run and setup things , we will use command &lt;em&gt;“chmod +x start-tor-browser.desktop &amp;amp;&amp;amp; ./start-tor-browser.desktop “&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;chmod changes the permission of the file of start-tor-browser.desktop file.&lt;/p&gt;
+
+&lt;h5 id=&quot;hope-it-helps-you-all&quot;&gt;Hope it helps you all.&lt;/h5&gt;
+
+</description>
+        <pubDate>Tue, 06 Nov 2018 01:30:00 +0530</pubDate>
+        <link>http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
+        
+        <category>Proxy</category>
+        
+        <category>Browser</category>
+        
+        <category>Tor</category>
+        
+        <category>Installation</category>
+        
+        <category>linux</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>My Journey with Tech</title>
