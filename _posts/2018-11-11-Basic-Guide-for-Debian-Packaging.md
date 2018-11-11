@@ -227,7 +227,7 @@ qw_1.0.1- 1_amd64.buildinfo node-qw_1.0.1.orig.tar.gz
 node-qw-1.0.1 node-qw_1.0.1-1.debian.tar.xz node-qw_1.0.1-1_all.deb
 node- qw_1.0.1-1_amd64.changes node-qw_itp.mail
 
-<u>node-qw is a buggy folder created by npm2deb its better to delete it to avoid confusion later</u>
+<u>node-qw is a temporary folder created by npm2deb its better to delete it to avoid confusion later</u>
 
 $ rm -rf node-qw
 
