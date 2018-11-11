@@ -192,41 +192,33 @@ Debian: None (None)
 $ npm2deb create qw
 ```
 
-You may want fix first these issues:
-qw/node-qw-1.0.1/debian/control:Description: FIX_ME write the Debian
-package
-description
-qw/node-qw_itp.mail:Subject: ITP: node-qw -- FIX_ME write the Debian
-package
-description
-qw/node-qw_itp.mail: Description
-description
-: FIX_ME write the Debian package
-qw/node-qw_itp.mail: FIX_ME: This ITP report is not ready for submission,
-until you are
-to
-qw/node-qw_itp.mail:FIX_ME: Explain why this package is suitable for adding
-Debian. Is
-qw/node-qw_itp.mail:FIX_ME: Explain how you intend to consistently
-maintain
-this package
+'You may want fix first these issues:
 
-ls command shows npm2deb created a dir called qw , change directory to
-qw it
-has the following contents$ ls
-qw
-$ cd qw/
+qw/node-qw-1.0.1/debian/control:Description: FIX_ME write the Debian package description
+
+qw/node-qw_itp.mail:Subject: ITP: node-qw -- FIX_ME write the Debian package description 
+
+ls command shows npm2deb created a dir called qw , 
+
+change directory to qw, It has the following contents
+
 $ ls
+
+qw
+
+$ cd qw/
+
+$ ls
+
 node-qw
 node-qw-1.0.1.tar.gz
 node-qw_1.0.1-1.dsc
 qw_1.0.1- 1_amd64.buildinfo node-qw_1.0.1.orig.tar.gz
-node-
 node-qw-1.0.1 node-qw_1.0.1-1.debian.tar.xz node-qw_1.0.1-1_all.deb
 node- qw_1.0.1-1_amd64.changes node-qw_itp.mail
-<u>node-qw is a buggy folder created by npm2deb its better to delete it to</u>
-<u>avoid</u>
-confusion later
+
+<u>node-qw is a buggy folder created by npm2deb its better to delete it to avoid confusion later</u>
+
 $ rm -rf node-qw
 
 5) Import package to git
@@ -235,60 +227,73 @@ $ rm -rf node-qw
 $ gbp import-dsc --pristine-tar node-qw_1.0.1-1.dsc
 ```
 
+now we get a new dir called node-qw which is git tracked , cd into the new created dir node-qw and see git branch and git tag
 
-now we get a new dir called node-qw which is git tracked , cd into the new
-created dir node-qw and see git branch and git tag
 $ git branch
 
 * master
+
   pristine-tar
+
   upstream
-  $ git tag
-  debian/1.0.1-1
-  upstream/1.0.1
-  Delete the debian tag by running git tag -d debian/1.0.1-1
+
+$ git tag
+
+debian/1.0.1-1
+
+upstream/1.0.1
+
+Delete the debian tag by running git tag -d debian/1.0.1-1
 
 
 
-6) File ITPFiling itp is a method by which we take ownership of the module by mailing
-  to
-  submit@bugs.debian.org , in return we get a bug number , a sample mailing
-  templete is created by npm2deb for our use
-  $ cat node-qw_itp.mail (to view the template )
-  update the template by fixing the error with the prefix FIX_ME:
-  sample itp is attached below
-  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=881423
+6) File ITPFiling itp is a method by which we take ownership of the module by mailing to submit@bugs.debian.org , in return we get a bug number , a sample mailing templete is created by npm2deb for our use
+
+$ cat node-qw_itp.mail (to view the template )
+
+ update the template by fixing the error with the prefix FIX_ME: 
+
+sample itp is attached below https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=881423
 
 
 
 7) Make package lintian clean
 
   /qw/node-qw$ ls
-  LICENSE README.md debian package.json qw.js test
+
+LICENSE README.md debian package.json qw.js test
 
 ```
 /qw/node-qw$ dpkg-buildpackage && lintian ../node-qw_1.0.1-1.dsc
 ```
 
-
   lintian points out the errors we need to fix
-  I: node-qw source: file-contains-fixme-placeholder debian/control:20
-  FIX_ME
-  W: node-qw source: out-of-date-standards-version 4.1.1 (current is 4.1.2)
+
+  I: node-qw source: file-contains-fixme-placeholder debian/control:20  FIX_ME
+
+  W: node-qw source: out-of-date-standards-version 4.1.1 (current is 4.2.1) 
+
   places where errors where fixed regarding this module
+
   debian/control
+
   debian/copyright
+
   debian/changelog
-  make sure to commit your changes as they are fixed by using the git
-  command
+
+ make sure to commit your changes as they are fixed by using the git command
+
   git commit -m “ commnet description” path/of/fixed/file
-  for reference -https://anonscm.debian.org/cgit/pkg-javascript/node-
-  qw.git/tree/
+
+  for reference -https://salsa.debianorg/js-team/node-qw.git/tree/
 
 
 
 8) Enable tests if present any , find the test command from package.json
+
+```
   $ cat package.json
+
   {
   "name": "qw",
   "version": "1.0.1",
@@ -304,34 +309,55 @@ $ git branch
   "devDependencies": {
   "tap": "^8.0.0"
   },
+```
+
   add the test command under override_dh_auto_test from debian/rules
-  override_dh_auto_test:
-  tap -J test/*.js
-  add the test framework (mocha, node-tape etc) as a build dependency in
-  debian/control
-  Build-Depends:
-  debhelper (>= 9)
-  , dh-buildinfo, nodejs
-  , node-tap
-  Standards-Version: 4.1.2
-  add a Test-Command section to debian/tests/control
-  $ cat tests/control
+
+```
+override_dh_auto_test:
+
+ tap -J test/*.js
+```
+
+add the test framework (mocha, node-tape etc) as a build dependency in
+
+debian/control
+
+Build-Depends:
+
+debhelper (>= 9)
+
+, dh-buildinfo, nodejs
+
+, node-tap
+
+Standards-Version: 4.1.2
+
+add a Test-Command section to debian/tests/control
+
+```
+$ cat tests/control
   Tests: require
   Depends: node-qw
   Test-Command: tap -J test/*.js
   Depends: @, node-tap
+```
+
   reference link ;-https://salsa.debian.org/js-team/node-qw.git/tree/debian
-  run dpkg-buildpackage and check if the tests ran sucessfully and change
-  debian/changelog to release by running dch -r.
+
+run dpkg-buildpackage and check if the tests ran sucessfully and change debian/changelog to release by running dch -r.
 
 
 
 9) upload to https://salsa.debian.org ( as the team maintains it)
 
   create a new project as per your node-module name
+
   git remote add origin git@salsa.debian.org:username/node-module-name.git (eg link)
+
   git push -u origin --all –follow-tags
-  this is a temperory repo once you mature ,will get officail repo access
+
+  this is a temporary repo once you mature ,will get official repo access
 
 
 
@@ -344,8 +370,12 @@ $ sudo sbuild-adduser $LOGNAME
 ```
 
   ... *logout* and *re-login* or use `newgrp sbuild` in your current shell$ sudo sbuild-createchroot --include=eatmydata,ccache,gnupg unstable
-  /srv/chroot/unstable-amd64-sbuild http://deb.debian.org/debian
+
+/srv/chroot/unstable-amd64-sbuild http://deb.debian.org/debian
+
+```
   $ sudo sbuild -A -d unstable ../node-qw_1.0.1-1.dsc
+```
 
 
 
