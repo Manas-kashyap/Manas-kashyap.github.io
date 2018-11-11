@@ -409,7 +409,7 @@ I do Debian Packaging, because it helps me to learn about languages , Linux syst
 How it helped me ? yeah , it helped me to make a name in open source field. 
 Helped me to be part of communities and gave me opportunities to get mentored by some known guys , Like [Praveen](https://qa.debian.org/developer.php?login=Praveen@debian.org) , [Raju](https://qa.debian.org/developer.php?login=rajudev@disroot.org) , etc. 
 
-Want to see my work , here is the [qa page](https://qa.debian.org/developer.php?login=manaskashyaptech@gmail.com) and here is the [salsa page](https://salsa.debian.org/Manas-kashyap-guest) where Debian works (*oh , i forgot , Debian has its own [Version Control System](https://en.wikipedia.org/wiki/Version_control) like [github](http://github.com) , [salsa](http://salsa.debian.org) is there , isn't it cool* :-p )
+Want to see my work , here is the [qa page](https://qa.debian.org/developer.php?login=manaskashyaptech@gmail.com) and here is the [salsa page](https://salsa.debian.org/Manas-kashyap-guest) where Debian works (*oh , i forgot , Debian has its own has self hosted git instance like [github](http://github.com) , [salsa](http://salsa.debian.org) is there , isn't it cool* :-p )
 
 
 
