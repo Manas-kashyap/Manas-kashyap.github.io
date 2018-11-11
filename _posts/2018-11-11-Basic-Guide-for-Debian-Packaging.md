@@ -88,7 +88,7 @@ Install packaging tools inside the container
 `# apt-get install gem2deb` OR
 `# apt-get install npm2deb` as required. 
 
-`# apt-get install git-buildpackage sbuild dh-buildinfo` these packages are must to be installed.
+`# apt-get install git-buildpackage sbuild dh-buildinfo quilt linitan` these packages are must to be installed.
 
 For Nodejs modules, use `npm2deb`; for ruby gems, use `gem2deb`; for go packages, use `dh-make-golang`. If there is no tool specific to a language, `dh-make` can be used as a generic tool for any language.
 
@@ -151,34 +151,44 @@ source ~/.bashrc
 $ npm2deb depends -b -r qw
 ```
 
-Module qw has no dependencies.
-Here qw has no depedencies
+*Module qw has no dependencies.*
+*Here qw has no depedencies*
 
 2) Search for existing work using npm2deb search
 
 ```
-$ npm2deb search monocle
+$ npm2deb search qw
 ```
 
-Looking for similiar package:
-None
-Looking for existing repositories:
-None
-Looking for wnpp bugs:
-None
+*Looking for similiar package:*
+
+*None*
+
+*Looking for existing repositories:*
+
+*None*
+
+*Looking for wnpp bugs:*
+
+*None*
+
 Output shows no existing work and one can start work on it
 
 3) Preview more info using npm2deb view
 
 ```
-$ npm2deb view qwName: qw
+$ npm2deb view qw
 ```
 
-Version: 1.0.1
-Description: None
-Homepage: https://github.com/iarna/node-qw#readme
-License: ISC
-Debian: None (None)
+*Version: 1.0.1*
+
+*Description: None*
+
+*Homepage: https://github.com/iarna/node-qw#readme*
+
+*License: ISC*
+
+*Debian: None (None)*
 
 *License is automatically recognize as BSD, if this does not happen, please*
 *pass*
