@@ -3,11 +3,425 @@
   <channel>
     <title>Manas Kashyap</title>
     <description>A Developer at building phase.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 11 Nov 2018 10:55:02 +0530</pubDate>
-    <lastBuildDate>Sun, 11 Nov 2018 10:55:02 +0530</lastBuildDate>
+    <link>https://Manas-kashyap.github.io/</link>
+    <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 12 Nov 2018 21:50:56 +0530</pubDate>
+    <lastBuildDate>Mon, 12 Nov 2018 21:50:56 +0530</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Basic Guide for Debian Packaging</title>
+        <description>&lt;p&gt;In this Blog, I am going to give a small peek in the vast world of Debian Packaging , and how to start with and why i do packaging .&lt;/p&gt;
+
+&lt;p&gt;So , Lets Start !!&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-debian-&quot;&gt;What is Debian ?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.debian.org&quot;&gt;Debian&lt;/a&gt; is an universal Linux based operating system .&lt;/p&gt;
+
+&lt;p&gt;Debian systems currently use the &lt;a href=&quot;https://www.kernel.org/&quot;&gt;Linux&lt;/a&gt; kernel or the &lt;a href=&quot;https://www.freebsd.org/&quot;&gt;FreeBSD&lt;/a&gt; kernel.&lt;/p&gt;
+
+&lt;p&gt;The need of people is application software: programs to help them get what they want to do done, from editing documents to running a business to playing games to writing more software. Debian comes with over 51000 &lt;a href=&quot;https://www.debian.org/distrib/packages&quot;&gt;packages&lt;/a&gt; (precompiled software that is bundled up in a nice format for easy installation on your machine), a package manager (APT), and other utilities that make it possible to manage thousands of packages on thousands of computers as easily as installing a single application. All of it &lt;a href=&quot;https://www.debian.org/intro/free&quot;&gt;free&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;It’s like a tower. At the base is the kernel. On top of that are all the basic tools. Next is all the software that you run on the computer. At the top of the tower is Debian carefully organising and fitting everything so it all works together.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is an Operating system ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;An operating system is the set of basic programs and utilities that make your computer run. 
+At the core of an operating system is the kernel. The kernel is the most fundamental program on the computer and does all the basic housekeeping and lets you start other programs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/&quot;&gt;Still thinking why to use linux ??&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-meant-by-debian-packaging&quot;&gt;What is meant by Debian Packaging?&lt;/h2&gt;
+
+&lt;p&gt;Ever done &lt;em&gt;sudo apt install (anything)&lt;/em&gt; ??&lt;/p&gt;
+
+&lt;p&gt;Wondered how apt install works and what file it fetches and how the file gets auto installed ?? 
+So , here comes the Debian Packaging task. 
+The aim of packaging is to allow the automation of installing, upgrading, configuring, and removing computer programs for Debian in a consistent manner.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;To be simple , its like making .deb of any software or module like in windows we have .exe file&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;By doing Debian packaging we make Debian packages , which is a collection of files that allow for applications or libraries to be distributed via the Debian package management system.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wiki.debian.org/Packaging&quot;&gt;More info&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;enough-of-this--knowledge--get-me-to-the-coding-part-and-lets-do-the--packaging&quot;&gt;&lt;u&gt;Enough of this  knowledge , get me to the coding part and lets do the  packaging&lt;/u&gt;&lt;/h4&gt;
+
+&lt;h2 id=&quot;lets-start-with-prerequisites-needed-to-do-the-work-&quot;&gt;Lets start with Prerequisites needed to do the work .&lt;/h2&gt;
+
+&lt;p&gt;So , To start with Debian packaging , we need a &lt;a href=&quot;https://www.debian.org/releases/sid/&quot;&gt;Debian SID&lt;/a&gt; environment  .&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Oops , i have an ubuntu/arch/gentoo/mac machine and installing another OS , nah , not ready for a new OS&lt;/em&gt; - its thats what you are thinking now , don’t worry we have &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; , &lt;a href=&quot;https://linuxcontainers.org/lxc/introduction/&quot;&gt;lxc&lt;/a&gt; or &lt;a href=&quot;https://www.virtualbox.org/&quot;&gt;virtual machine&lt;/a&gt;   for you .&lt;/p&gt;
+
+&lt;p&gt;See instructions given below to setup Debian Sid.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;LXC - &lt;a href=&quot;https://wiki.debian.org/Packaging/Pre-Requisites#LXC&quot;&gt;https://wiki.debian.org/Packaging/Pre-Requisites#LXC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Docker - &lt;a href=&quot;https://wiki.debian.org/Packaging/Pre-Requisites#Docker&quot;&gt;https://wiki.debian.org/Packaging/Pre-Requisites#Docker&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Virtual Machine - &lt;a href=&quot;https://wiki.debian.org/Packaging/Pre-Requisites#Virtual_Machine&quot;&gt;https://wiki.debian.org/Packaging/Pre-Requisites#Virtual_Machine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I personally prefer Docker, and when i started with Debian packaging , i started with Docker container.&lt;/p&gt;
+
+&lt;h5 id=&quot;tips--for-linux-users--who-uses-apt-package-manager--to-install-docker-is-now-really-easy--just-do-sudo-apt-install-dockerio&quot;&gt;Tips : for Linux users , who uses apt package manager , to install docker is now really easy , just do “sudo apt install docker.io”&lt;/h5&gt;
+
+&lt;p&gt;You can go with the above setup link or the way i installed .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My way of installation of Docker SID environment&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Work to be done&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Code&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Pull Debian Sid image from docker hub using the following command&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;docker pull debian:sid&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Create a container with it and start bash on it&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;docker run –privileged –name “sid” -it debian:sid /bin/bash&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Update and upgrade to latest versions of packages&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get upgrade&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Exit after your work is done.&lt;/p&gt;
+
+&lt;p&gt;If you need to connect to it later, use the following commands which will take you to the bash prompt.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“sudo docker start sid &amp;amp;&amp;amp; sudo docker attach sid”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Now , we need tools to work with&lt;/u&gt;&lt;/strong&gt; &lt;strong&gt;:-&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Install packaging tools inside the container
+&lt;code class=&quot;highlighter-rouge&quot;&gt;# apt-get install dh-make&lt;/code&gt; OR
+&lt;code class=&quot;highlighter-rouge&quot;&gt;# apt-get install gem2deb&lt;/code&gt; OR
+&lt;code class=&quot;highlighter-rouge&quot;&gt;# apt-get install npm2deb&lt;/code&gt; as required.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# apt-get install git-buildpackage sbuild dh-buildinfo quilt linitan&lt;/code&gt; these packages are must to be installed.&lt;/p&gt;
+
+&lt;p&gt;For Nodejs modules, use &lt;code class=&quot;highlighter-rouge&quot;&gt;npm2deb&lt;/code&gt;; for ruby gems, use &lt;code class=&quot;highlighter-rouge&quot;&gt;gem2deb&lt;/code&gt;; for go packages, use &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-golang&lt;/code&gt;. If there is no tool specific to a language, &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make&lt;/code&gt; can be used as a generic tool for any language.&lt;/p&gt;
+
+&lt;h3 id=&quot;still-having-an-issue-with-setting-up-things-&quot;&gt;Still having an issue with setting up things ?&lt;/h3&gt;
+
+&lt;p&gt;Join our real-time chat group using one of the 4 options and say hi. If you have difficulty with pre-requisites please ask here or on chat rooms.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Matrix: #debian-browserify:diasp.in&lt;/li&gt;
+  &lt;li&gt;IRC: #debian-browserify on irc.oftc.net&lt;/li&gt;
+  &lt;li&gt;Telegram: &lt;a href=&quot;https://t.me/debian_browserify&quot;&gt;https://t.me/debian_browserify&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you are new to these technologies, I suggest you try matrix, see &lt;a href=&quot;https://matrix.org/&quot;&gt;https://matrix.org&lt;/a&gt; for details. &lt;a href=&quot;https://riot.im/&quot;&gt;https://riot.im&lt;/a&gt; has a list of apps you can use.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://webchat.oftc.net/?channels=debian-browserify&amp;amp;uio=MT11bmRlZmluZWQb1&quot;&gt;http://webchat.oftc.net/?channels=debian-browserify&amp;amp;uio=MT11bmRlZmluZWQb1&lt;/a&gt; to join the IRC room&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Okay to start with packaging, start with nodejs packages and understand the workflow and then you can shift with other language modules and then to higher multi language modules.&lt;/em&gt;&lt;/strong&gt; - &lt;a href=&quot;http://wiki.debian.org/ManasKashyap&quot;&gt;Manas Kashyap&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;Lets , do it then ?&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Install a text editor (I like vim , for installation run sudo apt install vim ) and
+update .bashrc of docker container with the following environment variables&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export DEBEMAIL=your@email.domain
+export DEBFULLNAME='Your Name'
+alias lintian='lintian -iIEcv --pedantic --color auto'
+alias git-import-dsc='git-import-dsc --author-is-committer --pristine-tar'
+alias clean='fakeroot debian/rules clean'
+export LANG=C.UTF-8
+export LC_ALL=C.UTF-8
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Command ls -la shows the hidden .bashrc file , to edit with vim do vim .bashrc and
+add the above and the very end , update your current environment by running&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;vim tips&lt;/strong&gt;
+&lt;strong&gt;i – insert mode to enter text ,&lt;/strong&gt;
+&lt;strong&gt;:wq – write and exit ,:q!– exit without saving&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Setup username and email address for git&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;git config –global user.name “Your name”&lt;/em&gt;
+&lt;em&gt;git config –global user.email email@domain.tld&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;workflow-we-are-taking-example-of-node-module-qw&quot;&gt;workflow (we are taking example of node module &lt;a href=&quot;https://www.npmjs.com/package/qw&quot;&gt;qw&lt;/a&gt;)&lt;/h4&gt;
+
+&lt;p&gt;1) Check depedency use npm2deb depends&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb depends -b -r qw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Module qw has no dependencies.&lt;/em&gt;
+&lt;em&gt;Here qw has no depedencies&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;2) Search for existing work using npm2deb search&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb search qw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Looking for similiar package:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;None&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Looking for existing repositories:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;None&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Looking for wnpp bugs:&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;None&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Output shows no existing work and one can start work on it&lt;/p&gt;
+
+&lt;p&gt;3) Preview more info using npm2deb view&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb view qw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Version: 1.0.1&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Description: None&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Homepage: https://github.com/iarna/node-qw#readme&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;License: ISC&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Debian: None (None)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;License is automatically recognize as BSD, if this does not happen, please&lt;/em&gt;
+&lt;em&gt;pass&lt;/em&gt;
+&lt;em&gt;–upstream-license option during creation to set a correct license.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;4) Automate debian package creation using npm2deb create .&lt;/p&gt;
+
+&lt;p&gt;npm2deb fails to do it completely ,our job is to fix those error which is shown by the prefix FIX_ME&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb create qw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;‘You may want fix first these issues:&lt;/p&gt;
+
+&lt;p&gt;qw/node-qw-1.0.1/debian/control:Description: FIX_ME write the Debian package description&lt;/p&gt;
+
+&lt;p&gt;qw/node-qw_itp.mail:Subject: ITP: node-qw – FIX_ME write the Debian package description&lt;/p&gt;
+
+&lt;p&gt;ls command shows npm2deb created a dir called qw ,&lt;/p&gt;
+
+&lt;p&gt;change directory to qw, It has the following contents&lt;/p&gt;
+
+&lt;p&gt;$ ls&lt;/p&gt;
+
+&lt;p&gt;qw&lt;/p&gt;
+
+&lt;p&gt;$ cd qw/&lt;/p&gt;
+
+&lt;p&gt;$ ls&lt;/p&gt;
+
+&lt;p&gt;node-qw
+node-qw-1.0.1.tar.gz
+node-qw_1.0.1-1.dsc
+qw_1.0.1- 1_amd64.buildinfo node-qw_1.0.1.orig.tar.gz
+node-qw-1.0.1 node-qw_1.0.1-1.debian.tar.xz node-qw_1.0.1-1_all.deb
+node- qw_1.0.1-1_amd64.changes node-qw_itp.mail&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;node-qw is a temporary folder created by npm2deb its better to delete it to avoid confusion later&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;$ rm -rf node-qw&lt;/p&gt;
+
+&lt;p&gt;5) Import package to git&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gbp import-dsc --pristine-tar node-qw_1.0.1-1.dsc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;now we get a new dir called node-qw which is git tracked , cd into the new created dir node-qw and see git branch and git tag&lt;/p&gt;
+
+&lt;p&gt;$ git branch&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;master&lt;/p&gt;
+
+    &lt;p&gt;pristine-tar&lt;/p&gt;
+
+    &lt;p&gt;upstream&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;$ git tag&lt;/p&gt;
+
+&lt;p&gt;debian/1.0.1-1&lt;/p&gt;
+
+&lt;p&gt;upstream/1.0.1&lt;/p&gt;
+
+&lt;p&gt;Delete the debian tag by running git tag -d debian/1.0.1-1&lt;/p&gt;
+
+&lt;p&gt;6) File ITPFiling itp is a method by which we take ownership of the module by mailing to submit@bugs.debian.org , in return we get a bug number , a sample mailing templete is created by npm2deb for our use&lt;/p&gt;
+
+&lt;p&gt;$ cat node-qw_itp.mail (to view the template )&lt;/p&gt;
+
+&lt;p&gt;update the template by fixing the error with the prefix FIX_ME:&lt;/p&gt;
+
+&lt;p&gt;sample itp is attached below https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=881423&lt;/p&gt;
+
+&lt;p&gt;7) Make package lintian clean&lt;/p&gt;
+
+&lt;p&gt;/qw/node-qw$ ls&lt;/p&gt;
+
+&lt;p&gt;LICENSE README.md debian package.json qw.js test&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/qw/node-qw$ dpkg-buildpackage &amp;amp;&amp;amp; lintian ../node-qw_1.0.1-1.dsc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;lintian points out the errors we need to fix&lt;/p&gt;
+
+&lt;p&gt;I: node-qw source: file-contains-fixme-placeholder debian/control:20  FIX_ME&lt;/p&gt;
+
+&lt;p&gt;W: node-qw source: out-of-date-standards-version 4.1.1 (current is 4.2.1)&lt;/p&gt;
+
+&lt;p&gt;places where errors where fixed regarding this module&lt;/p&gt;
+
+&lt;p&gt;debian/control&lt;/p&gt;
+
+&lt;p&gt;debian/copyright&lt;/p&gt;
+
+&lt;p&gt;debian/changelog&lt;/p&gt;
+
+&lt;p&gt;make sure to commit your changes as they are fixed by using the git command&lt;/p&gt;
+
+&lt;p&gt;git commit -m “ commnet description” path/of/fixed/file&lt;/p&gt;
+
+&lt;p&gt;for reference -https://salsa.debianorg/js-team/node-qw.git/tree/&lt;/p&gt;
+
+&lt;p&gt;8) Enable tests if present any , find the test command from package.json&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ cat package.json
+
+  {
+  &quot;name&quot;: &quot;qw&quot;,
+  &quot;version&quot;: &quot;1.0.1&quot;,
+  &quot;description&quot;: &quot;Quoted word literals!&quot;,
+  &quot;main&quot;: &quot;qw.js&quot;,
+  &quot;scripts&quot;: {
+  &quot;test&quot;: &quot;tap test&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;Rebecca Turner &amp;lt;me@re-becca.org&amp;gt; (http://re-
+  becca.org/)&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;devDependencies&quot;: {
+  &quot;tap&quot;: &quot;^8.0.0&quot;
+  },
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;add the test command under override_dh_auto_test from debian/rules&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;override_dh_auto_test:
+
+ tap -J test/*.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;add the test framework (mocha, node-tape etc) as a build dependency in&lt;/p&gt;
+
+&lt;p&gt;debian/control&lt;/p&gt;
+
+&lt;p&gt;Build-Depends:&lt;/p&gt;
+
+&lt;p&gt;debhelper (&amp;gt;= 9)&lt;/p&gt;
+
+&lt;p&gt;, dh-buildinfo, nodejs&lt;/p&gt;
+
+&lt;p&gt;, node-tap&lt;/p&gt;
+
+&lt;p&gt;Standards-Version: 4.1.2&lt;/p&gt;
+
+&lt;p&gt;add a Test-Command section to debian/tests/control&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat tests/control
+  Tests: require
+  Depends: node-qw
+  Test-Command: tap -J test/*.js
+  Depends: @, node-tap
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;reference link ;-https://salsa.debian.org/js-team/node-qw.git/tree/debian&lt;/p&gt;
+
+&lt;p&gt;run dpkg-buildpackage and check if the tests ran sucessfully and change debian/changelog to release by running dch -r.&lt;/p&gt;
+
+&lt;p&gt;9) upload to https://salsa.debian.org ( as the team maintains it)&lt;/p&gt;
+
+&lt;p&gt;create a new project as per your node-module name&lt;/p&gt;
+
+&lt;p&gt;git remote add origin git@salsa.debian.org:username/node-module-name.git (eg link)&lt;/p&gt;
+
+&lt;p&gt;git push -u origin –all –follow-tags&lt;/p&gt;
+
+&lt;p&gt;this is a temporary repo once you mature ,will get official repo access&lt;/p&gt;
+
+&lt;p&gt;10) Clean build with sbuild&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo sbuild-adduser $LOGNAME
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;… &lt;em&gt;logout&lt;/em&gt; and &lt;em&gt;re-login&lt;/em&gt; or use &lt;code class=&quot;highlighter-rouge&quot;&gt;newgrp sbuild&lt;/code&gt; in your current shell$ sudo sbuild-createchroot –include=eatmydata,ccache,gnupg unstable&lt;/p&gt;
+
+&lt;p&gt;/srv/chroot/unstable-amd64-sbuild http://deb.debian.org/debian&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo sbuild -A -d unstable ../node-qw_1.0.1-1.dsc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;11)Install deb package&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  apt-get install autopkgtest
+  dpkg -i ../node-qw_1.0.1-1_all.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;why-i-do-debian-packaging-and-how-it-helped-me-&quot;&gt;Why i do Debian Packaging and how it helped me ?&lt;/h2&gt;
+
+&lt;p&gt;I do Debian Packaging, because it helps me to learn about languages , Linux systems etc , and also its one of the way to contribute to a bigger Open Source project. Plus, it makes you feel good when something you made is used by 100 of other people.&lt;/p&gt;
+
+&lt;p&gt;How it helped me ? yeah , it helped me to make a name in open source field. 
+Helped me to be part of communities and gave me opportunities to get mentored by some known guys , Like &lt;a href=&quot;https://qa.debian.org/developer.php?login=Praveen@debian.org&quot;&gt;Praveen&lt;/a&gt; , &lt;a href=&quot;https://qa.debian.org/developer.php?login=rajudev@disroot.org&quot;&gt;Raju&lt;/a&gt; , etc.&lt;/p&gt;
+
+&lt;p&gt;Want to see my work , here is the &lt;a href=&quot;https://qa.debian.org/developer.php?login=manaskashyaptech@gmail.com&quot;&gt;qa page&lt;/a&gt; and here is the &lt;a href=&quot;https://salsa.debian.org/Manas-kashyap-guest&quot;&gt;salsa page&lt;/a&gt; where Debian works (&lt;em&gt;oh , i forgot , Debian has its own has self hosted git instance like &lt;a href=&quot;http://github.com&quot;&gt;github&lt;/a&gt; , &lt;a href=&quot;http://salsa.debian.org&quot;&gt;salsa&lt;/a&gt; is there , isn’t it cool&lt;/em&gt; :-p )&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;This Blog is just a peek into packaging and how i started and where to get help , etc .&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hope it helps you&lt;/strong&gt; &lt;strong&gt;!!&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 11 Nov 2018 15:00:00 +0530</pubDate>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
+        
+        <category>linux</category>
+        
+        <category>Debian</category>
+        
+        <category>Packaging</category>
+        
+        <category>Open source</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Basic Linux Commands -1</title>
@@ -75,8 +489,8 @@ Use &lt;strong&gt;rmdir&lt;/strong&gt; to delete a directory. But &lt;em&gt;rmdi
 
 </description>
         <pubDate>Tue, 06 Nov 2018 17:10:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
         
         <category>linux</category>
         
@@ -133,8 +547,8 @@ so , to run and setup things , we will use command &lt;em&gt;“chmod +x start-t
 
 </description>
         <pubDate>Tue, 06 Nov 2018 01:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
         
         <category>Proxy</category>
         
@@ -192,8 +606,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Mon, 05 Nov 2018 01:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
         
         <category>linux</category>
         
@@ -238,8 +652,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Sat, 03 Nov 2018 17:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/03/Why-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/03/Why-linux/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</guid>
         
         <category>linux</category>
         
