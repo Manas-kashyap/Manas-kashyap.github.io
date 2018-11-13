@@ -47,7 +47,7 @@ And , once you get to know about the Linux file systems and get a basic grip of 
 
 [Link to Download Linux MInt](https://linuxmint.com/download.php) 
 
-#### Why a Beginner shouldn't use Kali Linux
+## Why a Beginner shouldn't use Kali Linux
 
 Here, Beginner mean the one who doesn't know about Linux file systems and never used it.
 
