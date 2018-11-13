@@ -3,10 +3,10 @@
   <channel>
     <title>Manas Kashyap</title>
     <description>A Developer at building phase.</description>
-    <link>https://Manas-kashyap.github.io/</link>
-    <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 12 Nov 2018 21:50:56 +0530</pubDate>
-    <lastBuildDate>Mon, 12 Nov 2018 21:50:56 +0530</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 13 Nov 2018 21:35:23 +0530</pubDate>
+    <lastBuildDate>Tue, 13 Nov 2018 21:35:23 +0530</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -407,8 +407,8 @@ Helped me to be part of communities and gave me opportunities to get mentored by
 
 </description>
         <pubDate>Sun, 11 Nov 2018 15:00:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
         
         <category>linux</category>
         
@@ -489,8 +489,8 @@ Use &lt;strong&gt;rmdir&lt;/strong&gt; to delete a directory. But &lt;em&gt;rmdi
 
 </description>
         <pubDate>Tue, 06 Nov 2018 17:10:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
         
         <category>linux</category>
         
@@ -547,8 +547,8 @@ so , to run and setup things , we will use command &lt;em&gt;“chmod +x start-t
 
 </description>
         <pubDate>Tue, 06 Nov 2018 01:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
         
         <category>Proxy</category>
         
@@ -606,8 +606,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Mon, 05 Nov 2018 01:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
         
         <category>linux</category>
         
@@ -652,8 +652,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Sat, 03 Nov 2018 17:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/03/Why-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/03/Why-linux/</guid>
         
         <category>linux</category>
         
