@@ -158,7 +158,7 @@ The aim of packaging is to allow the automation of installing, upgrading, config
   <li>Virtual Machine - <a href="https://wiki.debian.org/Packaging/Pre-Requisites#Virtual_Machine">https://wiki.debian.org/Packaging/Pre-Requisites#Virtual_Machine</a></li>
 </ul>
 
-<p>I personally prefer Docker, and when i started with Debian packaging , i started with Docker container.</p>
+<p>I personally prefer Docker, and when I started with Debian packaging , I started with Docker container.</p>
 
 <h5 id="tips--for-linux-users--who-uses-apt-package-manager--to-install-docker-is-now-really-easy--just-do-sudo-apt-install-dockerio">Tips : for Linux users , who uses apt package manager , to install docker is now really easy , just do “sudo apt install docker.io”</h5>
 
@@ -180,7 +180,7 @@ The aim of packaging is to allow the automation of installing, upgrading, config
     </tr>
     <tr>
       <td style="text-align: center">Create a container with it and start bash on it</td>
-      <td style="text-align: center">docker run –privileged –name “sid” -it debian:sid /bin/bash</td>
+      <td style="text-align: center"><code class="highlighter-rouge">docker run --privileged --name "sid" -it debian:sid /bin/bash</code></td>
     </tr>
     <tr>
       <td style="text-align: center">Update and upgrade to latest versions of packages</td>

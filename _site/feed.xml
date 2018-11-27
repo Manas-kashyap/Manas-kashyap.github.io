@@ -5,9 +5,86 @@
     <description>A Developer at building phase.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Nov 2018 21:35:23 +0530</pubDate>
-    <lastBuildDate>Tue, 13 Nov 2018 21:35:23 +0530</lastBuildDate>
+    <pubDate>Tue, 27 Nov 2018 21:20:24 +0530</pubDate>
+    <lastBuildDate>Tue, 27 Nov 2018 21:20:24 +0530</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Which Linux OS/Distro to use ??</title>
+        <description>&lt;p&gt;In this Blog, I am going to answer the most asked question by me that &lt;em&gt;“Which Distro i should start with ?”&lt;/em&gt; and &lt;em&gt;“Which Distro you use ?”&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;So , Lets start .&lt;/p&gt;
+
+&lt;p&gt;If you are the person right now who is thinking &lt;em&gt;“Why Linux ? , Why i have to use Linux? what is Linux?? and so so”&lt;/em&gt; , then don’t worry , just check this &lt;a href=&quot;https://manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/&quot;&gt;Blog&lt;/a&gt; . 
+Hope it helps you in getting the answers that you are thinking now .&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-meant-by-linux-distroosflavor-&quot;&gt;What i meant by Linux Distro/OS/Flavor ?&lt;/h2&gt;
+
+&lt;p&gt;Distro is IT vernacular for a Linux operating system (OS). It is a shortened version of the term distribution.&lt;/p&gt;
+
+&lt;p&gt;In the Linux world, there are hundreds of different flavors of distro. Examples include Debian, Ubuntu and Red Hat (among many others).&lt;/p&gt;
+
+&lt;p&gt;Technically, a distribution is any deployment of software and isn’t specifically Linux. Usually in this case you’ll hear it referred to as a “distribution of software.” Despite this, the term “distro” is nearly always used in a Linux context. So, while a distribution of software is a generic term for any bundle of software, distro is nearly always a flavor of Linux.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-linux-distro-i-should-use-as-a-begineer-&quot;&gt;What Linux distro i should use as a begineer ?&lt;/h2&gt;
+
+&lt;p&gt;For those folks who are going to open the door of Linux  for the first time, the choice of various distributions or ‘flavours’ of Linux can be truly overwhelming, especially if you’re not sure what to look for.&lt;/p&gt;
+
+&lt;p&gt;In the early days of Linux, choosing a distribution (distro) was much simpler. You usually selected one you had heard about or with which you had a small amount of experience. There were also far fewer choices beyond Red Hat Linux, Debian and Slackware.&lt;/p&gt;
+
+&lt;p&gt;While you can still make a choice based on these criteria, the sheer number of Linux distros available now, and their ever vocal fan bases, makes it difficult to settle on one and get started.&lt;/p&gt;
+
+&lt;p&gt;But, to start with i suggest , &lt;a href=&quot;3&quot;&gt;Linux Mint&lt;/a&gt; over &lt;a href=&quot;2&quot;&gt;Ubuntu&lt;/a&gt; or &lt;a href=&quot;3&quot;&gt;Kali&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;According to me your first OS should be a playground for you to research things and play with Linux , and for me Linux Mint was one of that playground i found. It’s really user friendly and easy to use , plus a good stability is there which doesn’t let the system die out of your experiments.&lt;/p&gt;
+
+&lt;p&gt;And , once you get to know about the Linux file systems and get a basic grip of how things work, you can shift to some unstable machines like  &lt;a href=&quot;8&quot;&gt;Debian SID&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://linuxmint.com/download.php&quot;&gt;Link to Download Linux MInt&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-a-beginner-shouldnt-use-kali-linux&quot;&gt;Why a Beginner shouldn’t use Kali Linux&lt;/h2&gt;
+
+&lt;p&gt;Here, Beginner mean the one who doesn’t know about Linux file systems and never used it.&lt;/p&gt;
+
+&lt;p&gt;So, while installing Kali Linux i faced a lot of problem when i was a beginner and using it was a mess as i had to know about terminals, tools and Linux files.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Kali Linux is good for hacking? why so ?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Yeah , it is as all the tools are auto installed and have configured default to give the user a good Pen testing and security analysis experience.&lt;/p&gt;
+
+&lt;p&gt;But, i say why Kali Linux ?? every tool can be installed in other Linux systems too , yeah you have to do it manually but it will help you in knowing about the configurations of the tools that you are going to use.&lt;/p&gt;
+
+&lt;p&gt;This will help you in getting a good grip with Linux file systems which will help you in getting a knowledge of what is going on with my system when i do something.&lt;/p&gt;
+
+&lt;h2 id=&quot;which-linux-distro-i-have-used-and-i-am-using-currently&quot;&gt;Which Linux distro I have used and I am using currently&lt;/h2&gt;
+
+&lt;p&gt;Till date i have used many different distros of linux , i have used &lt;a href=&quot;https://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; , &lt;a href=&quot;https://linuxmint.com/&quot;&gt;Linux mint&lt;/a&gt; , &lt;a href=&quot;http://hamaralinux.org&quot;&gt;Hamara Linux&lt;/a&gt; , &lt;a href=&quot;https://www.archlinux.org/&quot;&gt;arch linux&lt;/a&gt; , &lt;a href=&quot;https://www.kali.org/&quot;&gt;kali&lt;/a&gt; , &lt;a href=&quot;https://www.debian.org&quot;&gt;Debian&lt;/a&gt; and many more.&lt;/p&gt;
+
+&lt;p&gt;Yeah , i was a &lt;a href=&quot;https://www.urbandictionary.com/define.php?term=distrohopper&quot;&gt;Distro Hopper&lt;/a&gt; , as i was searching for one OS which suits my need .&lt;/p&gt;
+
+&lt;p&gt;Currently, I am using &lt;a href=&quot;https://www.debian.org/releases/sid/&quot;&gt;Debian SID&lt;/a&gt; , yeah its one of the Unstable systems Debian has, I use it as I need my OS to be updated with new packages and not to be waiting till a new release, plus I do a lot of &lt;a href=&quot;https://manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/&quot;&gt;Debian packaging&lt;/a&gt; and for that, I need Debian SID machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HOPE IT HELPS YOU !!&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 14 Nov 2018 03:30:00 +0530</pubDate>
+        <link>http://localhost:4000/jekyll/2018/11/14/Which-Linux-OS-to-use/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/14/Which-Linux-OS-to-use/</guid>
+        
+        <category>linux</category>
+        
+        <category>Open source</category>
+        
+        <category>Distro</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Basic Guide for Debian Packaging</title>
@@ -62,7 +139,7 @@ The aim of packaging is to allow the automation of installing, upgrading, config
   &lt;li&gt;Virtual Machine - &lt;a href=&quot;https://wiki.debian.org/Packaging/Pre-Requisites#Virtual_Machine&quot;&gt;https://wiki.debian.org/Packaging/Pre-Requisites#Virtual_Machine&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I personally prefer Docker, and when i started with Debian packaging , i started with Docker container.&lt;/p&gt;
+&lt;p&gt;I personally prefer Docker, and when I started with Debian packaging , I started with Docker container.&lt;/p&gt;
 
 &lt;h5 id=&quot;tips--for-linux-users--who-uses-apt-package-manager--to-install-docker-is-now-really-easy--just-do-sudo-apt-install-dockerio&quot;&gt;Tips : for Linux users , who uses apt package manager , to install docker is now really easy , just do “sudo apt install docker.io”&lt;/h5&gt;
 
@@ -84,7 +161,7 @@ The aim of packaging is to allow the automation of installing, upgrading, config
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Create a container with it and start bash on it&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;docker run –privileged –name “sid” -it debian:sid /bin/bash&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run --privileged --name &quot;sid&quot; -it debian:sid /bin/bash&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Update and upgrade to latest versions of packages&lt;/td&gt;

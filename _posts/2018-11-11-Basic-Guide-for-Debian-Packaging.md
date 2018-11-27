@@ -61,7 +61,7 @@ See instructions given below to setup Debian Sid.
 - Docker - <https://wiki.debian.org/Packaging/Pre-Requisites#Docker>
 - Virtual Machine - <https://wiki.debian.org/Packaging/Pre-Requisites#Virtual_Machine>
 
-I personally prefer Docker, and when i started with Debian packaging , i started with Docker container. 
+I personally prefer Docker, and when I started with Debian packaging , I started with Docker container. 
 
 ##### Tips : for Linux users , who uses apt package manager , to install docker is now really easy , just do "sudo apt install docker.io"
 
@@ -72,7 +72,7 @@ You can go with the above setup link or the way i installed .
 |                       Work to be done                        |                             Code                             |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | Pull Debian Sid image from docker hub using the following command |                    docker pull debian:sid                    |
-|       Create a container with it and start bash on it        | docker run --privileged --name "sid" -it debian:sid /bin/bash |
+|       Create a container with it and start bash on it        | `docker run --privileged --name "sid" -it debian:sid /bin/bash` |
 |      Update and upgrade to latest versions of packages       |              apt-get update && apt-get upgrade               |
 
 Exit after your work is done.
