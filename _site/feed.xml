@@ -5,8 +5,8 @@
     <description>A Developer at building phase.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 27 Nov 2018 21:20:24 +0530</pubDate>
-    <lastBuildDate>Tue, 27 Nov 2018 21:20:24 +0530</lastBuildDate>
+    <pubDate>Tue, 27 Nov 2018 21:24:29 +0530</pubDate>
+    <lastBuildDate>Tue, 27 Nov 2018 21:24:29 +0530</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -161,7 +161,7 @@ The aim of packaging is to allow the automation of installing, upgrading, config
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Create a container with it and start bash on it&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker run --privileged --name &quot;sid&quot; -it debian:sid /bin/bash&lt;/code&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;docker run - -privileged - -name “sid” -it debian:sid /bin/bash&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Update and upgrade to latest versions of packages&lt;/td&gt;

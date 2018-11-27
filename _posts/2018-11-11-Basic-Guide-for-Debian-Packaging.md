@@ -72,7 +72,7 @@ You can go with the above setup link or the way i installed .
 |                       Work to be done                        |                             Code                             |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | Pull Debian Sid image from docker hub using the following command |                    docker pull debian:sid                    |
-|       Create a container with it and start bash on it        | `docker run --privileged --name "sid" -it debian:sid /bin/bash` |
+|       Create a container with it and start bash on it        | docker run - -privileged - -name "sid" -it debian:sid /bin/bash |
 |      Update and upgrade to latest versions of packages       |              apt-get update && apt-get upgrade               |
 
 Exit after your work is done.
