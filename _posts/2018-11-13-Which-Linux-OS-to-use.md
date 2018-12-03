@@ -31,7 +31,7 @@ In the Linux world, there are hundreds of different flavors of distro. Examples 
 
 Technically, a distribution is any deployment of software and isn't specifically Linux. Usually in this case you'll hear it referred to as a "distribution of software." Despite this, the term "distro" is nearly always used in a Linux context. So, while a distribution of software is a generic term for any bundle of software, distro is nearly always a flavor of Linux.
 
-## What Linux distro i should use as a begineer ?
+## What Linux distro i should use as a beginner ?
 
 For those folks who are going to open the door of Linux  for the first time, the choice of various distributions or 'flavours' of Linux can be truly overwhelming, especially if you're not sure what to look for.
 

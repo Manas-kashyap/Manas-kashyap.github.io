@@ -88,7 +88,7 @@ Install packaging tools inside the container
 `# apt-get install gem2deb` OR
 `# apt-get install npm2deb` as required. 
 
-`# apt-get install git-buildpackage sbuild dh-buildinfo quilt linitan` these packages are must to be installed.
+`# apt-get install git-buildpackage sbuild dh-buildinfo quilt lintian` these packages are must to be installed.
 
 For Nodejs modules, use `npm2deb`; for ruby gems, use `gem2deb`; for go packages, use `dh-make-golang`. If there is no tool specific to a language, `dh-make` can be used as a generic tool for any language.
 
