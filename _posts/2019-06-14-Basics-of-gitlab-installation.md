@@ -82,17 +82,17 @@ and then just proceed into it using
 
   
 
-  `deb http://deb.debian.org/debian unstable main contrib non-free`
+`deb http://deb.debian.org/debian unstable main contrib non-free`
 
-  `deb-src http://deb.debian.org/debian unstable main contrib non-free`
+`deb-src http://deb.debian.org/debian unstable main contrib non-free`
 
 
 
 - Now let's install the [gitlab](https://tracker.debian.org/pkg/gitlab) package . 
 
-  `apt-get update && apt-get install upgrade`
+`apt-get update && apt-get install upgrade`
 
-  `apt-get install apt-utils && apt-get install gitlab`
+`apt-get install gitlab`
 
 
 **The installation is big and will take time so be patient** 
@@ -145,43 +145,46 @@ Now to register the runner ,
 
 1. Run the following command:
 
-   `
+   
     sudo gitlab-runner register
-   `
+   
 
 2. Enter your GitLab instance URL:
 
-   `
+   
     Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com )
     https://gitlab.com
-   `
+   
 
 3. Enter the token you obtained to register the Runner:
 
-   `
+   
     Please enter the gitlab-ci token for this runner
     xxx
-   `
+   
 
 4. Enter a description for the Runner, you can change this later in GitLab’s UI:
 
-   `
+   
     Please enter the gitlab-ci description for this runner
     [hostname] my-runner
-   `
+   
 
 5. Enter the [tags associated with the Runner](https://docs.gitlab.com/ee/ci/runners/#using-tags), you can change this later in GitLab’s UI:
 
-   `
+   
     Please enter the gitlab-ci tags for this runner (comma separated):
     my-tag,another-tag
-   `
+   
 
 6. Enter the [Runner executor](https://docs.gitlab.com/runner/executors/README.html):
 
-   `Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, parallels :`
+    Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, parallels :
     
     enter whatever you want , i personally suggest docker in this case . 
+
+
+
 
     **Tip :- In Debian unstable there is a docker package , on the name of docker.io , install it using `apt-get install docker.io` , before proceeding with the CI testing from the gitlab instance**
 
