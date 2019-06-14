@@ -23,7 +23,7 @@ Well you are at right place and at the end of the blog you can make your own git
 I have personally used a Debian unstable Linux container system for this whole installation process . 
 i suggest to use a server based container , of Debian unstable . 
 
-**Don't use Docker container for this installation process , there are docker pre made  [container](https://hub.docker.com/search?q=gitlab&type=image/)  available to use which can run as Gitlab server, just do "docker pull container_required" ** 
+**Don't use Docker container for this installation process , there are docker pre made  [container](https://hub.docker.com/search?q=gitlab&type=image/)  available to use which can run as Gitlab server, just do "docker pull container_required"** 
 
 ## What is Gitlab or VCS ?  
 
@@ -59,12 +59,12 @@ you can edit it too by going in **/etc/lxc/default.conf**
 
 Once lxc is configured you can download the unstable container using `lxc-create -n gitlab -t debian -- -r unstable`and then start it with `lxc-start -n gitlab` and then just proceed into it using `lxc-attach -n gitlab`
 
-**TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don't need to panic , just do `lxc-update-config`  and its done , the old configuration will change to new configuration . **
+**TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don't need to panic , just do `lxc-update-config`  and its done , the old configuration will change to new configuration .**
 
 - Once you are inside the container or the unstable server that you choose , 
   do the following `apt-get update && apt-get upgrade`(assuming you are having the super user permission )
 
-**TIP :-  sometimes while doing apt-update and apt-upgrade in lxc container you will have the issue of not connecting with deb.debian.org , i faced this issue , this is because of sources.list permissions , change the permission of the file using `chmod o+r /etc/apt/sources.list` **
+**TIP :-  sometimes while doing apt-update and apt-upgrade in lxc container you will have the issue of not connecting with deb.debian.org , i faced this issue , this is because of sources.list permissions , change the permission of the file using `chmod o+r /etc/apt/sources.list`**
 
 - Now the task is to add [contrib](https://www.debian.org/doc/debian-policy/ch-archive#s-contrib) section in the sources.list . 
   Now your sources.list will look like this if you do `cat /etc/apt/sources.list` 
