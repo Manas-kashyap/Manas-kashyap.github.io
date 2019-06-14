@@ -16,7 +16,7 @@ tags:
 ---
 In this Blog, I will be sharing a quick guide on how to install Gitlab in your Debian system.
 
-Ever thought How [http://github.com](http://github.com/) , [https://gitlab.com](https://gitlab.com/)  works , or how can i create my own Version control system locally for just my use and testing , or ever want to create personalised git instance like  [http://github.com](http://github.com/) , [https://gitlab.com]( for your group of contributors or developers . 
+Ever thought How [http://github.com](http://github.com/) , [https://gitlab.com](https://gitlab.com/)  works , or how can i create my own Version control system locally for just my use and testing , or ever want to create personalised git instance like  [http://github.com](http://github.com/) for your group of contributors or developers . 
 
 Well you are at right place and at the end of the blog you can make your own git instance or you can say your own Version Control System . 
 
