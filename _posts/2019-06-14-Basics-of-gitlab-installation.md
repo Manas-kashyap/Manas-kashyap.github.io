@@ -165,7 +165,7 @@ Now to register the runner ,
 
 6. Enter the [Runner executor](https://docs.gitlab.com/runner/executors/README.html):
 
-   `Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, docker, parallels :`
+   `Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, parallels :`
     
     enter whatever you want , i personally suggest docker in this case . 
 
