@@ -105,7 +105,8 @@ you can check the status of Gitlab using `systemctl status gitlab.service`
 Now as this Gitlab instance is installed on the container system , we have to update the host of the container and also the systems where you want to see this gitlab instance running to resolve the git.yourusername.com 
 you can view the container ip address using ip a 
 and add that ip address in /etc/hosts of the container as well as in the systems to resolve the gitlab instance name . 
-`192.168.122.104 gitlab.lxc # Change ip address and the name of the gitlab instance you gave`
+`192.168.122.104 gitlab.lxc`
+ Change ip address and the name of the gitlab instance you gave
 
 *We are updating the containers host too because when we will try to setup gitlab runner , it cant resolve the instance gitlab name , so we are setting it up .* 
 
