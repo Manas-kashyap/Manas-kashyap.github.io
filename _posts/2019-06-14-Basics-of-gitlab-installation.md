@@ -187,5 +187,5 @@ And with this , now you have your own gitlab instance running with the CI & CD e
 
 
 [1]: https://about.gitlab.com
-[]: 
+
 
