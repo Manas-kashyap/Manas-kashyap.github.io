@@ -165,9 +165,10 @@ Now to register the runner ,
 
 6. Enter the [Runner executor](https://docs.gitlab.com/runner/executors/README.html):
 
-   `Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, docker, parallels, virtualbox :`
+   `Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, docker, parallels :`
     
     enter whatever you want , i personally suggest docker in this case . 
+
     **Tip :- In Debian unstable there is a docker package , on the name of docker.io , install it using `apt-get install docker.io` , before proceeding with the CI testing from the gitlab instance**
 
 7. If you chose Docker as your executor, you’ll be asked for the default image to be used for projects that do not define one in `.gitlab-ci.yml`:
