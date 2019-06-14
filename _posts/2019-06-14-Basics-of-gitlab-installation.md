@@ -69,6 +69,8 @@ and then just proceed into it using
 
 **lxc-attach -n gitlab**
 
+----
+
 **TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don't need to panic , just do `lxc-update-config`  and its done , the old configuration will change to new configuration .**
 
 - Once you are inside the container or the unstable server that you choose , 
