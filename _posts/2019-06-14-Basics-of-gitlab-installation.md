@@ -48,9 +48,13 @@ As , when i was starting with lxc , i was facing a few issues due to lxc configu
 you can edit it too by going in **/etc/lxc/default.conf** 
 
 `lxc.net.0.type = veth`
+
 `lxc.apparmor.profile = generated`
+
 `lxc.apparmor.allow_nesting = 1`
+
 `lxc.net.0.link = virbr0`
+
 `lxc.net.0.flags = up`
 
 Once lxc is configured you can download the unstable container using `lxc-create -n gitlab -t debian -- -r unstable`and then start it with `lxc-start -n gitlab` and then just proceed into it using `lxc-attach -n gitlab`
