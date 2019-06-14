@@ -59,15 +59,15 @@ you can edit it too by going in **/etc/lxc/default.conf**
 
 Once lxc is configured you can download the unstable container using 
 
-`lxc-create -n gitlab -t debian -- -r unstable` 
+**lxc-create -n gitlab -t debian -- -r unstable**
 
 and then start it with 
 
-`lxc-start -n gitlab` 
+**lxc-start -n gitlab**
 
 and then just proceed into it using 
 
-`lxc-attach -n gitlab`
+**lxc-attach -n gitlab**
 
 **TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don't need to panic , just do `lxc-update-config`  and its done , the old configuration will change to new configuration .**
 
@@ -82,9 +82,9 @@ and then just proceed into it using
 
   
 
-`deb http://deb.debian.org/debian unstable main contrib non-free`
+**deb http://deb.debian.org/debian unstable main contrib non-free**
 
-`deb-src http://deb.debian.org/debian unstable main contrib non-free`
+**deb-src http://deb.debian.org/debian unstable main contrib non-free**
 
 
 
