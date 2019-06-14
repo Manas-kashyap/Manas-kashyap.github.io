@@ -1,5 +1,5 @@
 ---
- layout:     post
+layout:     post
 title:      Basics of Gitlab Installation in a Debian system 
 date:       2019-06-14 20:00:00
 author:     Manas kashyap
@@ -74,7 +74,8 @@ Once lxc is configured you can download the unstable container using `lxc-create
 
 - Now let's install the [gitlab](https://tracker.debian.org/pkg/gitlab) package . 
 
-  `apt-get update && apt-get install upgrade && apt-get install apt-utils && apt-get install gitlab`
+  `apt-get update && apt-get install upgrade`
+  `apt-get install apt-utils && apt-get install gitlab`
 
 
 **The installation is big and will take time so be patient** 
