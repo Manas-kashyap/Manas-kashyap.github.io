@@ -23,7 +23,7 @@ Well you are at right place and at the end of the blog you can make your own git
 I have personally used a Debian unstable Linux container system for this whole installation process . 
 i suggest to use a server based container , of Debian unstable . 
 
-**Don't use Docker container for this installation process , there are docker pre made  [container](https://hub.docker.com/search?q=gitlab&type=image/)  available to use which can run as Gitlab server, just do "*docker pull container_required*" ** 
+**Don't use Docker container for this installation process , there are docker pre made  [container](https://hub.docker.com/search?q=gitlab&type=image/)  available to use which can run as Gitlab server, just do "docker pull container_required" ** 
 
 ## What is Gitlab or VCS ?  
 
