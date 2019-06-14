@@ -190,10 +190,10 @@ Now to register the runner ,
 
 7. If you chose Docker as your executor, you’ll be asked for the default image to be used for projects that do not define one in `.gitlab-ci.yml`:
 
-   `
+   
     Please enter the Docker image (eg. ruby:2.1):
     alpine:latest
-   `
+   
 
 
 
