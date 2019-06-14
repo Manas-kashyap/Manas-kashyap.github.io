@@ -72,6 +72,7 @@ Once lxc is configured you can download the unstable container using `lxc-create
   
 
   `deb http://deb.debian.org/debian unstable main contrib non-free`
+
   `deb-src http://deb.debian.org/debian unstable main contrib non-free`
 
 
@@ -79,6 +80,7 @@ Once lxc is configured you can download the unstable container using `lxc-create
 - Now let's install the [gitlab](https://tracker.debian.org/pkg/gitlab) package . 
 
   `apt-get update && apt-get install upgrade`
+
   `apt-get install apt-utils && apt-get install gitlab`
 
 
@@ -113,11 +115,11 @@ it will install the runner .
 
 now just remember the mail id of the person you want to give the admin access to and follow the steps 
 
-```ruby
+```
 Granting an existing user admin access
 ======================================
 The steps involve dropping into rails console as gitlab user for production environment and running the following commands.
-    $ runuser -u gitlab -- sh -c 'cd /usr/share/gitlab && . /etc/gitlab/gitlab-debian.conf && export DB RAILS_ENV && bundle exec rails console production'
+    $ runuser -u gitlab -- sh -c 'cd /usr/share/gitlab && ./etc/gitlab/gitlab-debian.conf && export DB RAILS_ENV && bundle exec rails console production'
     irb(main):001:0> user = User.find_by(email: 'useraddress@domain')
     irb(main):003:0> user.admin=true
     irb(main):004:0> user.save
