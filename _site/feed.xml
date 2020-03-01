@@ -3,11 +3,279 @@
   <channel>
     <title>Manas Kashyap</title>
     <description>A Developer at building phase.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 14 Jun 2019 14:27:50 +0530</pubDate>
-    <lastBuildDate>Fri, 14 Jun 2019 14:27:50 +0530</lastBuildDate>
+    <link>https://Manas-kashyap.github.io/</link>
+    <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 01 Mar 2020 22:41:22 +0530</pubDate>
+    <lastBuildDate>Sun, 01 Mar 2020 22:41:22 +0530</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Deadly Linux Commands</title>
+        <description>&lt;p&gt;&lt;u&gt;**Warning:** These commands should NEVER be executed. They will most likely destroy your system (or ruin a major part) before you can stop them, however, if you want to see how they work, you could run them inside a Virtual Machine.&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;So, let’s get started:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;rm -rf /&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command basically means “remove all files (even Read Only files) recursively in the root (top) directory” (can also be written as “shred -rf /)”&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;:(){:|:&amp;amp;};:&quot;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command is known as a ‘Fork Bomb’. It operates by defining a function called ‘:’, which calls itself twice, once in the foreground and once in the background. It keeps on executing again and again till the system freezes.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;'command' &amp;gt; /dev/sda&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command writes the output of ‘command’ to the specified drive. This is considered deadly because it overwrites any data on the drive.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;mkfs.ext3 /dev/sda&quot;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command is known as a format command. It will format the specified drive to an ext3 format, wiping everything on the drive.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;dd if=/dev/random of=/dev/sda&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This command writes random data onto the specified drive, and overwrites any data within that drive.
+These are a few of the many deadly commands for Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This post was made for the newcomers in Linux (and maybe some of the veterans) who are likely to run the commands if told it will fix a problem. I, myself, was tricked into executing the 1st command listed here a while back and it took me FOREVER to get all my data and documents back.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 01 Mar 2020 05:30:00 +0530</pubDate>
+        <link>https://Manas-kashyap.github.io/jekyll/2020/03/01/Deadly-Linux-commands/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2020/03/01/Deadly-Linux-commands/</guid>
+        
+        <category>Dangerous</category>
+        
+        <category>linux</category>
+        
+        <category>Command Line</category>
+        
+        <category>Basics</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Basics of Gitlab Installation in a Debian system</title>
+        <description>&lt;p&gt;In this Blog, I will be sharing a quick guide on how to install Gitlab in your Debian system.&lt;/p&gt;
+
+&lt;p&gt;Ever thought How &lt;a href=&quot;http://github.com/&quot;&gt;http://github.com&lt;/a&gt; , &lt;a href=&quot;https://gitlab.com/&quot;&gt;https://gitlab.com&lt;/a&gt;  works , or how can i create my own Version control system locally for just my use and testing , or ever want to create personalised git instance like  &lt;a href=&quot;http://github.com/&quot;&gt;http://github.com&lt;/a&gt; for your group of contributors or developers .&lt;/p&gt;
+
+&lt;p&gt;Well you are at right place and at the end of the blog you can make your own git instance or you can say your own Version Control System .&lt;/p&gt;
+
+&lt;p&gt;I have personally used a Debian unstable Linux container system for this whole installation process . 
+i suggest to use a server based container , of Debian unstable .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Don’t use Docker container for this installation process , there are docker pre made  &lt;a href=&quot;https://hub.docker.com/search?q=gitlab&amp;amp;type=image/&quot;&gt;container&lt;/a&gt;  available to use which can run as Gitlab server, just do “docker pull container_required”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-gitlab-or-vcs-&quot;&gt;What is Gitlab or VCS ?&lt;/h2&gt;
+
+&lt;p&gt;The full form of VCS is Version Control System , these systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimising disruption to all team members.&lt;/p&gt;
+
+&lt;p&gt;VCS are sometimes known as SCM (Source Code Management) tools or RCS (Revision Control System). One of the most popular VCS tools in use today is called Git .&lt;/p&gt;
+
+&lt;p&gt;GitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security.&lt;/p&gt;
+
+&lt;p&gt;To know more read the official &lt;a href=&quot;https://about.gitlab.com&quot;&gt;Documentation&lt;/a&gt; here.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;That’s too much of info, get me to the installation part&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;so-how-and-what-are-we-going-to-do-in-this-installation-&quot;&gt;So how and what are we going to do in this installation ?&lt;/h2&gt;
+
+&lt;p&gt;In my words what are we going to do is install Gitlab package of Debian in the Debian system with a little configuration and then install Gitlab runner so that the Continuous Integration and Development can be done with the help of .gitlab-ci.yml file .&lt;/p&gt;
+
+&lt;h5 id=&quot;so-the-first-thing-is-to-use-a-debian-unstable-container--i-am-using-lxc-container-here--there-are-many-ways-to-install-lxc--please-visit-their-page-to-install-it-&quot;&gt;so the first thing is to use a Debian unstable container , i am using &lt;a href=&quot;https://linuxcontainers.org/&quot;&gt;lxc&lt;/a&gt; container here , there are many ways to install lxc , please visit their page to install it .&lt;/h5&gt;
+
+&lt;p&gt;As , when i was starting with lxc , i was facing a few issues due to lxc configuration file , how to bridge and what not to , so i am attaching my lxc configuration that i use .&lt;/p&gt;
+
+&lt;p&gt;you can edit it too by going in &lt;strong&gt;/etc/lxc/default.conf&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.net.0.type = veth&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.apparmor.profile = generated&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.apparmor.allow_nesting = 1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.net.0.link = virbr0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.net.0.flags = up&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once lxc is configured you can download the unstable container using&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;lxc-create -n gitlab -t debian – -r unstable&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;and then start it with&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;lxc-start -n gitlab&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;and then just proceed into it using&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;lxc-attach -n gitlab&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don’t need to panic , just do &lt;code class=&quot;highlighter-rouge&quot;&gt;lxc-update-config&lt;/code&gt;  and its done , the old configuration will change to new configuration .&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Once you are inside the container or the unstable server that you choose , 
+do the following &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get upgrade&lt;/code&gt;
+(assuming you are having the super user permission )&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;TIP :-  sometimes while doing apt-update and apt-upgrade in lxc container you will have the issue of not connecting with deb.debian.org , i faced this issue , this is because of sources.list permissions , change the permission of the file using &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod o+r /etc/apt/sources.list&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now the task is to add &lt;a href=&quot;https://www.debian.org/doc/debian-policy/ch-archive#s-contrib&quot;&gt;contrib&lt;/a&gt; section in the sources.list . 
+Now your sources.list will look like this if you do &lt;code class=&quot;highlighter-rouge&quot;&gt;cat /etc/apt/sources.list&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;deb http://deb.debian.org/debian unstable main contrib non-free&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;deb-src http://deb.debian.org/debian unstable main contrib non-free&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now let’s install the &lt;a href=&quot;https://tracker.debian.org/pkg/gitlab&quot;&gt;gitlab&lt;/a&gt; package .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get install upgrade&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get install gitlab&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The installation is big and will take time so be patient&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When it will be installing it will ask for some config questions , the questions are self explanatory and will tell you what to enter and it has example of it , i run gitlab instance in my local system , so i have named the gitlab instance as gitlab.lxc (while they ask you , you can give any name like git.yourname.com , it all depends on the domain name you buy for this) and i used local host for database configuration well they give you an option of new host where you can enter the database configuration of the other database system you are using . 
+And then it will run a few check and it will be done&lt;/p&gt;
+
+&lt;p&gt;you can check the status of Gitlab using &lt;code class=&quot;highlighter-rouge&quot;&gt;systemctl status gitlab.service&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now as this Gitlab instance is installed on the container system , we have to update the host of the container and also the systems where you want to see this gitlab instance running to resolve the git.yourusername.com 
+you can view the container ip address using ip a 
+and add that ip address in /etc/hosts of the container as well as in the systems to resolve the gitlab instance name . 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.122.104 gitlab.lxc&lt;/code&gt;
+ Change ip address and the name of the gitlab instance you gave&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;We are updating the containers host too because when we will try to setup gitlab runner , it cant resolve the instance gitlab name , so we are setting it up .&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Now in the system where you want to view you can view the git instance running by typing the url in the browser like “http://gitlab.lxc” depending on your gitlab instance name and whether you have https setup or not which will be asked by gitlab while configuring and installing .&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you have your own Gitlab instance , just register to it , till the time you have your won domain registered and set you wont get any mail for confirmation or anything .&lt;/p&gt;
+
+&lt;p&gt;But you can login to the system with the registered ID and password , and create your project , but till now we haven’t setup a runner to run any Gitlab CI , CD process so , we will do it with the help of &lt;a href=&quot;https://tracker.debian.org/pkg/gitlab-runner&quot;&gt;gitlab-runner&lt;/a&gt; package available .&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get install gitlab-ci-multi-runner&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;it will install the runner .&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Now get into  admin panel of your own Gitlab instance .&lt;/u&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Wait , how to do it and where is my admin panel ?&lt;/em&gt; if these questions are coming into mind , well here is the answer , now go back to the container or server where you installed Gitlab .&lt;/p&gt;
+
+&lt;p&gt;now just remember the mail id of the person you want to give the admin access to and follow the steps&lt;/p&gt;
+
+&lt;h1 id=&quot;granting-an-existing-user-admin-access&quot;&gt;&lt;strong&gt;Granting an existing user admin access&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;The steps involve dropping into rails console as gitlab user for production environment and running the following commands.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ runuser -u gitlab -- sh -c 'cd /usr/share/gitlab &amp;amp;&amp;amp; . /etc/gitlab/gitlab-debian.conf &amp;amp;&amp;amp; export DB RAILS_ENV &amp;amp;&amp;amp; bundle exec rails console production'
+
+irb(main):001:0&amp;gt; user = User.find_by(email: 'useraddress@domain')
+
+irb(main):003:0&amp;gt; user.admin=true
+
+irb(main):004:0&amp;gt; user.save
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you have the admin access , and you can view it in your instance too when you login to gitlab instance with the email id that you gave just now giving the admin access , there will be a sign of setting on the upside and you can click and go into the admin panel which will show number of users and all .&lt;/p&gt;
+
+&lt;p&gt;Now go into the runner option on the side bar and you will have the token there&lt;/p&gt;
+
+&lt;p&gt;Now to register the runner ,&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the following command:&lt;/p&gt;
+
+    &lt;p&gt;sudo gitlab-runner register&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter your GitLab instance URL:&lt;/p&gt;
+
+    &lt;p&gt;Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com )
+ https://gitlab.com&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter the token you obtained to register the Runner:&lt;/p&gt;
+
+    &lt;p&gt;Please enter the gitlab-ci token for this runner
+ xxx&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter a description for the Runner, you can change this later in GitLab’s UI:&lt;/p&gt;
+
+    &lt;p&gt;Please enter the gitlab-ci description for this runner
+ [hostname] my-runner&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter the &lt;a href=&quot;https://docs.gitlab.com/ee/ci/runners/#using-tags&quot;&gt;tags associated with the Runner&lt;/a&gt;, you can change this later in GitLab’s UI:&lt;/p&gt;
+
+    &lt;p&gt;Please enter the gitlab-ci tags for this runner (comma separated):
+ my-tag,another-tag&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Enter the &lt;a href=&quot;https://docs.gitlab.com/runner/executors/README.html&quot;&gt;Runner executor&lt;/a&gt;:&lt;/p&gt;
+
+    &lt;p&gt;Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, parallels :&lt;/p&gt;
+
+    &lt;p&gt;enter whatever you want , i personally suggest docker in this case .&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Tip :- In Debian unstable there is a docker package , on the name of docker.io , install it using &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get install docker.io&lt;/code&gt; , before proceeding with the CI testing from the gitlab instance&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you chose Docker as your executor, you’ll be asked for the default image to be used for projects that do not define one in &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;p&gt;Please enter the Docker image (eg. ruby:2.1):
+ alpine:latest&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And with this you will have your shared runner setup with which you can run CI &amp;amp; CD .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tip :- When you want to run CI and CD please see the internet connection is strong as it will download the container and will work on it .&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;And with this , now you have your own gitlab instance running with the CI &amp;amp; CD enabled .&lt;/p&gt;
+
+&lt;h5 id=&quot;i-know-this-blog-or-the-steps-i-gave-may-or-may-not-worked-for-you--this-is-all-based-on-my-personal-experience-to-work-on-the-debian-unstable-machine-installation-process--if-you-think-you-have-a-query-or-doubt-feel-free-to-reach-me-in-mail-or-telegram-or-riot--hope-i-can-help-you-with-that-or-if-you-find-any-flaw-in-my-blog--reach-me-out-&quot;&gt;&lt;strong&gt;I know this blog or the steps i gave may or may not worked for you , this is all based on my personal experience to work on the Debian unstable machine installation process , if you think you have a query or doubt feel free to reach me in mail or telegram or riot , hope i can help you with that or if you find any flaw in my blog , reach me out .&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;h5 id=&quot;hope-it-helps-you-all&quot;&gt;&lt;strong&gt;Hope it helps you all.&lt;/strong&gt;&lt;/h5&gt;
+
+</description>
+        <pubDate>Sat, 15 Jun 2019 01:30:00 +0530</pubDate>
+        <link>https://Manas-kashyap.github.io/jekyll/2019/06/15/Basics-of-gitlab-installation/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2019/06/15/Basics-of-gitlab-installation/</guid>
+        
+        <category>Gitlab</category>
+        
+        <category>Browser</category>
+        
+        <category>VCS</category>
+        
+        <category>Debian</category>
+        
+        <category>linux</category>
+        
+        <category>Installation</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Which Linux OS/Distro to use ??</title>
@@ -72,8 +340,8 @@ Hope it helps you in getting the answers that you are thinking now .&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 14 Nov 2018 03:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/14/Which-Linux-OS-to-use/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/14/Which-Linux-OS-to-use/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/14/Which-Linux-OS-to-use/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/14/Which-Linux-OS-to-use/</guid>
         
         <category>linux</category>
         
@@ -484,8 +752,8 @@ Helped me to be part of communities and gave me opportunities to get mentored by
 
 </description>
         <pubDate>Sun, 11 Nov 2018 15:00:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
         
         <category>linux</category>
         
@@ -566,8 +834,8 @@ Use &lt;strong&gt;rmdir&lt;/strong&gt; to delete a directory. But &lt;em&gt;rmdi
 
 </description>
         <pubDate>Tue, 06 Nov 2018 17:10:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
         
         <category>linux</category>
         
@@ -624,8 +892,8 @@ so , to run and setup things , we will use command &lt;em&gt;“chmod +x start-t
 
 </description>
         <pubDate>Tue, 06 Nov 2018 01:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
         
         <category>Proxy</category>
         
@@ -683,8 +951,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Mon, 05 Nov 2018 01:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
         
         <category>linux</category>
         
@@ -729,8 +997,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Sat, 03 Nov 2018 17:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/03/Why-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/03/Why-linux/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</guid>
         
         <category>linux</category>
         

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basics of Gitlab Installation in a Debian system</title>
+<meta name="description" content="A Developer at building phase.">
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/jquery.mmenu.all.css" />
+<link rel="stylesheet" href="/css/highlightjs.piperita.css">
+
+<!-- Favicons generated at http://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-513c6fa83da6ec67"></script>
+
+
+
+
+</head>
+
+
+    <body>
+
+    <nav id="my-menu">
+  <div>
+    <p>Manas Kashyap</p>
+
+    <ul class="pages">
+      <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
+      <li><a href="/search/"><i class="fa fa-search"></i> Search</a></li>
+    </ul>
+
+    <p class="links">
+  <a href="https://www.twitter.com/manas_tech" target="_new"><i class="fa fa-twitter"></i></a>
+  <a href="https://linkedin.com/in/manas-kashyap-1a2262130/" target="_new"><i class="fa fa-linkedin"></i></a>
+  
+  
+  
+  <a href="https://github.com/Manas-kashyap" target="_new"><i class="fa fa-github-alt"></i></a>
+  <a href="https://stackoverflow.com/users/10564308/manas-kashyap" target="_new"><i class="fa fa-stack-overflow"></i></a>
+  <a href="https://www.instagram.com/nerdy.404" target="_new"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.reddit.com/u/https://www.reddit.com/user/manas-kashyap/" target="_new"><i class="fa fa-reddit-alien"></i></a>
+  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
+</p>
+
+  </div>
+</nav>
+<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      
+
+<div class="container-fluid single">
+  <div class="row">
+
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      
+      <div class="thumb">
+        <img itemprop="image" src="https://i.imgur.com/JYvXWfD.png" alt="Thumbnail: gitlab" />
+      </div>
+      
+
+      <h1 class="header" itemprop="name">Basics of Gitlab Installation in a Debian system</h1>
+
+      <div class="author">
+        <small><i>
+          
+          by
+          <span itemprop="author">
+            
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">Manas kashyap</span>
+            </span>
+            
+          </span>
+          
+          on <span itemprop="datePublished" content="2014-08-28">June 15, 2019</span>
+           under jekyll
+        </i></small>
+      </div>
+
+      <div class="read-time">
+        <small>
+          9 minute read
+        </small>
+      </div>
+
+      <div class="content-panel content">
+
+        
+
+        <span itemprop="articleBody"><p>In this Blog, I will be sharing a quick guide on how to install Gitlab in your Debian system.</p>
+
+<p>Ever thought How <a href="http://github.com/">http://github.com</a> , <a href="https://gitlab.com/">https://gitlab.com</a>  works , or how can i create my own Version control system locally for just my use and testing , or ever want to create personalised git instance like  <a href="http://github.com/">http://github.com</a> for your group of contributors or developers .</p>
+
+<p>Well you are at right place and at the end of the blog you can make your own git instance or you can say your own Version Control System .</p>
+
+<p>I have personally used a Debian unstable Linux container system for this whole installation process . 
+i suggest to use a server based container , of Debian unstable .</p>
+
+<p><strong>Don’t use Docker container for this installation process , there are docker pre made  <a href="https://hub.docker.com/search?q=gitlab&amp;type=image/">container</a>  available to use which can run as Gitlab server, just do “docker pull container_required”</strong></p>
+
+<h2 id="what-is-gitlab-or-vcs-">What is Gitlab or VCS ?</h2>
+
+<p>The full form of VCS is Version Control System , these systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimising disruption to all team members.</p>
+
+<p>VCS are sometimes known as SCM (Source Code Management) tools or RCS (Revision Control System). One of the most popular VCS tools in use today is called Git .</p>
+
+<p>GitLab is a single application for the entire software development lifecycle. From project planning and source code management to CI/CD, monitoring, and security.</p>
+
+<p>To know more read the official <a href="https://about.gitlab.com">Documentation</a> here.</p>
+
+<p><em>That’s too much of info, get me to the installation part</em></p>
+
+<h2 id="so-how-and-what-are-we-going-to-do-in-this-installation-">So how and what are we going to do in this installation ?</h2>
+
+<p>In my words what are we going to do is install Gitlab package of Debian in the Debian system with a little configuration and then install Gitlab runner so that the Continuous Integration and Development can be done with the help of .gitlab-ci.yml file .</p>
+
+<h5 id="so-the-first-thing-is-to-use-a-debian-unstable-container--i-am-using-lxc-container-here--there-are-many-ways-to-install-lxc--please-visit-their-page-to-install-it-">so the first thing is to use a Debian unstable container , i am using <a href="https://linuxcontainers.org/">lxc</a> container here , there are many ways to install lxc , please visit their page to install it .</h5>
+
+<p>As , when i was starting with lxc , i was facing a few issues due to lxc configuration file , how to bridge and what not to , so i am attaching my lxc configuration that i use .</p>
+
+<p>you can edit it too by going in <strong>/etc/lxc/default.conf</strong></p>
+
+<p><code class="highlighter-rouge">lxc.net.0.type = veth</code></p>
+
+<p><code class="highlighter-rouge">lxc.apparmor.profile = generated</code></p>
+
+<p><code class="highlighter-rouge">lxc.apparmor.allow_nesting = 1</code></p>
+
+<p><code class="highlighter-rouge">lxc.net.0.link = virbr0</code></p>
+
+<p><code class="highlighter-rouge">lxc.net.0.flags = up</code></p>
+
+<p>Once lxc is configured you can download the unstable container using</p>
+
+<p><strong>lxc-create -n gitlab -t debian – -r unstable</strong></p>
+
+<p>and then start it with</p>
+
+<p><strong>lxc-start -n gitlab</strong></p>
+
+<p>and then just proceed into it using</p>
+
+<p><strong>lxc-attach -n gitlab</strong></p>
+
+<hr />
+
+<p><strong>TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don’t need to panic , just do <code class="highlighter-rouge">lxc-update-config</code>  and its done , the old configuration will change to new configuration .</strong></p>
+
+<ul>
+  <li>Once you are inside the container or the unstable server that you choose , 
+do the following <code class="highlighter-rouge">apt-get update &amp;&amp; apt-get upgrade</code>
+(assuming you are having the super user permission )</li>
+</ul>
+
+<p><strong>TIP :-  sometimes while doing apt-update and apt-upgrade in lxc container you will have the issue of not connecting with deb.debian.org , i faced this issue , this is because of sources.list permissions , change the permission of the file using <code class="highlighter-rouge">chmod o+r /etc/apt/sources.list</code></strong></p>
+
+<ul>
+  <li>Now the task is to add <a href="https://www.debian.org/doc/debian-policy/ch-archive#s-contrib">contrib</a> section in the sources.list . 
+Now your sources.list will look like this if you do <code class="highlighter-rouge">cat /etc/apt/sources.list</code></li>
+</ul>
+
+<p><strong>deb http://deb.debian.org/debian unstable main contrib non-free</strong></p>
+
+<p><strong>deb-src http://deb.debian.org/debian unstable main contrib non-free</strong></p>
+
+<ul>
+  <li>Now let’s install the <a href="https://tracker.debian.org/pkg/gitlab">gitlab</a> package .</li>
+</ul>
+
+<p><code class="highlighter-rouge">apt-get update &amp;&amp; apt-get install upgrade</code></p>
+
+<p><code class="highlighter-rouge">apt-get install gitlab</code></p>
+
+<p><strong>The installation is big and will take time so be patient</strong></p>
+
+<p>When it will be installing it will ask for some config questions , the questions are self explanatory and will tell you what to enter and it has example of it , i run gitlab instance in my local system , so i have named the gitlab instance as gitlab.lxc (while they ask you , you can give any name like git.yourname.com , it all depends on the domain name you buy for this) and i used local host for database configuration well they give you an option of new host where you can enter the database configuration of the other database system you are using . 
+And then it will run a few check and it will be done</p>
+
+<p>you can check the status of Gitlab using <code class="highlighter-rouge">systemctl status gitlab.service</code></p>
+
+<p>Now as this Gitlab instance is installed on the container system , we have to update the host of the container and also the systems where you want to see this gitlab instance running to resolve the git.yourusername.com 
+you can view the container ip address using ip a 
+and add that ip address in /etc/hosts of the container as well as in the systems to resolve the gitlab instance name . 
+<code class="highlighter-rouge">192.168.122.104 gitlab.lxc</code>
+ Change ip address and the name of the gitlab instance you gave</p>
+
+<p><em>We are updating the containers host too because when we will try to setup gitlab runner , it cant resolve the instance gitlab name , so we are setting it up .</em></p>
+
+<p><strong>Now in the system where you want to view you can view the git instance running by typing the url in the browser like “http://gitlab.lxc” depending on your gitlab instance name and whether you have https setup or not which will be asked by gitlab while configuring and installing .</strong></p>
+
+<p>Now you have your own Gitlab instance , just register to it , till the time you have your won domain registered and set you wont get any mail for confirmation or anything .</p>
+
+<p>But you can login to the system with the registered ID and password , and create your project , but till now we haven’t setup a runner to run any Gitlab CI , CD process so , we will do it with the help of <a href="https://tracker.debian.org/pkg/gitlab-runner">gitlab-runner</a> package available .</p>
+
+<p><code class="highlighter-rouge">apt-get install gitlab-ci-multi-runner</code></p>
+
+<p>it will install the runner .</p>
+
+<p><u>Now get into  admin panel of your own Gitlab instance .</u></p>
+
+<p><em>Wait , how to do it and where is my admin panel ?</em> if these questions are coming into mind , well here is the answer , now go back to the container or server where you installed Gitlab .</p>
+
+<p>now just remember the mail id of the person you want to give the admin access to and follow the steps</p>
+
+<h1 id="granting-an-existing-user-admin-access"><strong>Granting an existing user admin access</strong></h1>
+<p><em>The steps involve dropping into rails console as gitlab user for production environment and running the following commands.</em></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ runuser -u gitlab -- sh -c 'cd /usr/share/gitlab &amp;&amp; . /etc/gitlab/gitlab-debian.conf &amp;&amp; export DB RAILS_ENV &amp;&amp; bundle exec rails console production'
+
+irb(main):001:0&gt; user = User.find_by(email: 'useraddress@domain')
+
+irb(main):003:0&gt; user.admin=true
+
+irb(main):004:0&gt; user.save
+</code></pre></div></div>
+
+<p>Now you have the admin access , and you can view it in your instance too when you login to gitlab instance with the email id that you gave just now giving the admin access , there will be a sign of setting on the upside and you can click and go into the admin panel which will show number of users and all .</p>
+
+<p>Now go into the runner option on the side bar and you will have the token there</p>
+
+<p>Now to register the runner ,</p>
+
+<ol>
+  <li>
+    <p>Run the following command:</p>
+
+    <p>sudo gitlab-runner register</p>
+  </li>
+  <li>
+    <p>Enter your GitLab instance URL:</p>
+
+    <p>Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com )
+ https://gitlab.com</p>
+  </li>
+  <li>
+    <p>Enter the token you obtained to register the Runner:</p>
+
+    <p>Please enter the gitlab-ci token for this runner
+ xxx</p>
+  </li>
+  <li>
+    <p>Enter a description for the Runner, you can change this later in GitLab’s UI:</p>
+
+    <p>Please enter the gitlab-ci description for this runner
+ [hostname] my-runner</p>
+  </li>
+  <li>
+    <p>Enter the <a href="https://docs.gitlab.com/ee/ci/runners/#using-tags">tags associated with the Runner</a>, you can change this later in GitLab’s UI:</p>
+
+    <p>Please enter the gitlab-ci tags for this runner (comma separated):
+ my-tag,another-tag</p>
+  </li>
+  <li>
+    <p>Enter the <a href="https://docs.gitlab.com/runner/executors/README.html">Runner executor</a>:</p>
+
+    <p>Please enter the executor: ssh, docker+machine, docker-ssh+machine, kubernetes, parallels :</p>
+
+    <p>enter whatever you want , i personally suggest docker in this case .</p>
+
+    <p><strong>Tip :- In Debian unstable there is a docker package , on the name of docker.io , install it using <code class="highlighter-rouge">apt-get install docker.io</code> , before proceeding with the CI testing from the gitlab instance</strong></p>
+  </li>
+  <li>
+    <p>If you chose Docker as your executor, you’ll be asked for the default image to be used for projects that do not define one in <code class="highlighter-rouge">.gitlab-ci.yml</code>:</p>
+
+    <p>Please enter the Docker image (eg. ruby:2.1):
+ alpine:latest</p>
+  </li>
+</ol>
+
+<p>And with this you will have your shared runner setup with which you can run CI &amp; CD .</p>
+
+<p><strong>Tip :- When you want to run CI and CD please see the internet connection is strong as it will download the container and will work on it .</strong></p>
+
+<p>And with this , now you have your own gitlab instance running with the CI &amp; CD enabled .</p>
+
+<h5 id="i-know-this-blog-or-the-steps-i-gave-may-or-may-not-worked-for-you--this-is-all-based-on-my-personal-experience-to-work-on-the-debian-unstable-machine-installation-process--if-you-think-you-have-a-query-or-doubt-feel-free-to-reach-me-in-mail-or-telegram-or-riot--hope-i-can-help-you-with-that-or-if-you-find-any-flaw-in-my-blog--reach-me-out-"><strong>I know this blog or the steps i gave may or may not worked for you , this is all based on my personal experience to work on the Debian unstable machine installation process , if you think you have a query or doubt feel free to reach me in mail or telegram or riot , hope i can help you with that or if you find any flaw in my blog , reach me out .</strong></h5>
+
+<h5 id="hope-it-helps-you-all"><strong>Hope it helps you all.</strong></h5>
+
+</span>
+
+        
+
+        
+        <div class="share">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+        </div>
+        
+
+        
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            Gitlab, Browser, VCS, Debian, linux, Installation
+          </small>
+        </div>
+        
+
+      </div>
+
+      
+      <div class="content-panel feedback">
+        I <i class="fa fa-heart"></i> feedback.<br />
+        Let me know what you think of this article on twitter <a href="http://www.twitter.com/manas_tech">@manas_tech</a> or leave a comment below!
+      </div>
+      
+
+      
+      <div class="content-panel comments">
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+      
+
+      
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+function disqus_config() { this.experiment.enable_scroll_container = true; }
+var disqus_shortname = "manas_kashyap"; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+
+      </div>
+    </div>
+
+    <div class="footer clearfix">
+  <div class="col-md-6">
+    Made with <i class="fa fa-heart"></i> by <a href="https://twitter.com/manas_tech">Manas Kashyap</a>
+  </div>
+  <div class="col-md-6">
+    &lt;/&gt; on <a href="https://github.com/Manas-kashyap">Github</a> &nbsp;<i class="fa fa-github-alt"></i>
+  </div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="/js/jquery.mmenu.min.all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("#my-menu").mmenu().on( "closed.mm", function() {
+            $(".menu-button").show();
+         });
+      $(".menu-button").click(function() {
+        $(".menu-button").hide();
+        $("#my-menu").trigger("open.mm");
+      });
+   });
+</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20365477-4']);
+          _gaq.push(['_trackPageview']);
+  (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129067862-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129067862-1');
+</script>
+
+
+    
+    </body>
+</html>
