@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K8 Architecture</title>
+<meta name="description" content="A Developer at building phase.">
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/jquery.mmenu.all.css" />
+<link rel="stylesheet" href="/css/highlightjs.piperita.css">
+
+<!-- Favicons generated at http://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-513c6fa83da6ec67"></script>
+
+
+
+
+</head>
+
+
+    <body>
+
+    <nav id="my-menu">
+  <div>
+    <p>Manas Kashyap</p>
+
+    <ul class="pages">
+      <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
+      <li><a href="/search/"><i class="fa fa-search"></i> Search</a></li>
+    </ul>
+
+    <p class="links">
+  <a href="https://www.twitter.com/manas_tech" target="_new"><i class="fa fa-twitter"></i></a>
+  <a href="https://linkedin.com/in/manas-kashyap-1a2262130/" target="_new"><i class="fa fa-linkedin"></i></a>
+  
+  
+  
+  <a href="https://github.com/Manas-kashyap" target="_new"><i class="fa fa-github-alt"></i></a>
+  <a href="https://stackoverflow.com/users/10564308/manas-kashyap" target="_new"><i class="fa fa-stack-overflow"></i></a>
+  <a href="https://www.instagram.com/nerdy.404" target="_new"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.reddit.com/u/https://www.reddit.com/user/manas-kashyap/" target="_new"><i class="fa fa-reddit-alien"></i></a>
+  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
+</p>
+
+  </div>
+</nav>
+<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      
+
+<div class="container-fluid single">
+  <div class="row">
+
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      
+      <div class="thumb">
+        <img itemprop="image" src="https://i.imgur.com/JAqX6n2.png" alt="Thumbnail: kubernetes" />
+      </div>
+      
+
+      <h1 class="header" itemprop="name">K8 Architecture</h1>
+
+      <div class="author">
+        <small><i>
+          
+          by
+          <span itemprop="author">
+            
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">Manas kashyap</span>
+            </span>
+            
+          </span>
+          
+          on <span itemprop="datePublished" content="2014-08-28">May 23, 2020</span>
+           under jekyll
+        </i></small>
+      </div>
+
+      <div class="read-time">
+        <small>
+          2 minute read
+        </small>
+      </div>
+
+      <div class="content-panel content">
+
+        
+
+        <span itemprop="articleBody"><p>In this blog i am just pointing my learning about K8 architecture..</p>
+
+<h1 id="kubernetes-architecture">Kubernetes Architecture</h1>
+
+<p><img src="https://static1.tothenew.com/blog/wp-content/uploads/2016/08/kube7-arch.png" alt="kube7-arch" /></p>
+
+<h2 id="master-node-architecture">Master Node Architecture</h2>
+
+<p><strong>Etcd</strong>: It is an open source key-value store developed by CoreOs team. Kubernetes uses ‘Etcd’ to store the configuration data accessed by all nodes (minions and master) in the cluster.</p>
+
+<p><strong>Kube-ApiServer:</strong> The Kubernetes api-server generally validates the configuration data store in ‘Etcd’ and the details of the deployed container that are in agreement. It also provides a RESTful interface to make communication easy.</p>
+
+<p><strong>Kube-Schedule Server</strong>: It is responsible for assigning task to minions in the cluster. It keeps watch over the resource capacity and ensures that a worker node’s performance is within an appropriate threshold.</p>
+
+<p><strong>Kube-Controller-Manager:</strong> It is generally responsible for handling the cluster level function such as replication controller. Whenever the desired state of the cluster changes it is written to Etcd and then the controller manager tries to bring up the cluster in the desired state.</p>
+
+<p><img src="https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.45-AM.png" alt="Showing How a Kubernetes Master Node is Built Up" /></p>
+
+<h2 id="minion-node-architecture-kubernetes-worker-nodes">Minion Node Architecture (<strong>Kubernetes Worker Nodes</strong>)</h2>
+
+<p><strong>Docker:</strong> One of  the basic requirement of nodes is Docker. Docker is responsible for pulling down and running container from Docker images. Read here for more information on <a href="https://www.tothenew.com/blog/what-is-docker-and-why-use-it/">docker</a> .</p>
+
+<p><strong>Kube-Proxy:</strong> Every node in the cluster runs a simple network proxy. Using proxy node in cluster routes request to the correct container in a node.</p>
+
+<p><strong>Kubelet</strong>: It is an agent process that runs on each node. It is responsible for managing pods and their containers. It deal with pods specifications which are defined in YAML or JSON format. Kubelet takes the pod specifications and checks whether the pods are running healthy or not.</p>
+
+<p><strong>Flannel</strong>: It is an overlay network that works on assigning  a range of subnet address. It is used to assign IPs to each pods running in the cluster and to make the  pod-to-pod  and pod-to-services communications.</p>
+
+<p><img src="https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.58-AM.png" alt="The Process of Kubernetes Nodes and Pods" /></p>
+
+<h3 id="faqs">FAQs</h3>
+
+<h4 id="what-is-kubernetes-used-for">What is Kubernetes used for?</h4>
+
+<p>Kubernetes keeps track of your container applications that are deployed into the cloud. It restarts orphaned containers, shuts down containers when they’re not being used, and automatically provisions resources like memory, storage, and CPU when necessary.</p>
+
+<h4 id="how-does-kubernetes-work-with-docker">How does Kubernetes work with Docker?</h4>
+
+<p>Actually, Kubernetes supports several base container engines, and Docker is just one of them. The two technologies work great together, since Docker containers are an efficient way to distribute packaged applications, and Kubernetes is designed to coordinate and schedule those applications.</p>
+
+<h4 id="what-are-different-container-engines-supported-by-kubernetes-"><strong>What are different Container Engines supported by Kubernetes ?</strong></h4>
+
+<p>Kubernetes supports several container runtimes: <a href="https://docs.docker.com/engine/">Docker</a>, <a href="https://containerd.io/docs/">containerd</a>, <a href="https://cri-o.io/#what-is-cri-o">CRI-O</a>, and any implementation of the <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md">Kubernetes CRI (Container Runtime Interface)</a>.</p>
+
+<h4 id="how-do-i-use-kubernetes">How do I use Kubernetes?</h4>
+
+<p>If you’re interested in trying Kubernetes out, you can install <a href="https://kubernetes.io/docs/tutorials/hello-minikube/">Minikube</a> as a local testing environment or even make LXC containers to form a cluster if you have a really nice system.. When you’re ready to try Kubernetes out for real, you’ll use <a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/">kubectl</a> to deploy your application managed by Kubernetes.</p>
+</span>
+
+        
+
+        
+        <div class="share">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+        </div>
+        
+
+        
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            linux, Open source, Devops, Kubernetes, K8
+          </small>
+        </div>
+        
+
+      </div>
+
+      
+      <div class="content-panel feedback">
+        I <i class="fa fa-heart"></i> feedback.<br />
+        Let me know what you think of this article on twitter <a href="http://www.twitter.com/manas_tech">@manas_tech</a> or leave a comment below!
+      </div>
+      
+
+      
+      <div class="content-panel comments">
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+      
+
+      
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+function disqus_config() { this.experiment.enable_scroll_container = true; }
+var disqus_shortname = "manas_kashyap"; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+
+      </div>
+    </div>
+
+    <div class="footer clearfix">
+  <div class="col-md-6">
+    Made with <i class="fa fa-heart"></i> by <a href="https://twitter.com/manas_tech">Manas Kashyap</a>
+  </div>
+  <div class="col-md-6">
+    &lt;/&gt; on <a href="https://github.com/Manas-kashyap">Github</a> &nbsp;<i class="fa fa-github-alt"></i>
+  </div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="/js/jquery.mmenu.min.all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("#my-menu").mmenu().on( "closed.mm", function() {
+            $(".menu-button").show();
+         });
+      $(".menu-button").click(function() {
+        $(".menu-button").hide();
+        $("#my-menu").trigger("open.mm");
+      });
+   });
+</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20365477-4']);
+          _gaq.push(['_trackPageview']);
+  (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129067862-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129067862-1');
+</script>
+
+
+    
+    </body>
+</html>
