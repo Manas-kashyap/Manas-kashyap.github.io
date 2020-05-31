@@ -14,24 +14,18 @@ tags:
  - Automation
 ---
 
-Today we are going to talk about an automation tool that is really common and this blog is just an overview of what i learned and how i see through it . 
+***Today we are going to talk about an automation tool that is really common and this blog is just an overview of what i learned and how i see through it .*** 
 
 As we all know DevOps Lifecycle is really a big lifecycle with no end and it involved numerous tools for different work in production. 
+Automation is crucial these days, with IT environments that are too complex and often need to scale too quickly for system administrators and developers to keep up if they had to do everything manually. Automation simplifies complex tasks, not just making developers’ jobs more manageable but allowing them to focus attention on other tasks that add value to an organization. In other words, it frees up time and increases efficiency.
 
-#### Where does Ansible fit ?
-The fit of Ansible in the DevOps lifecycle can also provide viable insight into the benefits of Ansible. Ansible provides support for integrating development and operations in contemporary test-driven application design. It provides a stable environment for the development and operations team, thereby leading to smooth orchestration. Ansible automation helps considerably with the representation of Infrastructure as Code (IAC).
+![DevOps Tutorial — Why & What is DevOps? - Edureka - Medium](https://miro.medium.com/max/1388/1*F0Sqmqz3ubCzxYAAup2oLQ.png)
 
-IAC involves provisioning and management of computing infrastructure and related configuration through machine-processable definition files. Therefore, administrators could find opportunities to work in collaboration with developers that improves development speed. Also, the benefits of ansible help in focusing more on performance tuning and experimenting rather than fixing issues.
+So here you can see Ansible is a tool for Deployment phase , (Above is an infinity DevOps Cycle). 
 
-## What is Ansible
+## So , What is Ansible ?
 
 Ansible is an open-source automation tool, or platform, used for IT tasks such as configuration management, application deployment, intraservice orchestration, and provisioning.
-
-Automation is crucial these days, with IT environments that are too complex and often need to scale too quickly for system administrators and developers to keep up if they had to do everything manually. Automation simplifies complex tasks, not just making developers’ jobs more manageable but allowing them to focus attention on other tasks that add value to an organization. In other words, it frees up time and increases efficiency. And Ansible, as noted above, is rapidly rising to the top in the world of automation tools. 
-
-### Uses of Ansible
-
-Another important aspect under-emphasis before ansible advantages refers to the applications of ansible. The applications of Ansible can help in obtaining brief insights into their benefits for DevOps. The different applications of Ansible include provisioning, configuration management, deploying applications, security and compliance, and orchestration. The long list of applications clearly shows that Ansible is not just another configuration management tool. So, we can note that the advantages of Ansible come primarily from its applications.
 
 ## Advantages of Ansible
 
@@ -49,7 +43,8 @@ Now let’s talk a bit about the pieces that make up the Ansible environment.
 
 ### Modules
 
-Modules are like small programs that Ansible pushes out from a control machine to all the nodes or remote hosts. The modules are executed using playbooks , and they control things such as services, packages, and files. Ansible executes all the modules for installing updates or whatever the required task is, and then removes them when finished. Ansible provides more than 450 modules for everyday tasks.
+Modules are like small programs that Ansible pushes out from a control machine to all the nodes or remote hosts. The modules are executed using playbooks , and they control things such as services, packages, and files. 
+Ansible provides more than 450 modules for everyday tasks.
 
 ### Plugins
 
@@ -61,7 +56,7 @@ All the machines you’re using with Ansible (the control machine plus nodes) ar
 
 ### Playbooks
 
-Ansible playbooks are like instruction manuals for tasks. They are simple files written in YAML, which stands for YAML Ain’t Markup Language, a human-readable data serialization language. Playbooks are really at the heart of what makes Ansible so popular is because they describe the tasks to be done quickly and without the need for the user to know or remember any particular syntax. Not only can they declare configurations, but they can orchestrate the steps of any manually ordered task, and can execute tasks at the same time or at different times.
+Ansible playbooks are like instruction manuals for tasks. They are simple files written in YAML, which stands for YAML Ain’t Markup Language, a human-readable data serialization language. Playbooks are really at the heart of what makes Ansible so popular is because they describe the tasks to be done quickly and without the need for the user to know or remember any particular syntax. 
 
 Each playbook is composed of one or multiple plays, and the goal of a play is to map a group of hosts to well-defined roles, represented by tasks.
 
@@ -71,15 +66,13 @@ Various APIs (application programming interfaces) are available so you can exten
 
 # What is Ansible Roles ?
 
-Roles provide a framework for fully independent, or interdependent collections of variables, tasks, files, templates, and modules.
-
-In Ansible, the role is the primary mechanism for breaking a playbook into multiple files. This simplifies writing **complex playbooks**, and it makes them easier to reuse. The breaking of playbook allows you to logically break the playbook into reusable components.
+Roles is the primary mechanism for breaking a playbook into multiple files. This simplifies writing **complex playbooks**, and it makes them easier to reuse. The breaking of playbook allows you to logically break the playbook into reusable components.
 
 Each role is basically limited to a particular functionality or desired output, with all the necessary steps to provide that result either within that role itself or in other roles listed as dependencies.
 
-Roles are not playbooks. Roles are small functionality which can be independently used but have to be used within playbooks. There is no way to directly execute a role. Roles have no explicit setting for which host the role will apply to.
+------
 
-Top-level playbooks are the bridge holding the hosts from your inventory file to roles that should be applied to those hosts.
+**<u>So that was a hell lot of theoretical part , now lets get to practical and i would like you to play with the playbook and explore the roles :-)</u>**
 
 ## How to create Roles ?
 
@@ -91,7 +84,9 @@ Simply use `ansible-galaxy init ` to create a new role in your present working d
 
 ### Directory Structure
 
-These many number of files and directories may appear to be difficult to work with, but they are fairly easy to understand. Above all, we always have the freedom to write our tasks and variable into other files but we must **include** directives into the directory’s *main.yml* file. Let us look into the use of these different directories in our role.
+These many number of files and directories may appear to be difficult to work with, but they are fairly easy to understand. Above all, we always have the freedom to write our tasks and variable into other files but we must **include** directives into the directory’s *main.yml* file. 
+
+Let us look into the use of these different directories in our role.
 
 #### Defaults:
 
@@ -128,4 +123,4 @@ This directory contains a sample inventory and a *test.yml* file. This may conta
 
 This is where we create variable files that define necessary variables for our role.
 
-Hope this helps you out and Thank you for reading this blog !!!! 
+## **Hope this helps you out and Thank you for reading this blog !!!!** 
