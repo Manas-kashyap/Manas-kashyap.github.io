@@ -3,11 +3,213 @@
   <channel>
     <title>Manas Kashyap</title>
     <description>A Developer at building phase.</description>
-    <link>https://Manas-kashyap.github.io/</link>
-    <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 01 Mar 2020 22:41:22 +0530</pubDate>
-    <lastBuildDate>Sun, 01 Mar 2020 22:41:22 +0530</lastBuildDate>
-    <generator>Jekyll v3.8.4</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 05 Jun 2020 21:45:56 +0530</pubDate>
+    <lastBuildDate>Fri, 05 Jun 2020 21:45:56 +0530</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Ansible &amp; Ansible Roles</title>
+        <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Today we are going to talk about an automation tool that is really common and this blog is just an overview of what i learned and how i see through it .&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As we all know DevOps Lifecycle is really a big lifecycle with no end and it involved numerous tools for different work in production. 
+Automation is crucial these days, with IT environments that are too complex and often need to scale too quickly for system administrators and developers to keep up if they had to do everything manually. Automation simplifies complex tasks, not just making developers’ jobs more manageable but allowing them to focus attention on other tasks that add value to an organization. In other words, it frees up time and increases efficiency.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1388/1*F0Sqmqz3ubCzxYAAup2oLQ.png&quot; alt=&quot;DevOps Tutorial — Why &amp;amp; What is DevOps? - Edureka - Medium&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So here you can see Ansible is a tool for Deployment phase , (Above is an infinity DevOps Cycle).&lt;/p&gt;
+
+&lt;h2 id=&quot;so--what-is-ansible-&quot;&gt;So , What is Ansible ?&lt;/h2&gt;
+
+&lt;p&gt;Ansible is an open-source automation tool, or platform, used for IT tasks such as configuration management, application deployment, intraservice orchestration, and provisioning.&lt;/p&gt;
+
+&lt;h2 id=&quot;advantages-of-ansible&quot;&gt;Advantages of Ansible&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Free&lt;/strong&gt;: Ansible is an open-source tool.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Very simple to set up and use&lt;/strong&gt;: No special coding skills are necessary to use Ansible’s playbooks (more on playbooks later).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Powerful&lt;/strong&gt;: Ansible lets you model even highly complex IT workflows.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Flexible&lt;/strong&gt;: You can orchestrate the entire application environment no matter where it’s deployed. You can also customize it based on your needs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Agentless&lt;/strong&gt;: You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Efficient&lt;/strong&gt;: Because you don’t need to install any extra software, there’s more room for application resources on your server.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ansible-architecture&quot;&gt;Ansible Architecture&lt;/h2&gt;
+
+&lt;p&gt;Now let’s talk a bit about the pieces that make up the Ansible environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;modules&quot;&gt;Modules&lt;/h3&gt;
+
+&lt;p&gt;Modules are like small programs that Ansible pushes out from a control machine to all the nodes or remote hosts. The modules are executed using playbooks , and they control things such as services, packages, and files. 
+Ansible provides more than 450 modules for everyday tasks.&lt;/p&gt;
+
+&lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;/h3&gt;
+
+&lt;p&gt;As you probably already know from many other tools and platforms, plugins are extra pieces of code that augment functionality. Ansible comes with a number of its plugins, but you can write your own as well. Action, cache, and callback plugins are three examples.&lt;/p&gt;
+
+&lt;h3 id=&quot;inventories&quot;&gt;Inventories&lt;/h3&gt;
+
+&lt;p&gt;All the machines you’re using with Ansible (the control machine plus nodes) are listed in a single simple file, along with their IP addresses, databases, servers and so on. Once you register the inventory, you can assign variables to any of the hosts using a simple text file.&lt;/p&gt;
+
+&lt;h3 id=&quot;playbooks&quot;&gt;Playbooks&lt;/h3&gt;
+
+&lt;p&gt;Ansible playbooks are like instruction manuals for tasks. They are simple files written in YAML, which stands for YAML Ain’t Markup Language, a human-readable data serialization language. Playbooks are really at the heart of what makes Ansible so popular is because they describe the tasks to be done quickly and without the need for the user to know or remember any particular syntax.&lt;/p&gt;
+
+&lt;p&gt;Each playbook is composed of one or multiple plays, and the goal of a play is to map a group of hosts to well-defined roles, represented by tasks.&lt;/p&gt;
+
+&lt;h3 id=&quot;apis&quot;&gt;APIs&lt;/h3&gt;
+
+&lt;p&gt;Various APIs (application programming interfaces) are available so you can extend Ansible’s connection types (meaning more than just SSH for transport), callbacks and more.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-ansible-roles-&quot;&gt;What is Ansible Roles ?&lt;/h1&gt;
+
+&lt;p&gt;Roles is the primary mechanism for breaking a playbook into multiple files. This simplifies writing &lt;strong&gt;complex playbooks&lt;/strong&gt;, and it makes them easier to reuse. The breaking of playbook allows you to logically break the playbook into reusable components.&lt;/p&gt;
+
+&lt;p&gt;Each role is basically limited to a particular functionality or desired output, with all the necessary steps to provide that result either within that role itself or in other roles listed as dependencies.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;So that was a hell lot of theoretical part , now lets get to practical and i would like you to play with the playbook and explore the roles :-)&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-create-roles-&quot;&gt;How to create Roles ?&lt;/h2&gt;
+
+&lt;p&gt;The built-in &lt;em&gt;ansible-galaxy&lt;/em&gt; command has a sub command that will create our role skeleton for us.&lt;/p&gt;
+
+&lt;p&gt;Simply use &lt;code class=&quot;highlighter-rouge&quot;&gt;ansible-galaxy init &lt;/code&gt; to create a new role in your present working directory. You will see here that several directories and files are created within the new role:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://linuxacademy.com/site-content/uploads/2019/05/roles11.png&quot; alt=&quot;Ansible Roles example&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;directory-structure&quot;&gt;Directory Structure&lt;/h3&gt;
+
+&lt;p&gt;These many number of files and directories may appear to be difficult to work with, but they are fairly easy to understand. Above all, we always have the freedom to write our tasks and variable into other files but we must &lt;strong&gt;include&lt;/strong&gt; directives into the directory’s &lt;em&gt;main.yml&lt;/em&gt; file.&lt;/p&gt;
+
+&lt;p&gt;Let us look into the use of these different directories in our role.&lt;/p&gt;
+
+&lt;h4 id=&quot;defaults&quot;&gt;Defaults:&lt;/h4&gt;
+
+&lt;p&gt;The &lt;em&gt;defaults&lt;/em&gt; directory is for defining the variable defaults. The variables in &lt;em&gt;default&lt;/em&gt; have the lowest priority thus becoming easy to override. If definition of a variable is nowhere else, the variable in &lt;em&gt;defaults/main.yml&lt;/em&gt; will be used.&lt;/p&gt;
+
+&lt;h4 id=&quot;files&quot;&gt;Files:&lt;/h4&gt;
+
+&lt;p&gt;We use the &lt;em&gt;files&lt;/em&gt; directory to add files that are needed by machine, without modification. Mostly, we use copy task for referencing files in the &lt;em&gt;files&lt;/em&gt; directory.&lt;/p&gt;
+
+&lt;h4 id=&quot;handlers&quot;&gt;Handlers:&lt;/h4&gt;
+
+&lt;p&gt;The &lt;em&gt;handlers&lt;/em&gt; directory is used for storing Ansible handlers.&lt;/p&gt;
+
+&lt;p&gt;A Handler is exactly the same as a Task, but it will run when called by another Task. A Handler will take an action when called by an event it listens for.
+This is useful for secondary actions that might be required after running a Task, such as starting a new service after installation or reloading a service after a configuration change.&lt;/p&gt;
+
+&lt;h4 id=&quot;meta&quot;&gt;Meta:&lt;/h4&gt;
+
+&lt;p&gt;We use the &lt;em&gt;meta&lt;/em&gt; directory to store authorship information which is useful if we choose to publish our role on &lt;em&gt;galaxy.ansible.com&lt;/em&gt;. The metadata of an Ansible role consists of author, supported platforms, and dependencies.&lt;/p&gt;
+
+&lt;h4 id=&quot;tasks&quot;&gt;Tasks:&lt;/h4&gt;
+
+&lt;p&gt;The &lt;em&gt;task&lt;/em&gt; directory is where we write most of our roles which includes all the tasks our role will perform. We write each series of tasks in a separate file and include them into the &lt;em&gt;main.yml&lt;/em&gt; file in the &lt;em&gt;tasks&lt;/em&gt; directory.&lt;/p&gt;
+
+&lt;h4 id=&quot;templates&quot;&gt;Templates:&lt;/h4&gt;
+
+&lt;p&gt;We use the &lt;em&gt;template&lt;/em&gt; directory to add templates which can create the required file by replacing the variables . Only difference between &lt;em&gt;template&lt;/em&gt; and &lt;em&gt;files&lt;/em&gt; directories is that the &lt;em&gt;template&lt;/em&gt; directory contains files which can be modified basically the templates. &lt;a href=&quot;https://jinja.palletsprojects.com/en/master/&quot;&gt;Jinja2&lt;/a&gt; language to used to create these alteration. Configuration files are basically the template files&lt;/p&gt;
+
+&lt;h4 id=&quot;tests&quot;&gt;Tests:&lt;/h4&gt;
+
+&lt;p&gt;This directory contains a sample inventory and a &lt;em&gt;test.yml&lt;/em&gt; file. This may contain the tests that we can do before hand in this automation process .&lt;/p&gt;
+
+&lt;h4 id=&quot;vars&quot;&gt;Vars:&lt;/h4&gt;
+
+&lt;p&gt;This is where we create variable files that define necessary variables for our role.&lt;/p&gt;
+
+&lt;h2 id=&quot;hope-this-helps-you-out-and-thank-you-for-reading-this-blog-&quot;&gt;&lt;strong&gt;Hope this helps you out and Thank you for reading this blog !!!!&lt;/strong&gt;&lt;/h2&gt;
+</description>
+        <pubDate>Sun, 31 May 2020 17:30:00 +0530</pubDate>
+        <link>http://localhost:4000/jekyll/2020/05/31/Ansible-and-roles/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2020/05/31/Ansible-and-roles/</guid>
+        
+        <category>linux</category>
+        
+        <category>Open source</category>
+        
+        <category>Ansible</category>
+        
+        <category>Devops</category>
+        
+        <category>Automation</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>K8 Architecture</title>
+        <description>&lt;p&gt;In this blog i am just pointing my learning about K8 architecture..&lt;/p&gt;
+
+&lt;h1 id=&quot;kubernetes-architecture&quot;&gt;Kubernetes Architecture&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://static1.tothenew.com/blog/wp-content/uploads/2016/08/kube7-arch.png&quot; alt=&quot;kube7-arch&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;master-node-architecture&quot;&gt;Master Node Architecture&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Etcd&lt;/strong&gt;: It is an open source key-value store developed by CoreOs team. Kubernetes uses ‘Etcd’ to store the configuration data accessed by all nodes (minions and master) in the cluster.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kube-ApiServer:&lt;/strong&gt; The Kubernetes api-server generally validates the configuration data store in ‘Etcd’ and the details of the deployed container that are in agreement. It also provides a RESTful interface to make communication easy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kube-Schedule Server&lt;/strong&gt;: It is responsible for assigning task to minions in the cluster. It keeps watch over the resource capacity and ensures that a worker node’s performance is within an appropriate threshold.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kube-Controller-Manager:&lt;/strong&gt; It is generally responsible for handling the cluster level function such as replication controller. Whenever the desired state of the cluster changes it is written to Etcd and then the controller manager tries to bring up the cluster in the desired state.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.45-AM.png&quot; alt=&quot;Showing How a Kubernetes Master Node is Built Up&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;minion-node-architecture-kubernetes-worker-nodes&quot;&gt;Minion Node Architecture (&lt;strong&gt;Kubernetes Worker Nodes&lt;/strong&gt;)&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Docker:&lt;/strong&gt; One of  the basic requirement of nodes is Docker. Docker is responsible for pulling down and running container from Docker images. Read here for more information on &lt;a href=&quot;https://www.tothenew.com/blog/what-is-docker-and-why-use-it/&quot;&gt;docker&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kube-Proxy:&lt;/strong&gt; Every node in the cluster runs a simple network proxy. Using proxy node in cluster routes request to the correct container in a node.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kubelet&lt;/strong&gt;: It is an agent process that runs on each node. It is responsible for managing pods and their containers. It deal with pods specifications which are defined in YAML or JSON format. Kubelet takes the pod specifications and checks whether the pods are running healthy or not.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flannel&lt;/strong&gt;: It is an overlay network that works on assigning  a range of subnet address. It is used to assign IPs to each pods running in the cluster and to make the  pod-to-pod  and pod-to-services communications.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.58-AM.png&quot; alt=&quot;The Process of Kubernetes Nodes and Pods&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;faqs&quot;&gt;FAQs&lt;/h3&gt;
+
+&lt;h4 id=&quot;what-is-kubernetes-used-for&quot;&gt;What is Kubernetes used for?&lt;/h4&gt;
+
+&lt;p&gt;Kubernetes keeps track of your container applications that are deployed into the cloud. It restarts orphaned containers, shuts down containers when they’re not being used, and automatically provisions resources like memory, storage, and CPU when necessary.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-does-kubernetes-work-with-docker&quot;&gt;How does Kubernetes work with Docker?&lt;/h4&gt;
+
+&lt;p&gt;Actually, Kubernetes supports several base container engines, and Docker is just one of them. The two technologies work great together, since Docker containers are an efficient way to distribute packaged applications, and Kubernetes is designed to coordinate and schedule those applications.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-are-different-container-engines-supported-by-kubernetes-&quot;&gt;&lt;strong&gt;What are different Container Engines supported by Kubernetes ?&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Kubernetes supports several container runtimes: &lt;a href=&quot;https://docs.docker.com/engine/&quot;&gt;Docker&lt;/a&gt;, &lt;a href=&quot;https://containerd.io/docs/&quot;&gt;containerd&lt;/a&gt;, &lt;a href=&quot;https://cri-o.io/#what-is-cri-o&quot;&gt;CRI-O&lt;/a&gt;, and any implementation of the &lt;a href=&quot;https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md&quot;&gt;Kubernetes CRI (Container Runtime Interface)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-do-i-use-kubernetes&quot;&gt;How do I use Kubernetes?&lt;/h4&gt;
+
+&lt;p&gt;If you’re interested in trying Kubernetes out, you can install &lt;a href=&quot;https://kubernetes.io/docs/tutorials/hello-minikube/&quot;&gt;Minikube&lt;/a&gt; as a local testing environment or even make LXC containers to form a cluster if you have a really nice system.. When you’re ready to try Kubernetes out for real, you’ll use &lt;a href=&quot;https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/&quot;&gt;kubectl&lt;/a&gt; to deploy your application managed by Kubernetes.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 May 2020 17:30:00 +0530</pubDate>
+        <link>http://localhost:4000/jekyll/2020/05/23/Kubernetes-Architecture/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2020/05/23/Kubernetes-Architecture/</guid>
+        
+        <category>linux</category>
+        
+        <category>Open source</category>
+        
+        <category>Devops</category>
+        
+        <category>Kubernetes</category>
+        
+        <category>K8</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Deadly Linux Commands</title>
@@ -47,8 +249,8 @@ These are a few of the many deadly commands for Linux.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 01 Mar 2020 05:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2020/03/01/Deadly-Linux-commands/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2020/03/01/Deadly-Linux-commands/</guid>
+        <link>http://localhost:4000/jekyll/2020/03/01/Deadly-Linux-commands/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2020/03/01/Deadly-Linux-commands/</guid>
         
         <category>Dangerous</category>
         
@@ -257,8 +459,8 @@ irb(main):004:0&amp;gt; user.save
 
 </description>
         <pubDate>Sat, 15 Jun 2019 01:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2019/06/15/Basics-of-gitlab-installation/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2019/06/15/Basics-of-gitlab-installation/</guid>
+        <link>http://localhost:4000/jekyll/2019/06/15/Basics-of-gitlab-installation/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2019/06/15/Basics-of-gitlab-installation/</guid>
         
         <category>Gitlab</category>
         
@@ -340,8 +542,8 @@ Hope it helps you in getting the answers that you are thinking now .&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 14 Nov 2018 03:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/14/Which-Linux-OS-to-use/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/14/Which-Linux-OS-to-use/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/14/Which-Linux-OS-to-use/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/14/Which-Linux-OS-to-use/</guid>
         
         <category>linux</category>
         
@@ -752,8 +954,8 @@ Helped me to be part of communities and gave me opportunities to get mentored by
 
 </description>
         <pubDate>Sun, 11 Nov 2018 15:00:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
         
         <category>linux</category>
         
@@ -834,8 +1036,8 @@ Use &lt;strong&gt;rmdir&lt;/strong&gt; to delete a directory. But &lt;em&gt;rmdi
 
 </description>
         <pubDate>Tue, 06 Nov 2018 17:10:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
         
         <category>linux</category>
         
@@ -892,8 +1094,8 @@ so , to run and setup things , we will use command &lt;em&gt;“chmod +x start-t
 
 </description>
         <pubDate>Tue, 06 Nov 2018 01:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
         
         <category>Proxy</category>
         
@@ -951,8 +1153,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Mon, 05 Nov 2018 01:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
         
         <category>linux</category>
         
@@ -997,8 +1199,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Sat, 03 Nov 2018 17:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</guid>
+        <link>http://localhost:4000/jekyll/2018/11/03/Why-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/03/Why-linux/</guid>
         
         <category>linux</category>
         

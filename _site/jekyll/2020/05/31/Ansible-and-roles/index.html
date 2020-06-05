@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ansible & Ansible Roles</title>
+<meta name="description" content="A Developer at building phase.">
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/jquery.mmenu.all.css" />
+<link rel="stylesheet" href="/css/highlightjs.piperita.css">
+
+<!-- Favicons generated at http://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-513c6fa83da6ec67"></script>
+
+
+
+
+</head>
+
+
+    <body>
+
+    <nav id="my-menu">
+  <div>
+    <p>Manas Kashyap</p>
+
+    <ul class="pages">
+      <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
+      <li><a href="/search/"><i class="fa fa-search"></i> Search</a></li>
+    </ul>
+
+    <p class="links">
+  <a href="https://www.twitter.com/manas_tech" target="_new"><i class="fa fa-twitter"></i></a>
+  <a href="https://linkedin.com/in/manas-kashyap-1a2262130/" target="_new"><i class="fa fa-linkedin"></i></a>
+  
+  
+  
+  <a href="https://github.com/Manas-kashyap" target="_new"><i class="fa fa-github-alt"></i></a>
+  <a href="https://stackoverflow.com/users/10564308/manas-kashyap" target="_new"><i class="fa fa-stack-overflow"></i></a>
+  <a href="https://www.instagram.com/nerdy.404" target="_new"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.reddit.com/u/https://www.reddit.com/user/manas-kashyap/" target="_new"><i class="fa fa-reddit-alien"></i></a>
+  <a href="/feed.xml" target="_new"><i class="fa fa-rss"></i></a>
+</p>
+
+  </div>
+</nav>
+<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      
+
+<div class="container-fluid single">
+  <div class="row">
+
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      
+      <div class="thumb">
+        <img itemprop="image" src="https://mluh4on6k7db.i.optimole.com/h1xpWcI-405vSiMw/w:auto/h:auto/q:90/https://www.liquidweb.com/kb/wp-content/uploads/2019/07/Ansible_logo.svg_.png" alt="Thumbnail: ansible" />
+      </div>
+      
+
+      <h1 class="header" itemprop="name">Ansible & Ansible Roles</h1>
+
+      <div class="author">
+        <small><i>
+          
+          by
+          <span itemprop="author">
+            
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">Manas kashyap</span>
+            </span>
+            
+          </span>
+          
+          on <span itemprop="datePublished" content="2014-08-28">May 31, 2020</span>
+           under jekyll
+        </i></small>
+      </div>
+
+      <div class="read-time">
+        <small>
+          6 minute read
+        </small>
+      </div>
+
+      <div class="content-panel content">
+
+        
+
+        <span itemprop="articleBody"><p><strong><em>Today we are going to talk about an automation tool that is really common and this blog is just an overview of what i learned and how i see through it .</em></strong></p>
+
+<p>As we all know DevOps Lifecycle is really a big lifecycle with no end and it involved numerous tools for different work in production. 
+Automation is crucial these days, with IT environments that are too complex and often need to scale too quickly for system administrators and developers to keep up if they had to do everything manually. Automation simplifies complex tasks, not just making developers’ jobs more manageable but allowing them to focus attention on other tasks that add value to an organization. In other words, it frees up time and increases efficiency.</p>
+
+<p><img src="https://miro.medium.com/max/1388/1*F0Sqmqz3ubCzxYAAup2oLQ.png" alt="DevOps Tutorial — Why &amp; What is DevOps? - Edureka - Medium" /></p>
+
+<p>So here you can see Ansible is a tool for Deployment phase , (Above is an infinity DevOps Cycle).</p>
+
+<h2 id="so--what-is-ansible-">So , What is Ansible ?</h2>
+
+<p>Ansible is an open-source automation tool, or platform, used for IT tasks such as configuration management, application deployment, intraservice orchestration, and provisioning.</p>
+
+<h2 id="advantages-of-ansible">Advantages of Ansible</h2>
+
+<ul>
+  <li><strong>Free</strong>: Ansible is an open-source tool.</li>
+  <li><strong>Very simple to set up and use</strong>: No special coding skills are necessary to use Ansible’s playbooks (more on playbooks later).</li>
+  <li><strong>Powerful</strong>: Ansible lets you model even highly complex IT workflows.</li>
+  <li><strong>Flexible</strong>: You can orchestrate the entire application environment no matter where it’s deployed. You can also customize it based on your needs.</li>
+  <li><strong>Agentless</strong>: You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure.</li>
+  <li><strong>Efficient</strong>: Because you don’t need to install any extra software, there’s more room for application resources on your server.</li>
+</ul>
+
+<h2 id="ansible-architecture">Ansible Architecture</h2>
+
+<p>Now let’s talk a bit about the pieces that make up the Ansible environment.</p>
+
+<h3 id="modules">Modules</h3>
+
+<p>Modules are like small programs that Ansible pushes out from a control machine to all the nodes or remote hosts. The modules are executed using playbooks , and they control things such as services, packages, and files. 
+Ansible provides more than 450 modules for everyday tasks.</p>
+
+<h3 id="plugins">Plugins</h3>
+
+<p>As you probably already know from many other tools and platforms, plugins are extra pieces of code that augment functionality. Ansible comes with a number of its plugins, but you can write your own as well. Action, cache, and callback plugins are three examples.</p>
+
+<h3 id="inventories">Inventories</h3>
+
+<p>All the machines you’re using with Ansible (the control machine plus nodes) are listed in a single simple file, along with their IP addresses, databases, servers and so on. Once you register the inventory, you can assign variables to any of the hosts using a simple text file.</p>
+
+<h3 id="playbooks">Playbooks</h3>
+
+<p>Ansible playbooks are like instruction manuals for tasks. They are simple files written in YAML, which stands for YAML Ain’t Markup Language, a human-readable data serialization language. Playbooks are really at the heart of what makes Ansible so popular is because they describe the tasks to be done quickly and without the need for the user to know or remember any particular syntax.</p>
+
+<p>Each playbook is composed of one or multiple plays, and the goal of a play is to map a group of hosts to well-defined roles, represented by tasks.</p>
+
+<h3 id="apis">APIs</h3>
+
+<p>Various APIs (application programming interfaces) are available so you can extend Ansible’s connection types (meaning more than just SSH for transport), callbacks and more.</p>
+
+<h1 id="what-is-ansible-roles-">What is Ansible Roles ?</h1>
+
+<p>Roles is the primary mechanism for breaking a playbook into multiple files. This simplifies writing <strong>complex playbooks</strong>, and it makes them easier to reuse. The breaking of playbook allows you to logically break the playbook into reusable components.</p>
+
+<p>Each role is basically limited to a particular functionality or desired output, with all the necessary steps to provide that result either within that role itself or in other roles listed as dependencies.</p>
+
+<hr />
+
+<p><strong><u>So that was a hell lot of theoretical part , now lets get to practical and i would like you to play with the playbook and explore the roles :-)</u></strong></p>
+
+<h2 id="how-to-create-roles-">How to create Roles ?</h2>
+
+<p>The built-in <em>ansible-galaxy</em> command has a sub command that will create our role skeleton for us.</p>
+
+<p>Simply use <code class="highlighter-rouge">ansible-galaxy init </code> to create a new role in your present working directory. You will see here that several directories and files are created within the new role:</p>
+
+<p><img src="https://linuxacademy.com/site-content/uploads/2019/05/roles11.png" alt="Ansible Roles example" /></p>
+
+<h3 id="directory-structure">Directory Structure</h3>
+
+<p>These many number of files and directories may appear to be difficult to work with, but they are fairly easy to understand. Above all, we always have the freedom to write our tasks and variable into other files but we must <strong>include</strong> directives into the directory’s <em>main.yml</em> file.</p>
+
+<p>Let us look into the use of these different directories in our role.</p>
+
+<h4 id="defaults">Defaults:</h4>
+
+<p>The <em>defaults</em> directory is for defining the variable defaults. The variables in <em>default</em> have the lowest priority thus becoming easy to override. If definition of a variable is nowhere else, the variable in <em>defaults/main.yml</em> will be used.</p>
+
+<h4 id="files">Files:</h4>
+
+<p>We use the <em>files</em> directory to add files that are needed by machine, without modification. Mostly, we use copy task for referencing files in the <em>files</em> directory.</p>
+
+<h4 id="handlers">Handlers:</h4>
+
+<p>The <em>handlers</em> directory is used for storing Ansible handlers.</p>
+
+<p>A Handler is exactly the same as a Task, but it will run when called by another Task. A Handler will take an action when called by an event it listens for.
+This is useful for secondary actions that might be required after running a Task, such as starting a new service after installation or reloading a service after a configuration change.</p>
+
+<h4 id="meta">Meta:</h4>
+
+<p>We use the <em>meta</em> directory to store authorship information which is useful if we choose to publish our role on <em>galaxy.ansible.com</em>. The metadata of an Ansible role consists of author, supported platforms, and dependencies.</p>
+
+<h4 id="tasks">Tasks:</h4>
+
+<p>The <em>task</em> directory is where we write most of our roles which includes all the tasks our role will perform. We write each series of tasks in a separate file and include them into the <em>main.yml</em> file in the <em>tasks</em> directory.</p>
+
+<h4 id="templates">Templates:</h4>
+
+<p>We use the <em>template</em> directory to add templates which can create the required file by replacing the variables . Only difference between <em>template</em> and <em>files</em> directories is that the <em>template</em> directory contains files which can be modified basically the templates. <a href="https://jinja.palletsprojects.com/en/master/">Jinja2</a> language to used to create these alteration. Configuration files are basically the template files</p>
+
+<h4 id="tests">Tests:</h4>
+
+<p>This directory contains a sample inventory and a <em>test.yml</em> file. This may contain the tests that we can do before hand in this automation process .</p>
+
+<h4 id="vars">Vars:</h4>
+
+<p>This is where we create variable files that define necessary variables for our role.</p>
+
+<h2 id="hope-this-helps-you-out-and-thank-you-for-reading-this-blog-"><strong>Hope this helps you out and Thank you for reading this blog !!!!</strong></h2>
+</span>
+
+        
+
+        
+        <div class="share">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+        </div>
+        
+
+        
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            linux, Open source, Ansible, Devops, Automation
+          </small>
+        </div>
+        
+
+      </div>
+
+      
+      <div class="content-panel feedback">
+        I <i class="fa fa-heart"></i> feedback.<br />
+        Let me know what you think of this article on twitter <a href="http://www.twitter.com/manas_tech">@manas_tech</a> or leave a comment below!
+      </div>
+      
+
+      
+      <div class="content-panel comments">
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </div>
+      
+
+      
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+function disqus_config() { this.experiment.enable_scroll_container = true; }
+var disqus_shortname = "manas-kashyap-github-io"; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+
+      </div>
+    </div>
+
+    <div class="footer clearfix">
+  <div class="col-md-6">
+    Made with <i class="fa fa-heart"></i> by <a href="https://twitter.com/manas_tech">Manas Kashyap</a>
+  </div>
+  <div class="col-md-6">
+    &lt;/&gt; on <a href="https://github.com/Manas-kashyap">Github</a> &nbsp;<i class="fa fa-github-alt"></i>
+  </div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="/js/jquery.mmenu.min.all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $("#my-menu").mmenu().on( "closed.mm", function() {
+            $(".menu-button").show();
+         });
+      $(".menu-button").click(function() {
+        $(".menu-button").hide();
+        $("#my-menu").trigger("open.mm");
+      });
+   });
+</script>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20365477-4']);
+          _gaq.push(['_trackPageview']);
+  (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129067862-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129067862-1');
+</script>
+
+
+    
+    </body>
+</html>

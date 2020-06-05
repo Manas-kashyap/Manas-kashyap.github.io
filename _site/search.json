@@ -1,6 +1,22 @@
 [
   
   {
+    "title"    : "Ansible &amp; Ansible Roles",
+    "category" : "",
+    "tags"     : "linux, Open source, Ansible, Devops, Automation",
+    "url"      : "/jekyll/2020/05/31/Ansible-and-roles/",
+    "date"     : "2020-05-31 17:30:00 +0530"
+    } ,
+    
+  {
+    "title"    : "K8 Architecture",
+    "category" : "",
+    "tags"     : "linux, Open source, Devops, Kubernetes, K8",
+    "url"      : "/jekyll/2020/05/23/Kubernetes-Architecture/",
+    "date"     : "2020-05-23 17:30:00 +0530"
+    } ,
+    
+  {
     "title"    : "Deadly Linux Commands",
     "category" : "",
     "tags"     : "Dangerous, linux, Command Line, Basics",
