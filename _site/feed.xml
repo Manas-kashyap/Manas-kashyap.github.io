@@ -5,8 +5,8 @@
     <description>Senior DevOps Engineer</description>
     <link>https://Manas-kashyap.github.io/</link>
     <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Feb 2024 14:10:06 +0530</pubDate>
-    <lastBuildDate>Thu, 01 Feb 2024 14:10:06 +0530</lastBuildDate>
+    <pubDate>Thu, 01 Feb 2024 16:07:57 +0530</pubDate>
+    <lastBuildDate>Thu, 01 Feb 2024 16:07:57 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -176,15 +176,15 @@ This is useful for secondary actions that might be required after running a Task
 
 &lt;h3 id=&quot;faqs&quot;&gt;FAQs&lt;/h3&gt;
 
-&lt;h4 id=&quot;what-is-kubernetes-used-for&quot;&gt;What is Kubernetes used for?&lt;/h4&gt;
+&lt;h4 id=&quot;what-is-kubernetes-used-for&quot;&gt;&lt;u&gt;What is Kubernetes used for?&lt;/u&gt;&lt;/h4&gt;
 
 &lt;p&gt;Kubernetes keeps track of your container applications that are deployed into the cloud. It restarts orphaned containers, shuts down containers when they’re not being used, and automatically provisions resources like memory, storage, and CPU when necessary.&lt;/p&gt;
 
-&lt;h4 id=&quot;how-does-kubernetes-work-with-docker&quot;&gt;How does Kubernetes work with Docker?&lt;/h4&gt;
+&lt;h4 id=&quot;how-does-kubernetes-work-with-docker&quot;&gt;&lt;u&gt;How does Kubernetes work with Docker?&lt;/u&gt;&lt;/h4&gt;
 
 &lt;p&gt;Actually, Kubernetes supports several base container engines, and Docker is just one of them. The two technologies work great together, since Docker containers are an efficient way to distribute packaged applications, and Kubernetes is designed to coordinate and schedule those applications.&lt;/p&gt;
 
-&lt;h4 id=&quot;what-are-different-container-engines-supported-by-kubernetes-&quot;&gt;&lt;strong&gt;What are different Container Engines supported by Kubernetes ?&lt;/strong&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;what-are-different-container-engines-supported-by-kubernetes-&quot;&gt;&lt;u&gt;**What are different Container Engines supported by Kubernetes ?**&lt;/u&gt;&lt;/h4&gt;
 
 &lt;p&gt;Kubernetes supports several container runtimes: &lt;a href=&quot;https://docs.docker.com/engine/&quot;&gt;Docker&lt;/a&gt;, &lt;a href=&quot;https://containerd.io/docs/&quot;&gt;containerd&lt;/a&gt;, &lt;a href=&quot;https://cri-o.io/#what-is-cri-o&quot;&gt;CRI-O&lt;/a&gt;, and any implementation of the &lt;a href=&quot;https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md&quot;&gt;Kubernetes CRI (Container Runtime Interface)&lt;/a&gt;.&lt;/p&gt;
 
