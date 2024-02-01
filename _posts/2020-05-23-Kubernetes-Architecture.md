@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      K8 Architecture
+title:      K8s Architecture
 date:       2020-05-23 12:00:00
 author:     Manas kashyap
 summary:    Kubernetes Architecture
@@ -11,7 +11,7 @@ tags:
  - Open source
  - Devops
  - Kubernetes
- - K8
+ - K8s
 ---
 In this blog i am just pointing my learning about K8 architecture.. 
 
@@ -31,7 +31,7 @@ In this blog i am just pointing my learning about K8 architecture..
 
 **Kube-Controller-Manager:** It is generally responsible for handling the cluster level function such as replication controller. Whenever the desired state of the cluster changes it is written to Etcd and then the controller manager tries to bring up the cluster in the desired state.
 
-![Showing How a Kubernetes Master Node is Built Up](https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.45-AM.png)
+<!-- ![Showing How a Kubernetes Master Node is Built Up](https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.45-AM.png) -->
 
 ## Minion Node Architecture (**Kubernetes Worker Nodes**)
 
@@ -43,19 +43,19 @@ In this blog i am just pointing my learning about K8 architecture..
 
 **Flannel**: It is an overlay network that works on assigning  a range of subnet address. It is used to assign IPs to each pods running in the cluster and to make the  pod-to-pod  and pod-to-services communications.
 
-![The Process of Kubernetes Nodes and Pods](https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.58-AM.png)
+<!-- ![The Process of Kubernetes Nodes and Pods](https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.58-AM.png) -->
 
 ### FAQs
 
-#### What is Kubernetes used for?
+#### <u>What is Kubernetes used for?</u>
 
 Kubernetes keeps track of your container applications that are deployed into the cloud. It restarts orphaned containers, shuts down containers when they’re not being used, and automatically provisions resources like memory, storage, and CPU when necessary.
 
-#### How does Kubernetes work with Docker?
+#### <u>How does Kubernetes work with Docker?</u>
 
 Actually, Kubernetes supports several base container engines, and Docker is just one of them. The two technologies work great together, since Docker containers are an efficient way to distribute packaged applications, and Kubernetes is designed to coordinate and schedule those applications.
 
-#### **What are different Container Engines supported by Kubernetes ?**
+#### <u>**What are different Container Engines supported by Kubernetes ?**</u>
 
 Kubernetes supports several container runtimes: [Docker](https://docs.docker.com/engine/), [containerd](https://containerd.io/docs/), [CRI-O](https://cri-o.io/#what-is-cri-o), and any implementation of the [Kubernetes CRI (Container Runtime Interface)](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md).
 

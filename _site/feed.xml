@@ -5,8 +5,8 @@
     <description>Senior DevOps Engineer</description>
     <link>https://Manas-kashyap.github.io/</link>
     <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Feb 2024 13:42:24 +0530</pubDate>
-    <lastBuildDate>Thu, 01 Feb 2024 13:42:24 +0530</lastBuildDate>
+    <pubDate>Thu, 01 Feb 2024 14:10:06 +0530</pubDate>
+    <lastBuildDate>Thu, 01 Feb 2024 14:10:06 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -143,7 +143,7 @@ This is useful for secondary actions that might be required after running a Task
       </item>
     
       <item>
-        <title>K8 Architecture</title>
+        <title>K8s Architecture</title>
         <description>&lt;p&gt;In this blog i am just pointing my learning about K8 architecture..&lt;/p&gt;
 
 &lt;h1 id=&quot;kubernetes-architecture&quot;&gt;Kubernetes Architecture&lt;/h1&gt;
@@ -160,7 +160,7 @@ This is useful for secondary actions that might be required after running a Task
 
 &lt;p&gt;&lt;strong&gt;Kube-Controller-Manager:&lt;/strong&gt; It is generally responsible for handling the cluster level function such as replication controller. Whenever the desired state of the cluster changes it is written to Etcd and then the controller manager tries to bring up the cluster in the desired state.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.45-AM.png&quot; alt=&quot;Showing How a Kubernetes Master Node is Built Up&quot; /&gt;&lt;/p&gt;
+&lt;!-- ![Showing How a Kubernetes Master Node is Built Up](https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.45-AM.png) --&gt;
 
 &lt;h2 id=&quot;minion-node-architecture-kubernetes-worker-nodes&quot;&gt;Minion Node Architecture (&lt;strong&gt;Kubernetes Worker Nodes&lt;/strong&gt;)&lt;/h2&gt;
 
@@ -172,7 +172,7 @@ This is useful for secondary actions that might be required after running a Task
 
 &lt;p&gt;&lt;strong&gt;Flannel&lt;/strong&gt;: It is an overlay network that works on assigning  a range of subnet address. It is used to assign IPs to each pods running in the cluster and to make the  pod-to-pod  and pod-to-services communications.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.58-AM.png&quot; alt=&quot;The Process of Kubernetes Nodes and Pods&quot; /&gt;&lt;/p&gt;
+&lt;!-- ![The Process of Kubernetes Nodes and Pods](https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.58-AM.png) --&gt;
 
 &lt;h3 id=&quot;faqs&quot;&gt;FAQs&lt;/h3&gt;
 
@@ -204,7 +204,7 @@ This is useful for secondary actions that might be required after running a Task
         
         <category>Kubernetes</category>
         
-        <category>K8</category>
+        <category>K8s</category>
         
         
         <category>jekyll</category>

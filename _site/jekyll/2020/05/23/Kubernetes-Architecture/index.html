@@ -4,7 +4,7 @@
     <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>K8 Architecture</title>
+<title>K8s Architecture</title>
 <meta name="description" content="Senior DevOps Engineer">
 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -78,7 +78,7 @@
       </div>
       
 
-      <h1 class="header" itemprop="name">K8 Architecture</h1>
+      <h1 class="header" itemprop="name">K8s Architecture</h1>
 
       <div class="author">
         <small><i>
@@ -123,7 +123,7 @@
 
 <p><strong>Kube-Controller-Manager:</strong> It is generally responsible for handling the cluster level function such as replication controller. Whenever the desired state of the cluster changes it is written to Etcd and then the controller manager tries to bring up the cluster in the desired state.</p>
 
-<p><img src="https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.45-AM.png" alt="Showing How a Kubernetes Master Node is Built Up" /></p>
+<!-- ![Showing How a Kubernetes Master Node is Built Up](https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.45-AM.png) -->
 
 <h2 id="minion-node-architecture-kubernetes-worker-nodes">Minion Node Architecture (<strong>Kubernetes Worker Nodes</strong>)</h2>
 
@@ -135,19 +135,19 @@
 
 <p><strong>Flannel</strong>: It is an overlay network that works on assigning  a range of subnet address. It is used to assign IPs to each pods running in the cluster and to make the  pod-to-pod  and pod-to-services communications.</p>
 
-<p><img src="https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.58-AM.png" alt="The Process of Kubernetes Nodes and Pods" /></p>
+<!-- ![The Process of Kubernetes Nodes and Pods](https://kublr.com/wp-content/uploads/2017/09/Screen-Shot-2019-09-06-at-11.43.58-AM.png) -->
 
 <h3 id="faqs">FAQs</h3>
 
-<h4 id="what-is-kubernetes-used-for">What is Kubernetes used for?</h4>
+<h4 id="what-is-kubernetes-used-for"><u>What is Kubernetes used for?</u></h4>
 
 <p>Kubernetes keeps track of your container applications that are deployed into the cloud. It restarts orphaned containers, shuts down containers when they’re not being used, and automatically provisions resources like memory, storage, and CPU when necessary.</p>
 
-<h4 id="how-does-kubernetes-work-with-docker">How does Kubernetes work with Docker?</h4>
+<h4 id="how-does-kubernetes-work-with-docker"><u>How does Kubernetes work with Docker?</u></h4>
 
 <p>Actually, Kubernetes supports several base container engines, and Docker is just one of them. The two technologies work great together, since Docker containers are an efficient way to distribute packaged applications, and Kubernetes is designed to coordinate and schedule those applications.</p>
 
-<h4 id="what-are-different-container-engines-supported-by-kubernetes-"><strong>What are different Container Engines supported by Kubernetes ?</strong></h4>
+<h4 id="what-are-different-container-engines-supported-by-kubernetes-"><u>**What are different Container Engines supported by Kubernetes ?**</u></h4>
 
 <p>Kubernetes supports several container runtimes: <a href="https://docs.docker.com/engine/">Docker</a>, <a href="https://containerd.io/docs/">containerd</a>, <a href="https://cri-o.io/#what-is-cri-o">CRI-O</a>, and any implementation of the <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md">Kubernetes CRI (Container Runtime Interface)</a>.</p>
 
@@ -169,7 +169,7 @@
         <div class="tags">
           <small>
           <i class="fa fa-tags"></i>
-            linux, Open source, Devops, Kubernetes, K8
+            linux, Open source, Devops, Kubernetes, K8s
           </small>
         </div>
         
