@@ -15,6 +15,7 @@ tags:
  - Cloud
  - CI/CD 
 ---
+
 In this Blog, I will be sharing my experience and a look back of my journey as a DevOps Engineer and what i feel an aspiring DevOps Engineer should know about.
 
 # 20 Things Every Aspiring DevOps Engineer Should Know: Insights from My Journey
