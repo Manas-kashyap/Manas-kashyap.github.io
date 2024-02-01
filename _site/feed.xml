@@ -5,9 +5,9 @@
     <description>A Developer at building phase.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 05 Jun 2020 21:45:56 +0530</pubDate>
-    <lastBuildDate>Fri, 05 Jun 2020 21:45:56 +0530</lastBuildDate>
-    <generator>Jekyll v3.8.6</generator>
+    <pubDate>Thu, 01 Feb 2024 13:26:46 +0530</pubDate>
+    <lastBuildDate>Thu, 01 Feb 2024 13:26:46 +0530</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>Ansible &amp; Ansible Roles</title>
@@ -76,7 +76,7 @@ Ansible provides more than 450 modules for everyday tasks.&lt;/p&gt;
 
 &lt;p&gt;The built-in &lt;em&gt;ansible-galaxy&lt;/em&gt; command has a sub command that will create our role skeleton for us.&lt;/p&gt;
 
-&lt;p&gt;Simply use &lt;code class=&quot;highlighter-rouge&quot;&gt;ansible-galaxy init &lt;/code&gt; to create a new role in your present working directory. You will see here that several directories and files are created within the new role:&lt;/p&gt;
+&lt;p&gt;Simply use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ansible-galaxy init &lt;/code&gt; to create a new role in your present working directory. You will see here that several directories and files are created within the new role:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://linuxacademy.com/site-content/uploads/2019/05/roles11.png&quot; alt=&quot;Ansible Roles example&quot; /&gt;&lt;/p&gt;
 
@@ -217,29 +217,29 @@ This is useful for secondary actions that might be required after running a Task
 
 &lt;p&gt;So, let’s get started:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;rm -rf /&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;rm -rf /&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This command basically means “remove all files (even Read Only files) recursively in the root (top) directory” (can also be written as “shred -rf /)”&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;:(){:|:&amp;amp;};:&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;:(){:|:&amp;amp;};:&quot;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This command is known as a ‘Fork Bomb’. It operates by defining a function called ‘:’, which calls itself twice, once in the foreground and once in the background. It keeps on executing again and again till the system freezes.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;'command' &amp;gt; /dev/sda&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;&apos;command&apos; &amp;gt; /dev/sda&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This command writes the output of ‘command’ to the specified drive. This is considered deadly because it overwrites any data on the drive.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;mkfs.ext3 /dev/sda&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;mkfs.ext3 /dev/sda&quot;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This command is known as a format command. It will format the specified drive to an ext3 format, wiping everything on the drive.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;dd if=/dev/random of=/dev/sda&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;dd if=/dev/random of=/dev/sda&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This command writes random data onto the specified drive, and overwrites any data within that drive.
@@ -300,15 +300,15 @@ i suggest to use a server based container , of Debian unstable .&lt;/p&gt;
 
 &lt;p&gt;you can edit it too by going in &lt;strong&gt;/etc/lxc/default.conf&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.net.0.type = veth&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lxc.net.0.type = veth&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.apparmor.profile = generated&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lxc.apparmor.profile = generated&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.apparmor.allow_nesting = 1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lxc.apparmor.allow_nesting = 1&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.net.0.link = virbr0&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lxc.net.0.link = virbr0&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;lxc.net.0.flags = up&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lxc.net.0.flags = up&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Once lxc is configured you can download the unstable container using&lt;/p&gt;
 
@@ -324,19 +324,19 @@ i suggest to use a server based container , of Debian unstable .&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don’t need to panic , just do &lt;code class=&quot;highlighter-rouge&quot;&gt;lxc-update-config&lt;/code&gt;  and its done , the old configuration will change to new configuration .&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don’t need to panic , just do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lxc-update-config&lt;/code&gt;  and its done , the old configuration will change to new configuration .&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Once you are inside the container or the unstable server that you choose , 
-do the following &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get upgrade&lt;/code&gt;
+do the following &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get upgrade&lt;/code&gt;
 (assuming you are having the super user permission )&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;TIP :-  sometimes while doing apt-update and apt-upgrade in lxc container you will have the issue of not connecting with deb.debian.org , i faced this issue , this is because of sources.list permissions , change the permission of the file using &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod o+r /etc/apt/sources.list&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TIP :-  sometimes while doing apt-update and apt-upgrade in lxc container you will have the issue of not connecting with deb.debian.org , i faced this issue , this is because of sources.list permissions , change the permission of the file using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod o+r /etc/apt/sources.list&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Now the task is to add &lt;a href=&quot;https://www.debian.org/doc/debian-policy/ch-archive#s-contrib&quot;&gt;contrib&lt;/a&gt; section in the sources.list . 
-Now your sources.list will look like this if you do &lt;code class=&quot;highlighter-rouge&quot;&gt;cat /etc/apt/sources.list&lt;/code&gt;&lt;/li&gt;
+Now your sources.list will look like this if you do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat /etc/apt/sources.list&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;deb http://deb.debian.org/debian unstable main contrib non-free&lt;/strong&gt;&lt;/p&gt;
@@ -347,21 +347,21 @@ Now your sources.list will look like this if you do &lt;code class=&quot;highlig
   &lt;li&gt;Now let’s install the &lt;a href=&quot;https://tracker.debian.org/pkg/gitlab&quot;&gt;gitlab&lt;/a&gt; package .&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get install upgrade&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt-get update &amp;amp;&amp;amp; apt-get install upgrade&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get install gitlab&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt-get install gitlab&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;The installation is big and will take time so be patient&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;When it will be installing it will ask for some config questions , the questions are self explanatory and will tell you what to enter and it has example of it , i run gitlab instance in my local system , so i have named the gitlab instance as gitlab.lxc (while they ask you , you can give any name like git.yourname.com , it all depends on the domain name you buy for this) and i used local host for database configuration well they give you an option of new host where you can enter the database configuration of the other database system you are using . 
 And then it will run a few check and it will be done&lt;/p&gt;
 
-&lt;p&gt;you can check the status of Gitlab using &lt;code class=&quot;highlighter-rouge&quot;&gt;systemctl status gitlab.service&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;you can check the status of Gitlab using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systemctl status gitlab.service&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Now as this Gitlab instance is installed on the container system , we have to update the host of the container and also the systems where you want to see this gitlab instance running to resolve the git.yourusername.com 
 you can view the container ip address using ip a 
 and add that ip address in /etc/hosts of the container as well as in the systems to resolve the gitlab instance name . 
-&lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.122.104 gitlab.lxc&lt;/code&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;192.168.122.104 gitlab.lxc&lt;/code&gt;
  Change ip address and the name of the gitlab instance you gave&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;We are updating the containers host too because when we will try to setup gitlab runner , it cant resolve the instance gitlab name , so we are setting it up .&lt;/em&gt;&lt;/p&gt;
@@ -372,7 +372,7 @@ and add that ip address in /etc/hosts of the container as well as in the systems
 
 &lt;p&gt;But you can login to the system with the registered ID and password , and create your project , but till now we haven’t setup a runner to run any Gitlab CI , CD process so , we will do it with the help of &lt;a href=&quot;https://tracker.debian.org/pkg/gitlab-runner&quot;&gt;gitlab-runner&lt;/a&gt; package available .&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get install gitlab-ci-multi-runner&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt-get install gitlab-ci-multi-runner&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;it will install the runner .&lt;/p&gt;
 
@@ -385,9 +385,9 @@ and add that ip address in /etc/hosts of the container as well as in the systems
 &lt;h1 id=&quot;granting-an-existing-user-admin-access&quot;&gt;&lt;strong&gt;Granting an existing user admin access&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;The steps involve dropping into rails console as gitlab user for production environment and running the following commands.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ runuser -u gitlab -- sh -c 'cd /usr/share/gitlab &amp;amp;&amp;amp; . /etc/gitlab/gitlab-debian.conf &amp;amp;&amp;amp; export DB RAILS_ENV &amp;amp;&amp;amp; bundle exec rails console production'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ runuser -u gitlab -- sh -c &apos;cd /usr/share/gitlab &amp;amp;&amp;amp; . /etc/gitlab/gitlab-debian.conf &amp;amp;&amp;amp; export DB RAILS_ENV &amp;amp;&amp;amp; bundle exec rails console production&apos;
 
-irb(main):001:0&amp;gt; user = User.find_by(email: 'useraddress@domain')
+irb(main):001:0&amp;gt; user = User.find_by(email: &apos;useraddress@domain&apos;)
 
 irb(main):003:0&amp;gt; user.admin=true
 
@@ -437,10 +437,10 @@ irb(main):004:0&amp;gt; user.save
 
     &lt;p&gt;enter whatever you want , i personally suggest docker in this case .&lt;/p&gt;
 
-    &lt;p&gt;&lt;strong&gt;Tip :- In Debian unstable there is a docker package , on the name of docker.io , install it using &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get install docker.io&lt;/code&gt; , before proceeding with the CI testing from the gitlab instance&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Tip :- In Debian unstable there is a docker package , on the name of docker.io , install it using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apt-get install docker.io&lt;/code&gt; , before proceeding with the CI testing from the gitlab instance&lt;/strong&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;If you chose Docker as your executor, you’ll be asked for the default image to be used for projects that do not define one in &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt;:&lt;/p&gt;
+    &lt;p&gt;If you chose Docker as your executor, you’ll be asked for the default image to be used for projects that do not define one in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitlab-ci.yml&lt;/code&gt;:&lt;/p&gt;
 
     &lt;p&gt;Please enter the Docker image (eg. ruby:2.1):
  alpine:latest&lt;/p&gt;
@@ -649,13 +649,13 @@ The aim of packaging is to allow the automation of installing, upgrading, config
 &lt;p&gt;&lt;strong&gt;&lt;u&gt;Now , we need tools to work with&lt;/u&gt;&lt;/strong&gt; &lt;strong&gt;:-&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Install packaging tools inside the container
-&lt;code class=&quot;highlighter-rouge&quot;&gt;# apt-get install dh-make&lt;/code&gt; OR
-&lt;code class=&quot;highlighter-rouge&quot;&gt;# apt-get install gem2deb&lt;/code&gt; OR
-&lt;code class=&quot;highlighter-rouge&quot;&gt;# apt-get install npm2deb&lt;/code&gt; as required.&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;# apt-get install dh-make&lt;/code&gt; OR
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;# apt-get install gem2deb&lt;/code&gt; OR
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;# apt-get install npm2deb&lt;/code&gt; as required.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# apt-get install git-buildpackage sbuild dh-buildinfo quilt lintian&lt;/code&gt; these packages are must to be installed.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;# apt-get install git-buildpackage sbuild dh-buildinfo quilt lintian&lt;/code&gt; these packages are must to be installed.&lt;/p&gt;
 
-&lt;p&gt;For Nodejs modules, use &lt;code class=&quot;highlighter-rouge&quot;&gt;npm2deb&lt;/code&gt;; for ruby gems, use &lt;code class=&quot;highlighter-rouge&quot;&gt;gem2deb&lt;/code&gt;; for go packages, use &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make-golang&lt;/code&gt;. If there is no tool specific to a language, &lt;code class=&quot;highlighter-rouge&quot;&gt;dh-make&lt;/code&gt; can be used as a generic tool for any language.&lt;/p&gt;
+&lt;p&gt;For Nodejs modules, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm2deb&lt;/code&gt;; for ruby gems, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem2deb&lt;/code&gt;; for go packages, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dh-make-golang&lt;/code&gt;. If there is no tool specific to a language, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dh-make&lt;/code&gt; can be used as a generic tool for any language.&lt;/p&gt;
 
 &lt;h3 id=&quot;still-having-an-issue-with-setting-up-things-&quot;&gt;Still having an issue with setting up things ?&lt;/h3&gt;
 
@@ -680,11 +680,11 @@ The aim of packaging is to allow the automation of installing, upgrading, config
 &lt;p&gt;Install a text editor (I like vim , for installation run sudo apt install vim ) and
 update .bashrc of docker container with the following environment variables&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export DEBEMAIL=your@email.domain
-export DEBFULLNAME='Your Name'
-alias lintian='lintian -iIEcv --pedantic --color auto'
-alias git-import-dsc='git-import-dsc --author-is-committer --pristine-tar'
-alias clean='fakeroot debian/rules clean'
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export DEBEMAIL=your@email.domain
+export DEBFULLNAME=&apos;Your Name&apos;
+alias lintian=&apos;lintian -iIEcv --pedantic --color auto&apos;
+alias git-import-dsc=&apos;git-import-dsc --author-is-committer --pristine-tar&apos;
+alias clean=&apos;fakeroot debian/rules clean&apos;
 export LANG=C.UTF-8
 export LC_ALL=C.UTF-8
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -692,7 +692,7 @@ export LC_ALL=C.UTF-8
 &lt;p&gt;Command ls -la shows the hidden .bashrc file , to edit with vim do vim .bashrc and
 add the above and the very end , update your current environment by running&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source ~/.bashrc
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source ~/.bashrc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;vim tips&lt;/strong&gt;
@@ -708,7 +708,7 @@ add the above and the very end , update your current environment by running&lt;/
 
 &lt;p&gt;1) Check depedency use npm2deb depends&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb depends -b -r qw
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb depends -b -r qw
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Module qw has no dependencies.&lt;/em&gt;
@@ -716,7 +716,7 @@ add the above and the very end , update your current environment by running&lt;/
 
 &lt;p&gt;2) Search for existing work using npm2deb search&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb search qw
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb search qw
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Looking for similiar package:&lt;/em&gt;&lt;/p&gt;
@@ -735,7 +735,7 @@ add the above and the very end , update your current environment by running&lt;/
 
 &lt;p&gt;3) Preview more info using npm2deb view&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb view qw
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb view qw
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Version: 1.0.1&lt;/em&gt;&lt;/p&gt;
@@ -756,7 +756,7 @@ add the above and the very end , update your current environment by running&lt;/
 
 &lt;p&gt;npm2deb fails to do it completely ,our job is to fix those error which is shown by the prefix FIX_ME&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb create qw
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ npm2deb create qw
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;‘You may want fix first these issues:&lt;/p&gt;
@@ -790,7 +790,7 @@ node- qw_1.0.1-1_amd64.changes node-qw_itp.mail&lt;/p&gt;
 
 &lt;p&gt;5) Import package to git&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gbp import-dsc --pristine-tar node-qw_1.0.1-1.dsc
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ gbp import-dsc --pristine-tar node-qw_1.0.1-1.dsc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;now we get a new dir called node-qw which is git tracked , cd into the new created dir node-qw and see git branch and git tag&lt;/p&gt;
@@ -829,7 +829,7 @@ node- qw_1.0.1-1_amd64.changes node-qw_itp.mail&lt;/p&gt;
 
 &lt;p&gt;LICENSE README.md debian package.json qw.js test&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/qw/node-qw$ dpkg-buildpackage &amp;amp;&amp;amp; lintian ../node-qw_1.0.1-1.dsc
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/qw/node-qw$ dpkg-buildpackage &amp;amp;&amp;amp; lintian ../node-qw_1.0.1-1.dsc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;lintian points out the errors we need to fix&lt;/p&gt;
@@ -854,7 +854,7 @@ node- qw_1.0.1-1_amd64.changes node-qw_itp.mail&lt;/p&gt;
 
 &lt;p&gt;8) Enable tests if present any , find the test command from package.json&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ cat package.json
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ cat package.json
 
   {
   &quot;name&quot;: &quot;qw&quot;,
@@ -875,7 +875,7 @@ node- qw_1.0.1-1_amd64.changes node-qw_itp.mail&lt;/p&gt;
 
 &lt;p&gt;add the test command under override_dh_auto_test from debian/rules&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;override_dh_auto_test:
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;override_dh_auto_test:
 
  tap -J test/*.js
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -896,7 +896,7 @@ node- qw_1.0.1-1_amd64.changes node-qw_itp.mail&lt;/p&gt;
 
 &lt;p&gt;add a Test-Command section to debian/tests/control&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat tests/control
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat tests/control
   Tests: require
   Depends: node-qw
   Test-Command: tap -J test/*.js
@@ -919,19 +919,19 @@ node- qw_1.0.1-1_amd64.changes node-qw_itp.mail&lt;/p&gt;
 
 &lt;p&gt;10) Clean build with sbuild&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo sbuild-adduser $LOGNAME
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo sbuild-adduser $LOGNAME
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;… &lt;em&gt;logout&lt;/em&gt; and &lt;em&gt;re-login&lt;/em&gt; or use &lt;code class=&quot;highlighter-rouge&quot;&gt;newgrp sbuild&lt;/code&gt; in your current shell$ sudo sbuild-createchroot –include=eatmydata,ccache,gnupg unstable&lt;/p&gt;
+&lt;p&gt;… &lt;em&gt;logout&lt;/em&gt; and &lt;em&gt;re-login&lt;/em&gt; or use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newgrp sbuild&lt;/code&gt; in your current shell$ sudo sbuild-createchroot –include=eatmydata,ccache,gnupg unstable&lt;/p&gt;
 
 &lt;p&gt;/srv/chroot/unstable-amd64-sbuild http://deb.debian.org/debian&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo sbuild -A -d unstable ../node-qw_1.0.1-1.dsc
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ sudo sbuild -A -d unstable ../node-qw_1.0.1-1.dsc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;11)Install deb package&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  apt-get install autopkgtest
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  apt-get install autopkgtest
   dpkg -i ../node-qw_1.0.1-1_all.deb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 

@@ -140,15 +140,15 @@ i suggest to use a server based container , of Debian unstable .</p>
 
 <p>you can edit it too by going in <strong>/etc/lxc/default.conf</strong></p>
 
-<p><code class="highlighter-rouge">lxc.net.0.type = veth</code></p>
+<p><code class="language-plaintext highlighter-rouge">lxc.net.0.type = veth</code></p>
 
-<p><code class="highlighter-rouge">lxc.apparmor.profile = generated</code></p>
+<p><code class="language-plaintext highlighter-rouge">lxc.apparmor.profile = generated</code></p>
 
-<p><code class="highlighter-rouge">lxc.apparmor.allow_nesting = 1</code></p>
+<p><code class="language-plaintext highlighter-rouge">lxc.apparmor.allow_nesting = 1</code></p>
 
-<p><code class="highlighter-rouge">lxc.net.0.link = virbr0</code></p>
+<p><code class="language-plaintext highlighter-rouge">lxc.net.0.link = virbr0</code></p>
 
-<p><code class="highlighter-rouge">lxc.net.0.flags = up</code></p>
+<p><code class="language-plaintext highlighter-rouge">lxc.net.0.flags = up</code></p>
 
 <p>Once lxc is configured you can download the unstable container using</p>
 
@@ -164,19 +164,19 @@ i suggest to use a server based container , of Debian unstable .</p>
 
 <hr />
 
-<p><strong>TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don’t need to panic , just do <code class="highlighter-rouge">lxc-update-config</code>  and its done , the old configuration will change to new configuration .</strong></p>
+<p><strong>TIP :-  sometimes while searching for this configuration , you will found terms like , lxc.network.type , those are old lxc terms , if you are using lxc 2.1 or above the terms change to lxc.net.0 and else , if you have been using old lxc and update to new one and configuration fails , you don’t need to panic , just do <code class="language-plaintext highlighter-rouge">lxc-update-config</code>  and its done , the old configuration will change to new configuration .</strong></p>
 
 <ul>
   <li>Once you are inside the container or the unstable server that you choose , 
-do the following <code class="highlighter-rouge">apt-get update &amp;&amp; apt-get upgrade</code>
+do the following <code class="language-plaintext highlighter-rouge">apt-get update &amp;&amp; apt-get upgrade</code>
 (assuming you are having the super user permission )</li>
 </ul>
 
-<p><strong>TIP :-  sometimes while doing apt-update and apt-upgrade in lxc container you will have the issue of not connecting with deb.debian.org , i faced this issue , this is because of sources.list permissions , change the permission of the file using <code class="highlighter-rouge">chmod o+r /etc/apt/sources.list</code></strong></p>
+<p><strong>TIP :-  sometimes while doing apt-update and apt-upgrade in lxc container you will have the issue of not connecting with deb.debian.org , i faced this issue , this is because of sources.list permissions , change the permission of the file using <code class="language-plaintext highlighter-rouge">chmod o+r /etc/apt/sources.list</code></strong></p>
 
 <ul>
   <li>Now the task is to add <a href="https://www.debian.org/doc/debian-policy/ch-archive#s-contrib">contrib</a> section in the sources.list . 
-Now your sources.list will look like this if you do <code class="highlighter-rouge">cat /etc/apt/sources.list</code></li>
+Now your sources.list will look like this if you do <code class="language-plaintext highlighter-rouge">cat /etc/apt/sources.list</code></li>
 </ul>
 
 <p><strong>deb http://deb.debian.org/debian unstable main contrib non-free</strong></p>
@@ -187,21 +187,21 @@ Now your sources.list will look like this if you do <code class="highlighter-rou
   <li>Now let’s install the <a href="https://tracker.debian.org/pkg/gitlab">gitlab</a> package .</li>
 </ul>
 
-<p><code class="highlighter-rouge">apt-get update &amp;&amp; apt-get install upgrade</code></p>
+<p><code class="language-plaintext highlighter-rouge">apt-get update &amp;&amp; apt-get install upgrade</code></p>
 
-<p><code class="highlighter-rouge">apt-get install gitlab</code></p>
+<p><code class="language-plaintext highlighter-rouge">apt-get install gitlab</code></p>
 
 <p><strong>The installation is big and will take time so be patient</strong></p>
 
 <p>When it will be installing it will ask for some config questions , the questions are self explanatory and will tell you what to enter and it has example of it , i run gitlab instance in my local system , so i have named the gitlab instance as gitlab.lxc (while they ask you , you can give any name like git.yourname.com , it all depends on the domain name you buy for this) and i used local host for database configuration well they give you an option of new host where you can enter the database configuration of the other database system you are using . 
 And then it will run a few check and it will be done</p>
 
-<p>you can check the status of Gitlab using <code class="highlighter-rouge">systemctl status gitlab.service</code></p>
+<p>you can check the status of Gitlab using <code class="language-plaintext highlighter-rouge">systemctl status gitlab.service</code></p>
 
 <p>Now as this Gitlab instance is installed on the container system , we have to update the host of the container and also the systems where you want to see this gitlab instance running to resolve the git.yourusername.com 
 you can view the container ip address using ip a 
 and add that ip address in /etc/hosts of the container as well as in the systems to resolve the gitlab instance name . 
-<code class="highlighter-rouge">192.168.122.104 gitlab.lxc</code>
+<code class="language-plaintext highlighter-rouge">192.168.122.104 gitlab.lxc</code>
  Change ip address and the name of the gitlab instance you gave</p>
 
 <p><em>We are updating the containers host too because when we will try to setup gitlab runner , it cant resolve the instance gitlab name , so we are setting it up .</em></p>
@@ -212,7 +212,7 @@ and add that ip address in /etc/hosts of the container as well as in the systems
 
 <p>But you can login to the system with the registered ID and password , and create your project , but till now we haven’t setup a runner to run any Gitlab CI , CD process so , we will do it with the help of <a href="https://tracker.debian.org/pkg/gitlab-runner">gitlab-runner</a> package available .</p>
 
-<p><code class="highlighter-rouge">apt-get install gitlab-ci-multi-runner</code></p>
+<p><code class="language-plaintext highlighter-rouge">apt-get install gitlab-ci-multi-runner</code></p>
 
 <p>it will install the runner .</p>
 
@@ -225,7 +225,7 @@ and add that ip address in /etc/hosts of the container as well as in the systems
 <h1 id="granting-an-existing-user-admin-access"><strong>Granting an existing user admin access</strong></h1>
 <p><em>The steps involve dropping into rails console as gitlab user for production environment and running the following commands.</em></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ runuser -u gitlab -- sh -c 'cd /usr/share/gitlab &amp;&amp; . /etc/gitlab/gitlab-debian.conf &amp;&amp; export DB RAILS_ENV &amp;&amp; bundle exec rails console production'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ runuser -u gitlab -- sh -c 'cd /usr/share/gitlab &amp;&amp; . /etc/gitlab/gitlab-debian.conf &amp;&amp; export DB RAILS_ENV &amp;&amp; bundle exec rails console production'
 
 irb(main):001:0&gt; user = User.find_by(email: 'useraddress@domain')
 
@@ -277,10 +277,10 @@ irb(main):004:0&gt; user.save
 
     <p>enter whatever you want , i personally suggest docker in this case .</p>
 
-    <p><strong>Tip :- In Debian unstable there is a docker package , on the name of docker.io , install it using <code class="highlighter-rouge">apt-get install docker.io</code> , before proceeding with the CI testing from the gitlab instance</strong></p>
+    <p><strong>Tip :- In Debian unstable there is a docker package , on the name of docker.io , install it using <code class="language-plaintext highlighter-rouge">apt-get install docker.io</code> , before proceeding with the CI testing from the gitlab instance</strong></p>
   </li>
   <li>
-    <p>If you chose Docker as your executor, you’ll be asked for the default image to be used for projects that do not define one in <code class="highlighter-rouge">.gitlab-ci.yml</code>:</p>
+    <p>If you chose Docker as your executor, you’ll be asked for the default image to be used for projects that do not define one in <code class="language-plaintext highlighter-rouge">.gitlab-ci.yml</code>:</p>
 
     <p>Please enter the Docker image (eg. ruby:2.1):
  alpine:latest</p>

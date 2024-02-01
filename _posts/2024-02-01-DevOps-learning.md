@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      20 Things to know about DevOps
-date:       2018-11-04 20:00:00
+date:       2024-02-01 14:00:00
 author:     Manas kashyap
 summary:    It's a summary of what i feel a aspiring DevOps Engineer should know
 categories: jekyll
