@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manas Kashyap</title>
-    <description>A Developer at building phase.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Feb 2024 13:31:33 +0530</pubDate>
-    <lastBuildDate>Thu, 01 Feb 2024 13:31:33 +0530</lastBuildDate>
+    <description>Senior DevOps Engineer</description>
+    <link>https://Manas-kashyap.github.io/</link>
+    <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 01 Feb 2024 13:37:40 +0530</pubDate>
+    <lastBuildDate>Thu, 01 Feb 2024 13:37:40 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -124,8 +124,8 @@ This is useful for secondary actions that might be required after running a Task
 &lt;h2 id=&quot;hope-this-helps-you-out-and-thank-you-for-reading-this-blog-&quot;&gt;&lt;strong&gt;Hope this helps you out and Thank you for reading this blog !!!!&lt;/strong&gt;&lt;/h2&gt;
 </description>
         <pubDate>Sun, 31 May 2020 17:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2020/05/31/Ansible-and-roles/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2020/05/31/Ansible-and-roles/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2020/05/31/Ansible-and-roles/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2020/05/31/Ansible-and-roles/</guid>
         
         <category>linux</category>
         
@@ -193,8 +193,8 @@ This is useful for secondary actions that might be required after running a Task
 &lt;p&gt;If you’re interested in trying Kubernetes out, you can install &lt;a href=&quot;https://kubernetes.io/docs/tutorials/hello-minikube/&quot;&gt;Minikube&lt;/a&gt; as a local testing environment or even make LXC containers to form a cluster if you have a really nice system.. When you’re ready to try Kubernetes out for real, you’ll use &lt;a href=&quot;https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/&quot;&gt;kubectl&lt;/a&gt; to deploy your application managed by Kubernetes.&lt;/p&gt;
 </description>
         <pubDate>Sat, 23 May 2020 17:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2020/05/23/Kubernetes-Architecture/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2020/05/23/Kubernetes-Architecture/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2020/05/23/Kubernetes-Architecture/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2020/05/23/Kubernetes-Architecture/</guid>
         
         <category>linux</category>
         
@@ -249,8 +249,8 @@ These are a few of the many deadly commands for Linux.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 01 Mar 2020 05:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2020/03/01/Deadly-Linux-commands/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2020/03/01/Deadly-Linux-commands/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2020/03/01/Deadly-Linux-commands/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2020/03/01/Deadly-Linux-commands/</guid>
         
         <category>Dangerous</category>
         
@@ -459,8 +459,8 @@ irb(main):004:0&amp;gt; user.save
 
 </description>
         <pubDate>Sat, 15 Jun 2019 01:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2019/06/15/Basics-of-gitlab-installation/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2019/06/15/Basics-of-gitlab-installation/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2019/06/15/Basics-of-gitlab-installation/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2019/06/15/Basics-of-gitlab-installation/</guid>
         
         <category>Gitlab</category>
         
@@ -542,8 +542,8 @@ Hope it helps you in getting the answers that you are thinking now .&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 14 Nov 2018 03:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/14/Which-Linux-OS-to-use/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/14/Which-Linux-OS-to-use/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/14/Which-Linux-OS-to-use/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/14/Which-Linux-OS-to-use/</guid>
         
         <category>linux</category>
         
@@ -954,8 +954,8 @@ Helped me to be part of communities and gave me opportunities to get mentored by
 
 </description>
         <pubDate>Sun, 11 Nov 2018 15:00:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/11/Basic-Guide-for-Debian-Packaging/</guid>
         
         <category>linux</category>
         
@@ -1036,8 +1036,8 @@ Use &lt;strong&gt;rmdir&lt;/strong&gt; to delete a directory. But &lt;em&gt;rmdi
 
 </description>
         <pubDate>Tue, 06 Nov 2018 17:10:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/Basic-Linux-Commands-1/</guid>
         
         <category>linux</category>
         
@@ -1094,8 +1094,8 @@ so , to run and setup things , we will use command &lt;em&gt;“chmod +x start-t
 
 </description>
         <pubDate>Tue, 06 Nov 2018 01:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/06/How-to-install-tor-browser-in-linux/</guid>
         
         <category>Proxy</category>
         
@@ -1153,8 +1153,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Mon, 05 Nov 2018 01:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
         
         <category>linux</category>
         
@@ -1199,8 +1199,8 @@ This blog is just to let you know yeah, you all are not alone who are starting w
 
 </description>
         <pubDate>Sat, 03 Nov 2018 17:30:00 +0530</pubDate>
-        <link>http://localhost:4000/jekyll/2018/11/03/Why-linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2018/11/03/Why-linux/</guid>
+        <link>https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</guid>
         
         <category>linux</category>
         
