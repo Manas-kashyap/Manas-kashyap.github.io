@@ -1,6 +1,14 @@
 [
   
   {
+    "title"    : "DevOps Insights || Learnings from 4 Years in the Field",
+    "category" : "",
+    "tags"     : "linux, Open source, Journey, A look back, DevOps, Cloud, CI/CD",
+    "url"      : "/jekyll/2024/02/01/DevOps-learning/",
+    "date"     : "2024-02-01 19:30:00 +0530"
+    } ,
+    
+  {
     "title"    : "Ansible &amp; Ansible Roles",
     "category" : "",
     "tags"     : "linux, Open source, Ansible, Devops, Automation",

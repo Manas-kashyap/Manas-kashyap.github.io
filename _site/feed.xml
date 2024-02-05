@@ -5,9 +5,92 @@
     <description>Senior DevOps Engineer</description>
     <link>https://Manas-kashyap.github.io/</link>
     <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 01 Feb 2024 16:07:57 +0530</pubDate>
-    <lastBuildDate>Thu, 01 Feb 2024 16:07:57 +0530</lastBuildDate>
+    <pubDate>Mon, 05 Feb 2024 14:34:55 +0530</pubDate>
+    <lastBuildDate>Mon, 05 Feb 2024 14:34:55 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>DevOps Insights || Learnings from 4 Years in the Field</title>
+        <description>&lt;p&gt;Hey there! If you’re in college and dreaming of becoming a DevOps Engineer, then guess what? This blog is tailor-made just for you!&lt;/p&gt;
+
+&lt;p&gt;Imagine this: you’re sitting in your dorm room or library, flipping through textbooks, wondering where to start on your DevOps journey. Well, you’re in luck because I’ve been there, done that, and I’m here to guide you through it all.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;On January 20th, 2024, I celebrated a significant milestone in my career as a DevOps Engineer—I completed four years in this exciting field! So, I&apos;m not just talking the talk I&apos;ve walked the walk.&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As I reflect on my journey as a DevOps engineer, I’ve encountered various experiences that have shaped my understanding and approach to this dynamic field. Here are 10 essential things I’ve learned along the way, infused with personal insights and principles:&lt;/p&gt;
+
+&lt;h1 id=&quot;10-things-every-aspiring-devops-engineer-should-know-insights-from-my-journey&quot;&gt;10 Things Every Aspiring DevOps Engineer Should Know: Insights from My Journey&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-embrace-the-devops-philosophy&quot;&gt;1. Embrace the DevOps Philosophy&lt;/h2&gt;
+
+&lt;p&gt;Embracing DevOps isn’t just about adopting new tools; it’s about fostering a culture of collaboration, transparency, and continuous improvement. Remember, it’s not just about the code; it’s about the people and processes behind it.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-dive-deep-into-version-control-systems&quot;&gt;2. Dive Deep into Version Control Systems&lt;/h2&gt;
+
+&lt;p&gt;Version control systems like Git have been my faithful companions throughout my DevOps journey. Understanding Git isn’t just about mastering commands; it’s about appreciating the power of collaboration and version history in software development.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-automation-is-the-key-master-cicd-pipelines&quot;&gt;3. Automation is the Key (Master CI/CD Pipelines)&lt;/h2&gt;
+
+&lt;p&gt;Automation has been the cornerstone of my DevOps practices. From automating repetitive tasks to orchestrating complex workflows, automation frees up time for innovation and ensures consistency across environments.&lt;/p&gt;
+
+&lt;p&gt;Continuous Integration and Continuous Delivery (CI/CD) pipelines are the arteries of modern software development. Learning to build robust pipelines isn’t just about configuring tools; it’s about fostering a culture of rapid feedback and iteration.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-embrace-the-power-of-monitoring-and-logging&quot;&gt;4. Embrace the Power of Monitoring and Logging&lt;/h2&gt;
+
+&lt;p&gt;Monitoring and logging tools provide invaluable insights into system health and performance. Dive deep into monitoring not just to detect issues but to anticipate and prevent them before they impact users.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-security-is-everyones-responsibility&quot;&gt;5. Security is Everyone’s Responsibility&lt;/h2&gt;
+
+&lt;p&gt;Security isn’t just the concern of dedicated teams; it’s everyone’s responsibility. Prioritise security not just as a checklist item but as a fundamental aspect of your DevOps culture and practices.&lt;/p&gt;
+
+&lt;h2 id=&quot;6-learn-from-failure-and-iterate&quot;&gt;6. Learn from Failure and Iterate&lt;/h2&gt;
+
+&lt;p&gt;Failure isn’t a sign of weakness it’s an opportunity for growth. Embrace failure not just as a learning experience but as a catalyst for innovation and improvement.&lt;/p&gt;
+
+&lt;h2 id=&quot;7-document-document-document&quot;&gt;7. Document, Document, Document&lt;/h2&gt;
+
+&lt;p&gt;Documentation isn’t just an afterthought it’s a critical component of effective communication and knowledge sharing. Invest time in documenting processes, configurations, and best practices to empower your team and future colleagues.&lt;/p&gt;
+
+&lt;h2 id=&quot;8-disaster-recovery-is-essential&quot;&gt;8. Disaster Recovery is Essential&lt;/h2&gt;
+
+&lt;p&gt;Disaster recovery isn’t a luxury; it’s a necessity. Prioritise disaster recovery not just as a contingency plan but as a proactive strategy to safeguard your organization’s assets and reputation.&lt;/p&gt;
+
+&lt;h2 id=&quot;9-networking-fundamentals-matter&quot;&gt;9. Networking Fundamentals Matter&lt;/h2&gt;
+
+&lt;p&gt;Networking fundamentals provide the backbone of modern infrastructure. Invest time in understanding networking concepts not just for troubleshooting but for designing resilient and scalable architectures.&lt;/p&gt;
+
+&lt;h2 id=&quot;10-continuous-learning-and-adaptability&quot;&gt;10. Continuous Learning and Adaptability&lt;/h2&gt;
+
+&lt;p&gt;The world of DevOps is vast and ever-evolving, with endless opportunities for exploration and discovery. Aspiring engineers should cultivate a mindset of continuous learning, stay updated with industry trends, and adapt to changing requirements and challenges.&lt;/p&gt;
+
+&lt;p&gt;Above all, stay curious and keep learning.  Embrace each new challenge as an opportunity to expand your horizons and push the boundaries of what’s possible.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;hope-this-helps-you-out-and-thank-you-for-reading-this-blog-&quot;&gt;&lt;strong&gt;Hope this helps you out and Thank you for reading this blog !!!!&lt;/strong&gt;&lt;/h2&gt;
+</description>
+        <pubDate>Thu, 01 Feb 2024 19:30:00 +0530</pubDate>
+        <link>https://Manas-kashyap.github.io/jekyll/2024/02/01/DevOps-learning/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2024/02/01/DevOps-learning/</guid>
+        
+        <category>linux</category>
+        
+        <category>Open source</category>
+        
+        <category>Journey</category>
+        
+        <category>A look back</category>
+        
+        <category>DevOps</category>
+        
+        <category>Cloud</category>
+        
+        <category>CI/CD</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Ansible &amp; Ansible Roles</title>
@@ -1163,48 +1246,6 @@ This blog is just to let you know yeah, you all are not alone who are starting w
         <category>Journey</category>
         
         <category>A look back</category>
-        
-        
-        <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Why Linux</title>
-        <description>&lt;p&gt;In this Blog, I am going to answer some questions over Linux and also state why I use them.&lt;/p&gt;
-
-&lt;p&gt;Linux is best known as the most used open source operating system.&lt;/p&gt;
-
-&lt;p&gt;We use the term “Linux” to refer to the Linux kernel, but also the set of programs, tools, and services that are typically bundled together with the Linux kernel to provide all of the necessary components of a fully functional operating system.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-i-should-use-linux-over-windows&quot;&gt;Why I should use Linux over windows&lt;/h2&gt;
-
-&lt;p&gt;Well i started using Linux because , first of all its &lt;a href=&quot;https://whatis.techtarget.com/definition/open-source&quot;&gt;open source&lt;/a&gt; , secondly at that time when I started using Linux is , I had an old laptop Compaq 621, with 2gb ram and intel core duo , I wanted to use new software but my laptop was 32 bit and was a not great supporter of many software, so at that time one of my friends told me to use Linux as its a lightweight OS and to my amaze it was running efficiently on my old laptop and with ease.&lt;/p&gt;
-
-&lt;p&gt;One more reason behind my usage of Linux journey was the new look which really attracted me, yeah I wanted to feel that new look, well in windows too we have many themes and transformation pack, but I really wanted to feel the original look of Linux system.&lt;/p&gt;
-
-&lt;p&gt;And lastly, there is strong community support for Linux over the Internet through various forums. Any question posed in forums will usually get a quick response as a lot of volunteers are online and working to solve the problems due to their passion for Linux. The paid support option is also available for commercial enterprises, with companies like Red Hat and Novell offering 24×7 support for critical applications and services.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-meant-by-linux-distro&quot;&gt;What is meant by Linux distro?&lt;/h2&gt;
-
-&lt;p&gt;In the Linux world, there are hundreds of different flavors of a distro. Examples include Debian, Ubuntu and Red Hat (among many others).&lt;/p&gt;
-
-&lt;p&gt;Technically, a distribution is any deployment of software and isn’t specifically Linux. Usually, in this case, you’ll hear it referred to as a “distribution of software.” Despite this, the term “distro” is nearly always used in a Linux context. So, while a distribution of software is a generic term for any bundle of software, a distro is nearly always a flavor of Linux.&lt;/p&gt;
-
-&lt;h2 id=&quot;which-linux-distro-i-have-used-and-i-am-using-currently&quot;&gt;Which Linux distro I have used and I am using currently&lt;/h2&gt;
-
-&lt;p&gt;Till date i have used many different distros of linux , i have used &lt;a href=&quot;https://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; , &lt;a href=&quot;https://linuxmint.com/&quot;&gt;Linux mint&lt;/a&gt; , &lt;a href=&quot;http://hamaralinux.org&quot;&gt;Hamara Linux&lt;/a&gt; , &lt;a href=&quot;https://www.archlinux.org/&quot;&gt;arch linux&lt;/a&gt; , &lt;a href=&quot;https://www.kali.org/&quot;&gt;kali&lt;/a&gt; , &lt;a href=&quot;https://www.debian.org&quot;&gt;Debian&lt;/a&gt; and many more.&lt;/p&gt;
-
-&lt;p&gt;Currently, I am using &lt;a href=&quot;https://www.debian.org/releases/sid/&quot;&gt;Debian SID&lt;/a&gt; as I need my os to be updated with new packages and not to be waiting till a new release, plus I do a lot of &lt;a href=&quot;https://wiki.debian.org/Packaging&quot;&gt;Debian packaging&lt;/a&gt; and for that, I need Debian SID machine.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 03 Nov 2018 17:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/</guid>
-        
-        <category>linux</category>
-        
-        <category>Open source</category>
         
         
         <category>jekyll</category>
