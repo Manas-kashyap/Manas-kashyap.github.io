@@ -9,11 +9,11 @@ thumbnail:  devops
 tags:
  - linux
  - Open source
- - Journey
  - A look back
  - DevOps
- - Cloud
- - CI/CD 
+ - Why DevOps
+ - DevOps Answer
+ - Interview DevOps
 ---
 
 ### **Why DevOps? Answering the Most Questioned Question in DevOps Interviews**
@@ -35,3 +35,5 @@ Having navigated through the realms of software development, operations, and inf
 Reflecting on my journey in the DevOps landscape, I've witnessed firsthand the transformative power of DevOps in driving organizational agility, innovation, and resilience. From orchestrating complex deployments to optimizing infrastructure performance, DevOps has become an indispensable cornerstone in modern software delivery practices.
 
 So, the next time you're asked, "Why DevOps?" remember that DevOps is not merely a buzzword or a set of practices—it's a cultural shift that empowers teams to deliver value faster, mitigate risks, and stay ahead in an ever-evolving digital landscape. As organizations continue to embrace DevOps principles and methodologies, the question of "Why DevOps?" becomes less about justification and more about embracing a mindset of continuous improvement and collaboration.
+
+## **Thank you for reading this blog !!!!** 
