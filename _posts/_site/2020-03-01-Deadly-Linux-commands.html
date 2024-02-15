@@ -1,0 +1,34 @@
+<p><u>**Warning:** These commands should NEVER be executed. They will most likely destroy your system (or ruin a major part) before you can stop them, however, if you want to see how they work, you could run them inside a Virtual Machine.</u></p>
+
+<p>So, let’s get started:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"rm -rf /"
+</code></pre></div></div>
+
+<p>This command basically means “remove all files (even Read Only files) recursively in the root (top) directory” (can also be written as “shred -rf /)”</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>":(){:|:&amp;};:"
+
+</code></pre></div></div>
+
+<p>This command is known as a ‘Fork Bomb’. It operates by defining a function called ‘:’, which calls itself twice, once in the foreground and once in the background. It keeps on executing again and again till the system freezes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"'command' &gt; /dev/sda"
+</code></pre></div></div>
+
+<p>This command writes the output of ‘command’ to the specified drive. This is considered deadly because it overwrites any data on the drive.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"mkfs.ext3 /dev/sda"
+
+</code></pre></div></div>
+
+<p>This command is known as a format command. It will format the specified drive to an ext3 format, wiping everything on the drive.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"dd if=/dev/random of=/dev/sda"
+</code></pre></div></div>
+
+<p>This command writes random data onto the specified drive, and overwrites any data within that drive.
+These are a few of the many deadly commands for Linux.</p>
+
+<p><em>This post was made for the newcomers in Linux (and maybe some of the veterans) who are likely to run the commands if told it will fix a problem. I, myself, was tricked into executing the 1st command listed here a while back and it took me FOREVER to get all my data and documents back.</em></p>
+

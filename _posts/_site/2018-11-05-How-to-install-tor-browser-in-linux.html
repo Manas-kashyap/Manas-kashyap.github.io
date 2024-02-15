@@ -1,0 +1,40 @@
+<p>In this Blog, I will be sharing a quick guide on how to install Tor-browser in your system.</p>
+
+<h2 id="what-is-tor">What is Tor?</h2>
+
+<p>The Tor software protects you by bouncing your communications around a distributed network of relays run by volunteers all around the world: it prevents somebody watching your Internet connection from learning what sites you visit, it prevents the sites you visit from learning your physical location, and it lets you access sites which are blocked.</p>
+
+<p>Tor Browser lets you use Tor on Microsoft Windows, Apple MacOS, or GNU/Linux without needing to install any software. It can run off a USB flash drive, comes with a pre-configured web browser to protect your anonymity, and is self-contained (portable).</p>
+
+<p>To know more read the official <a href="https://www.torproject.org/docs/documentation.html.en">Documentation</a> here.</p>
+
+<p><em>That’s too much of info, get me to the installation part</em></p>
+
+<h2 id="how-to-install-tor">How to install Tor.</h2>
+
+<p>1) “For Kali Linux and Debian repository”</p>
+<h4 id="sudo-apt-get-install-tor">sudo apt-get install tor</h4>
+
+<p>2) Download and Running TOR Bundle
+For this, you need a little grip of some basic Linux command like wget, cd and changing the permission of files.
+So, let’s start
+I) Let’s get the TOR Bundle (latest version as on 05-11-2018), we will be using “wget” tool.</p>
+
+<p>So, Let’s get to the terminal using ctrl+alt+t (for many Desktop environment, Defaultly setup).
+Lets get to the directory where you want to install it, lets suppose Documents is the place , so the command will be <em>cd Documents</em></p>
+
+<p>Now we will download the TOR bundle using wget or you can do it manually from the <a href="https://www.torproject.org/download/download-easy.html.en">site</a> (but doing manually will Download it to the Downoads folder) , but from terminal we will use <em>“wget https://www.torproject.org/dist/torbrowser/8.0.3/tor-browser-linux64-8.0.3_en-US.tar.xz”</em> (latest bundle as per 05/11/18) .</p>
+
+<p>II) Now we will extract it from the zipped filee that we just downloaded.
+For that we will use <em>“tar -xvzf https://www.torproject.org/dist/torbrowser/8.0.3/tor-browser-linux64-8.0.3_en-US.tar.xz”</em></p>
+
+<p>III) Now we can see the files will be extracted to a new folder named tor-browser(tab completion completes it)
+We will go to that folder using <em>“cd tor-browser(tab completion)”</em></p>
+
+<p>IV) Now by typing <em>“ls -la”</em> , you can see a number of files in which one is “start-tor-browser.desktop”
+so , to run and setup things , we will use command <em>“chmod +x start-tor-browser.desktop &amp;&amp; ./start-tor-browser.desktop “</em></p>
+
+<p>chmod changes the permission of the file of start-tor-browser.desktop file.</p>
+
+<h5 id="hope-it-helps-you-all">Hope it helps you all.</h5>
+
