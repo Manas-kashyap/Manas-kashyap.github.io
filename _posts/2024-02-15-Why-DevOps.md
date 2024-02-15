@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Why DevOps
-date:       2024-02-15 12:00:00
+date:       2024-02-14 12:00:00
 author:     Manas kashyap
 summary:    Answering the Most Questioned Question in DevOps Interviews
 categories: jekyll

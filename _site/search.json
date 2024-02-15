@@ -1,6 +1,14 @@
 [
   
   {
+    "title"    : "Why DevOps",
+    "category" : "",
+    "tags"     : "linux, Open source, A look back, DevOps, Why DevOps, DevOps Answer, Interview DevOps",
+    "url"      : "/jekyll/2024/02/14/Why-DevOps/",
+    "date"     : "2024-02-14 17:30:00 +0530"
+    } ,
+    
+  {
     "title"    : "DevOps Insights || Learnings from 4 Years in the Field",
     "category" : "",
     "tags"     : "linux, Open source, Journey, A look back, DevOps, Cloud, CI/CD",

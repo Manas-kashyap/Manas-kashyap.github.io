@@ -5,9 +5,58 @@
     <description>Senior DevOps Engineer</description>
     <link>https://Manas-kashyap.github.io/</link>
     <atom:link href="https://Manas-kashyap.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 15 Feb 2024 12:21:43 +0530</pubDate>
-    <lastBuildDate>Thu, 15 Feb 2024 12:21:43 +0530</lastBuildDate>
+    <pubDate>Thu, 15 Feb 2024 12:24:17 +0530</pubDate>
+    <lastBuildDate>Thu, 15 Feb 2024 12:24:17 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Why DevOps</title>
+        <description>&lt;h3 id=&quot;why-devops-answering-the-most-questioned-question-in-devops-interviews&quot;&gt;&lt;strong&gt;Why DevOps? Answering the Most Questioned Question in DevOps Interviews&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;As a DevOps practitioner with over four years of hands-on experience, I’ve encountered numerous interviews and discussions where one question always finds its way into the conversation: &lt;strong&gt;&lt;u&gt;Why DevOps?&lt;/u&gt;&lt;/strong&gt; This seemingly simple question carries profound significance, reflecting the fundamental principles and driving forces behind the DevOps movement.&lt;/p&gt;
+
+&lt;p&gt;Having navigated through the realms of software development, operations, and infrastructure management, I’ve come to appreciate DevOps not just as a methodology but as a cultural shift that revolutionises how teams collaborate, deliver software, and respond to change.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So, why DevOps?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Working Together Across Teams&lt;/strong&gt;: In the old way of doing things in software development, different groups like developers, QA engineers, and operations folks would often do their own thing separately. This caused issues like not talking to each other enough, making things slower, and sometimes causing mistakes. DevOps changes this by encouraging everyone to work as a team, share what they’re doing, and help each other out. This makes everything run more smoothly and quickly, like a well-oiled machine.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Continuous Integration and Continuous Deployment (CI/CD)&lt;/strong&gt;: In today’s fast-paced digital landscape, businesses demand rapid and reliable software delivery. DevOps embraces CI/CD pipelines, automating the build, test, and deployment stages to accelerate the release cycle while maintaining quality and stability. This automation not only reduces manual errors but also enhances deployment frequency and agility.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Infrastructure as Code (IaC)&lt;/strong&gt;: Managing infrastructure manually is prone to errors, inconsistencies, and configuration drifts. DevOps promotes the concept of Infrastructure as Code, where infrastructure configurations are defined and managed through code, allowing for versioning, repeatability, and scalability. IaC empowers teams to provision, configure, and deploy infrastructure resources seamlessly, promoting consistency and reproducibility across environments.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Resilience and Reliability&lt;/strong&gt;: In today’s digital ecosystem, system failures and downtime can have severe implications on business operations and customer experience. DevOps emphasizes resilience and reliability by implementing practices such as automated monitoring, proactive alerting, and fault tolerance mechanisms. By continuously monitoring system health and performance metrics, DevOps teams can identify and address issues promptly, minimizing downtime and maximizing uptime.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Culture of Continuous Improvement&lt;/strong&gt;: At its core, DevOps is more than just tools and practices; it’s a cultural mindset that fosters a culture of continuous improvement and learning. By embracing principles such as blameless post-mortems, cross-functional collaboration, and experimentation, DevOps encourages teams to iterate, innovate, and adapt in response to evolving business requirements and technological advancements.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Reflecting on my journey in the DevOps landscape, I’ve witnessed firsthand the transformative power of DevOps in driving organizational agility, innovation, and resilience. From orchestrating complex deployments to optimizing infrastructure performance, DevOps has become an indispensable cornerstone in modern software delivery practices.&lt;/p&gt;
+
+&lt;p&gt;So, the next time you’re asked, “Why DevOps?” remember that DevOps is not merely a buzzword or a set of practices—it’s a cultural shift that empowers teams to deliver value faster, mitigate risks, and stay ahead in an ever-evolving digital landscape. As organizations continue to embrace DevOps principles and methodologies, the question of “Why DevOps?” becomes less about justification and more about embracing a mindset of continuous improvement and collaboration.&lt;/p&gt;
+
+&lt;h2 id=&quot;thank-you-for-reading-this-blog-&quot;&gt;&lt;strong&gt;Thank you for reading this blog !!!!&lt;/strong&gt;&lt;/h2&gt;
+</description>
+        <pubDate>Wed, 14 Feb 2024 17:30:00 +0530</pubDate>
+        <link>https://Manas-kashyap.github.io/jekyll/2024/02/14/Why-DevOps/</link>
+        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2024/02/14/Why-DevOps/</guid>
+        
+        <category>linux</category>
+        
+        <category>Open source</category>
+        
+        <category>A look back</category>
+        
+        <category>DevOps</category>
+        
+        <category>Why DevOps</category>
+        
+        <category>DevOps Answer</category>
+        
+        <category>Interview DevOps</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>DevOps Insights || Learnings from 4 Years in the Field</title>
@@ -137,7 +186,7 @@ Ansible provides more than 450 modules for everyday tasks.&lt;/p&gt;
 
 &lt;h3 id=&quot;playbooks&quot;&gt;Playbooks&lt;/h3&gt;
 
-&lt;p&gt;Ansible playbooks are like instruction manuals for tasks. They are simple files written in YAML, which stands for YAML Ain’t Markup Language, a human-readable data serialization language. Playbooks are really at the heart of what makes Ansible so popular is because they describe the tasks to be done quickly and without the need for the user to know or remember any particular syntax.&lt;/p&gt;
+&lt;p&gt;Ansible playbooks are like instruction manuals for tasks. They are simple files written in YAML, which stands for YAML Ain’t Markup Language, a human-readable data serialization language. Playbooks are really at t—he heart of what makes Ansible so popular is because they describe the tasks to be done quickly and without the need for the user to know or remember any particular syntax.&lt;/p&gt;
 
 &lt;p&gt;Each playbook is composed of one or multiple plays, and the goal of a play is to map a group of hosts to well-defined roles, represented by tasks.&lt;/p&gt;
 
@@ -1189,63 +1238,6 @@ so , to run and setup things , we will use command &lt;em&gt;“chmod +x start-t
         <category>Installation</category>
         
         <category>linux</category>
-        
-        
-        <category>jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>My Journey with Tech -1</title>
-        <description>&lt;p&gt;In this Blog, I will be sharing my experience and a look back of my journey from where I started.
-Yeah, it’s not a technical blog but surely it’s a technical guy journey overview. 
-Please read till last.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;“Date every technology before you get settled for one” - Anonymous&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;a-nervous-guys&quot;&gt;A nervous guys&lt;/h2&gt;
-
-&lt;p&gt;So, this journey started in 2016 when I got admission in Amity University, I still remember the first day when we had an introduction class, where everyone was giving an intro about themselves to the teachers and I was sitting there and hearing intros. Many students have already started with technical things or have done a lot of work in their startups. And when I got the chance to speak I became nervous as, I too wanted to speak something cool I have done, but when I recall everything till that moment, I haven’t done anything great and that nervousness came to my voice and I started to stammer, although somehow I spoke about myself and where I belong and that’s it and I sat back .
-But I got a reality check about my confidence plus what I have done till now. I was really nervous and wanted to do something great. Well, I was a computer student in my school, but never explored it, as I never thought that, there are many options in exploring it plus I used to stick to the syllabus for the computer. And, now it was coming back that I should have explored options and should have tried things as many had done in my class.&lt;/p&gt;
-
-&lt;h2 id=&quot;turning-point&quot;&gt;Turning Point&lt;/h2&gt;
-
-&lt;p&gt;The turning point in my life was a workshop by my college club on Linux and python. Well, I wanted to do something great in my life and wanted to learn technical things, so I used to attend every college club workshop, and there was one workshop which changed my life. In my class 11,12 read about &lt;a href=&quot;https://whatis.techtarget.com/definition/open-source&quot;&gt;Open Source&lt;/a&gt; and there i learnt about &lt;a href=&quot;https://www.linux.org/&quot;&gt;linux&lt;/a&gt; . So, I was really excited plus i wanted to know what is really linux. So , i went to linux workshop and there came some alumni of our college who have already ecelled and tried linux in their time and they gave a brief knowledge about linux , and really i thought i should &lt;a href=&quot;https://manas-kashyap.github.io/jekyll/2018/11/03/Why-linux/&quot;&gt;use linux&lt;/a&gt;. There i learnt about &lt;a href=&quot;https://www.python.org/&quot;&gt;python&lt;/a&gt; too , and python programming langugae really attracted me as it was really new plus compatible for me to work on .
-From that day I started to use Linux and python.&lt;/p&gt;
-
-&lt;h2 id=&quot;more-technical-things&quot;&gt;More technical things&lt;/h2&gt;
-
-&lt;p&gt;While I was exploring things, I came to know about game developing and tried my luck there also, with &lt;a href=&quot;https://unity3d.com/&quot;&gt;unity 3D&lt;/a&gt;, then tried to design things in 3D and also 2D graphics designing using &lt;a href=&quot;https://www.photoshop.com/&quot;&gt;photoshop&lt;/a&gt; and &lt;a href=&quot;https://www.autodesk.com/education/free-software/maya&quot;&gt;Autodesk Maya&lt;/a&gt;, android development and so on,  So basically I tried my best to learn every technology I could, in this journey I encountered some super awesome seniors, and some really helpful communities when it came for open source.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-first-contribution-to-open-source&quot;&gt;My first contribution to Open Source&lt;/h2&gt;
-
-&lt;p&gt;So, well I remember my first contribution was in a website of a technical club of my college itself where i did a minor change in the css component of the website .&lt;/p&gt;
-
-&lt;h2 id=&quot;my-biggest-contribution&quot;&gt;My biggest contribution&lt;/h2&gt;
-
-&lt;p&gt;To be honest, i really don’t think i have done any big contribution till now , well the contribution that made my name in Open Source contributors name is &lt;a href=&quot;http://wiki.debian.org/ManasKashyap&quot;&gt;My Debian Packaging&lt;/a&gt; and contribution to &lt;a href=&quot;http://hamaralinux.org&quot;&gt;HamaraLinux project&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-this-blog&quot;&gt;Why This Blog??&lt;/h2&gt;
-
-&lt;p&gt;I am sure many readers who are going to read this blog will have one thing in mind &lt;em&gt;“Why this Blog?”&lt;/em&gt;. So, for them, the answer is I have encountered many students who are feeling very low because they don’t have any prior technical knowledge and that leads to loosing of their self-confidence.
-For, those students just one kind of advice, try your best and leave the rest. I also started without any prior knowledge and yeah i am at a place where i didnt expect i will be in upcoming years. 
-This blog is just to let you know yeah, you all are not alone who are starting with things now, just don’t feel low as it can create many bad thoughts in your mind, as I have encountered with those thoughts and it created really a lot of bad phase in my college journey.&lt;/p&gt;
-
-&lt;h5 id=&quot;this-is-just-a-small-part-of-the-bigger-story-which-will-come-soon-part--1-is-this&quot;&gt;This is just a small part of the bigger story which will come soon. (Part -1 is this)&lt;/h5&gt;
-&lt;h5 id=&quot;hope-it-helps-you-all-&quot;&gt;Hope it helps you all .&lt;/h5&gt;
-
-</description>
-        <pubDate>Mon, 05 Nov 2018 01:30:00 +0530</pubDate>
-        <link>https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</link>
-        <guid isPermaLink="true">https://Manas-kashyap.github.io/jekyll/2018/11/05/My-journey-with-Tech-1/</guid>
-        
-        <category>linux</category>
-        
-        <category>Open source</category>
-        
-        <category>Journey</category>
-        
-        <category>A look back</category>
         
         
         <category>jekyll</category>
