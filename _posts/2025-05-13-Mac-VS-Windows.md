@@ -1,4 +1,18 @@
-# Windows or Mac for DevOps Engineering: My Reality After 5+ Years of Experience
+---
+layout:     post
+title:      Windows or Mac for DevOps Engineering
+date:       2025-03-15 12:00:00
+author:     Manas kashyap
+summary:    Windows or Mac for DevOps Engineering
+categories: jekyll
+thumbnail:  devops
+tags:
+ - DevOps
+ - Windows or Mac 
+ - DevOps Engineering
+---
+
+# Windows or Mac for DevOps Engineering
 
 As a DevOps Engineer with **more than five years of experience**, I have worked with both **Windows and Mac** environments on various real-world projects. I wish to write a real-world comparison of the two, based on what actually worked—and not worked—for me in this blog.
 
